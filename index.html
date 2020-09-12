@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>AUSTIN JACOBS | PORTFOLIO</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-cyan.css">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-family: Arial, 'Rajdhani', sans-serif;
+    }
+
+    body,
+    html {
+      height: 100%;
+      line-height: 1.6;
+    }
+
+    /* Full height image header */
+    .bgimg-1 {
+      background-position: center;
+      background-size: cover;
+      background-image: url("https://i.postimg.cc/K8Jq21NP/2880x1800-black-solid-color-background.jpg");
+      min-height: 100%;
+    }
+
+    .w3-bar .w3-button {
+      padding: 16px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navbar (sit on top) -->
+  <div class="w3-top">
+    <div class="w3-bar nav-color" id="myNavbar">
+      <!--<span class="w3-bar-item w3-wide w3-display-middle text-color">AUSTIN JACOBS</span>-->
+      <a href="#home"><img src="https://i.postimg.cc/DzyW13FR/logo-1-brand.jpg"
+          class="w3-image branding-image w3-display-middle" alt="Branding Image"></a>
+      <!-- Right-sided navbar links -->
+      <div class="w3-right w3-hide-small w3-padding">
+        <a href="#about" class="w3-bar-item text-color nav-btn-hover"> ABOUT</a>
+        <a href="#work" class="w3-bar-item text-color nav-btn-hover"></i> PORTFOLIO</a>
+        <a href="#contact" class="w3-bar-item text-color nav-btn-hover"></i> CONTACT</a>
+      </div>
+      <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+      <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium bars-color"
+        onclick="w3_open()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+  </div>
+
+  <!-- Sidebar on small screens when clicking the menu icon -->
+  <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large"
+    style="display:none" id="mySidebar">
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+    <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
+    <a href="#work" onclick="w3_close()" class="w3-bar-item w3-button">WORK</a>
+    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+  </nav>
+
+  <!-- Header with full-height image -->
+  <header class="bgimg-1 w3-container" id="home">
+    <div class="mobile-hello w3-center w3-text-white w3-mobile">
+      <div class="w3-hide-small text-color-cont-1" style="font-size:96px;">Hello. I'm
+        Austin.</div>
+      <div class="w3-xxlarge w3-hide-large w3-hide-medium text-color-cont-1">Hello. I'm
+        Austin.</div>
+      <div class="w3-hide-small text-color-cont-2 develop-text-style-big" style="font-size:38px">I want to develop your
+        perfect
+        website.</div>
+      <div class="w3-xlarge w3-hide-large w3-hide-medium text-color-cont-2 develop-text-style-small">I want to develop
+        your perfect
+        website.</div>
+      <p></p><a href="#contact"
+        class="w3-btn w3-padding-large w3-large  btn-hover btn-style w3-padding-small w3-mobile">Contact
+        Me</a></p>
+    </div>
+  </header>
+
+
+  <!-- About Section -->
+  <div class="w3-container w3-mobile container-color" style="padding:60px 16px" id="about">
+    <div class="w3-center w3-mobile">
+      <img class="profile-image w3-image w3-circle show-on-scroll" style="max-width:22%; min-width: 200px;"
+        src="https://i.postimg.cc/HnV82NRR/Screen-Shot-2020-04-14-at-8-15-43-PM.png" alt="profile picture">
+    </div>
+    <div class="about-me-intro w3-row w3-mobile">
+      <p class="about-me-intro-1 w3-col s6 w3-center w3-hide-small">Hi I'm Austin Jacobs. I'm happy that you are here, and I hope you
+        enjoy my work.</p>
+
+      <p class="w3-hide-small about-me-intro-2 w3-col s6 w3-left-align">I am a <a class="frontend-def"
+          href="https://frontendmasters.com/books/front-end-handbook/2018/what-is-a-FD.html" target="_blank">Frontend
+          Web Developer</a> based in Teton Valley, Idaho. I am currently earning a bachelors degree at Brigham Young
+        University of Idaho in order to become a <a class="fullstack-def"
+          href="https://www.w3schools.com/whatis/whatis_fullstack.asp#:~:text=A%20full%20stack%20web%20developer,ASP%2C%20Python%2C%20or%20Node)"
+          target="_blank">Full Stack Web Developer.</a> I am currently seeking internships and other positions that will
+        allow me to gain experience in industry. </p>
+
+        <p class="about-me-intro-hidden w3-center w3-hide-large w3-hide-medium w3-mobile">I am a <a class="frontend-def"
+          href="https://frontendmasters.com/books/front-end-handbook/2018/what-is-a-FD.html" target="_blank">Frontend
+          Web Developer</a> based in Teton Valley, Idaho. I am currently earning a bachelors degree at Brigham Young
+        University of Idaho in order to become a <a class="fullstack-def"
+          href="https://www.w3schools.com/whatis/whatis_fullstack.asp#:~:text=A%20full%20stack%20web%20developer,ASP%2C%20Python%2C%20or%20Node)"
+          target="_blank">Full Stack Web Developer.</a> I am currently seeking internships and other positions that will
+        allow me to gain experience in industry.</div>
+    </div>
+    <div class="w3-row-padding w3-center" style="margin-top:64px">
+      <div class="w3-quarter">
+        <i class="fa fa-heart w3-jumbo" style="padding-top: 20px;"></i>
+        <p class="" style="font-size:26px;">Passion</p>
+        <p style="font-size:18px; padding-bottom: 80px;">Technology is my passion. I like hardware and software, but what I really love is
+          bringing the two together and creating a beautiful website.</p>
+      </div>
+      <div class="w3-quarter">
+        <i class="fa fa-laptop-code w3-jumbo w3-center" style="padding-top: 20px;"></i>
+        <p class="" style="font-size:26px">Languages</p>
+        <p style="font-size:18px; padding-bottom: 80px;">HTML | CSS | JavaScript</p>
+      </div>
+      <div class="w3-quarter">
+        <i class="fa fa-gem w3-jumbo" style="padding-top: 20px;"></i>
+        <p class="" style="font-size:26px">Quality</p>
+        <p style="font-size:18px; padding-bottom: 80px;">I build high quality websites that are mobile responsive and tailored to the needs of
+          whatever you might need a website for. </p>
+      </div>
+      <div class="w3-quarter">
+        <i class="fa fa-brain w3-jumbo" style="padding-top: 20px;"></i>
+        <p class="" style="font-size:26px">Knowledge</p>
+        <p style="font-size:18px; padding-bottom: 80px;">Believe it or not, Web Developers don't know everything. I strive to learn the most
+          reliable and industry recommended languages and techniques.</p>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <!-- Work Section -->
+  <div class="work-background w3-container" style="padding:100px 16px" id="work">
+    <div class="portfolio-title w3-center">
+      <h1 class="w3-text-white w3-wide" style="font-size: 35px;">PORTFOLIO</h1>
+    </div>
+    <div class="w3-row-padding" style="margin-top:75px">
+      <div class="w3-third">
+        <img src="https://i.postimg.cc/7ZgmvBYj/Screen-Shot-2020-09-06-at-4-08-49-PM.png" style="width:100%"
+          onclick="onClick(this)" class="w3-hover-opacity" alt="REVIVE Website">
+        <p class="image-description w3-mobile w3-center">FRONT END DEVELOPMENT | Beginner (Non-responsive)</p>
+        <p class="w3-mobile w3-center" style="color: white"><a
+            href="https://final-website-project-aj.glitch.me/index.html" target="_blank">Revive</p></a>
+      </div>
+      <div class="w3-third">
+        <img src="https://i.postimg.cc/Bvwj60my/Screen-Shot-2020-09-06-at-4-32-59-PM.png" style="width:100%"
+          onclick="onClick(this)" class="w3-hover-opacity" alt="REVIVE Website">
+        <p class="image-description w3-mobile w3-center">FRONT END DEVELOPMENT | Beginner (Non-responsive)</p>
+        <p class="w3-mobile w3-center" style="color: white"><a href="https://wdd130winter20-aj.glitch.me/"
+            target="_blank">Dry Oar Rafting</p></a>
+      </div>
+      <div class="w3-third">
+        <img src="https://i.postimg.cc/2jn5phNg/Screen-Shot-2020-09-06-at-4-37-01-PM.png" style="width:100%"
+          onclick="onClick(this)" class="w3-hover-opacity" alt="REVIVE Website">
+        <p class="image-description w3-mobile w3-center">JAVASCRIPT | Program </p>
+        <p class="w3-mobile w3-center" style="color: white"><a
+            href="https://tip-calculator-aust.glitch.me/" target="_blank">Tip Calculator</p></a>
+      </div>
+    </div>
+  </div>
+  </div>
+
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+    <span class="w3-button w3-xxlarge close-hover-color w3-padding-large w3-display-topright"
+      title="Close Modal Image">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption" class="w3-opacity w3-large"></p>
+    </div>
+  </div>
+
+  <!-- Contact Section -->
+  <div class="contact-background w3-container" style="padding:64px 16px" id="contact">
+    <h3 class="w3-center w3-wide" style="font-size: 35px;">CONTACT</h3>
+    <p class="w3-center w3-large">Let's get in touch. Send me a message:</p>
+    <div>
+      <p><i class="fa fa-map-marker-alt fa-fw w3-xxlarge w3-margin-right"></i> Tetonia, Idaho</p>
+      <p><i class="fa fa-mobile-alt fa-fw w3-xxlarge w3-margin-right"></i> Phone: 208-970-7717</p>
+      <p><i class="fa fa-envelope-open fa-fw w3-xxlarge w3-margin-right"> </i> Email: <a href="mailto:aust.t.jac@gmail.com">aust.t.jac@gmail.com</a></p>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="w3-center w3-white w3-padding-16">
+    <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+    <div class="w3-xlarge w3-section w3-center w3-mobile">
+      <a href="https://twitter.com/austtjac" target="_blank"><i class="fab fa-twitter w3-hover-opacity" style="padding:6px;"></i></a>
+      <a href="https://www.facebook.com/aust.t.jac" target="_blank"><i class="fab fa-facebook-f w3-hover-opacity" style="padding:6px;"></i></a>
+      <a href="https://www.linkedin.com/in/aust-t-jac/" target="_blank"><i class="fab fa-linkedin-in w3-hover-opacity" style="padding:6px;"></i></a>
+      <!--Twitter follow me button-->
+      <div class="twitter-API w3-center">
+        <a href="https://twitter.com/austtjac?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @austtjac</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+      </div>
+    </div>
+    <p>Copyright &copy Austin Jacobs 2020</p>
+  </footer>
+
+  <script>
+    // Modal Image Gallery
+    function onClick(element) {
+      document.getElementById("img01").src = element.src;
+      document.getElementById("modal01").style.display = "block";
+      var captionText = document.getElementById("caption");
+      captionText.innerHTML = element.alt;
+    }
+
+
+    // Toggle between showing and hiding the sidebar when clicking the menu icon
+    var mySidebar = document.getElementById("mySidebar");
+
+    function w3_open() {
+      if (mySidebar.style.display === 'block') {
+        mySidebar.style.display = 'none';
+      } else {
+        mySidebar.style.display = 'block';
+      }
+    }
+
+    // Close the sidebar with the close button
+    function w3_close() {
+      mySidebar.style.display = "none";
+    }
+
+    // Scroll animation javascript.
+
+    const callback = function (entries) {
+      entries.forEach(entry => {
+        entry.target.classList.toggle("is-visible");
+      });
+    };
+
+    const observer = new IntersectionObserver(callback);
+
+    const targets = document.querySelectorAll(".show-on-scroll");
+    targets.forEach(function (target) {
+      observer.observe(target);
+    });
+  </script>
+
+</body>
+
+</html>

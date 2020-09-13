@@ -2041,6 +2041,12 @@ a {
 .profile-image {
     padding-top: 40px;
     padding-bottom: 40px;
+    margin-left: 40px;
+}
+
+.profile-image-2 {
+    padding-bottom: 40px;
+    padding-top: 40px;
 }
 
 .image-description {
@@ -2097,25 +2103,25 @@ a {
     color: #06d6a0;
 }
 
-.about-me-intro {
-    padding-top: 40px;
-}
-
-.about-me-intro-1 {
-    font-size: 32px;
-    padding: 30px;
-    font-weight: bold;
-    background-color: #06d6a0;
-    border-radius: 10px;
-}
-
 .about-me-intro-2 {
-    font-size: 20px;
+    font-size: 22px;
     padding-right: 30px;
     padding-top: 14px;
     padding-left: 30px;
+    width: 50%;
 }
 
 .about-me-intro-hidden {
     font-size: 30px;
 }
+
+.signature-img-1 img {
+    max-width: 8%;
+    margin-left: 40px;
+}
+
+.signature-img-2 img {
+    max-width: 20%;
+    margin-left: 40%;
+}
+

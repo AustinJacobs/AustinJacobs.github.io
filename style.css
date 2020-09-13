@@ -2065,10 +2065,6 @@ a {
     background-color: #06d6a0;
 }
 
-.image-background-clr {
-    background-color: red;
-}
-
 .image-about-container {
     padding-left: 25px;
     padding-right: 25px;
@@ -2103,12 +2099,17 @@ a {
     color: #06d6a0;
 }
 
+.about-me-intro {
+    
+}
+
 .about-me-intro-2 {
     font-size: 22px;
     padding-right: 30px;
     padding-top: 14px;
-    padding-left: 30px;
-    width: 50%;
+    padding-left: 40px;
+    padding-bottom: 20px;
+    width: 60%;
 }
 
 .about-me-intro-hidden {
@@ -2121,12 +2122,11 @@ a {
 }
 
 .signature-img-2 img {
-    max-width: 20%;
-    margin-left: 40%;
+    max-width: 30%;
+    margin-left: 35%;
 }
 
 .bird-img {
     margin-right: 130px;
     margin-top: 800px;
 }
-

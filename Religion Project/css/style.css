@@ -1,0 +1,108 @@
+body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+        font-family: "Raleway", sans-serif;
+    }
+
+    .w3-third img {
+        margin-bottom: -6px;
+        opacity: 0.8;
+        cursor: pointer
+    }
+
+    .w3-third img:hover {
+        opacity: 1
+    }
+
+    #one {
+        background-color: #f29e4c;
+    }
+
+    #two {
+        background-color: #f1c453;
+    }
+
+    #three {
+        background-color: #efea5a;
+    }
+
+    #four {
+        background-color: #b9e769;
+    }
+
+    #five {
+        background-color: #83e377;
+    }
+
+    #six {
+        background-color: #16db93;
+    }
+
+    #seven {
+        background-color: #0db39e;
+    }
+
+    #eight {
+        background-color: #048ba8;
+    }
+
+    #nine {
+        background-color: #2c699a;
+    }
+
+    #one-name {
+        color: black;
+    }
+
+    #one-name a:hover {
+        color: red;
+    }
+
+    #two-name {
+        color: black;
+    }
+
+    #three-name {
+        color: black;
+    }
+
+    #four-name {
+        color: black;
+    }
+
+    #five-name {
+        color: black;
+    }
+
+    #six-name {
+        color: black;
+    }
+
+    #seven-name {
+        color: black;
+    }
+
+    #eight-name {
+        color: black;
+    }
+
+    #nine-name {
+        color: black;
+    }
+
+    #mySidebar {
+        background-color: white;
+    }
+
+    #page-title {
+        color: black;
+        text-decoration: none;
+        font-size: 26px;
+    }
+
+    #footer {
+        background-color: white;
+    }

@@ -55,42 +55,83 @@ body,
 
     #one-name {
         color: black;
+        text-decoration: none;
     }
 
-    #one-name a:hover {
-        color: red;
+    #one-name:hover {
+        background-color: #f29e4c;
     }
 
     #two-name {
         color: black;
+        text-decoration: none;
+    }
+
+    #two-name:hover {
+        background-color: #f1c453;
     }
 
     #three-name {
         color: black;
+        text-decoration: none;
+    }
+
+    #three-name:hover {
+        background-color: #efea5a;
     }
 
     #four-name {
         color: black;
+        text-decoration: none;
+    }
+
+    #four-name:hover {
+        background-color: #b9e769;
     }
 
     #five-name {
         color: black;
+        text-decoration: none;
+    }
+
+    #five-name:hover {
+        background-color: #83e377;
     }
 
     #six-name {
         color: black;
+        text-decoration: none;
+    }
+
+    #six-name:hover {
+        background-color: #16db93;
     }
 
     #seven-name {
         color: black;
+        text-decoration: none;
+    }
+
+    #seven-name:hover {
+        background-color: #0db39e;
     }
 
     #eight-name {
         color: black;
+        text-decoration: none;
+    }
+
+    #eight-name:hover {
+        background-color: #048Ba8;
     }
 
     #nine-name {
         color: black;
+        text-decoration: none;
+    }
+
+    #nine-name:hover {
+        background-color: #2c699a;
     }
 
     #mySidebar {
@@ -105,4 +146,21 @@ body,
 
     #footer {
         background-color: white;
+    }
+
+    #banner-image {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    .adameve {
+        float: left;
+        margin-right: 16px;
+        padding-bottom: 16px;
+    }
+
+    .enoch {
+        float: right;
+        margin-left: 16px;
+        padding-bottom: 16px;
     }

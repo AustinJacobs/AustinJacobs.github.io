@@ -1965,8 +1965,28 @@ a {
     border-color: #e7ffff !important
 }
 
+.bgimg-1 {
+    background-color: black;
+    height: 820px;
+}
+
+.bird-title {
+    margin-left: -95px;
+    margin-top: 1px;
+}
+
+.pacifico-span {
+    font-family: "Pacifico", "Roboto";
+    font-size: larger;
+}
+
 .nav-color {
     background-color: black;
+}
+
+.title-text-style {
+    color: white;
+    font-size: 12px;
 }
 
 .text-color {

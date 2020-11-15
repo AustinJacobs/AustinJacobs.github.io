@@ -8,10 +8,12 @@
   <meta name="keywords" content="HTML, CSS, JavaScript, code, hello, contact, work, portfolio">
   <meta name="author" content="Austin Jacobs">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta http-equiv="X-UA-Compatible"> 
+  <meta http-equiv="X-UA-Compatible">
   <link rel="shortcut icon" href="https://i.postimg.cc/Z59kbCMZ/favicon.jpg" type="image/x-icon">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
   <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-cyan.css">
   <link rel="stylesheet" href="style.css">
@@ -32,14 +34,6 @@
       line-height: 1.6;
     }
 
-    /* Full height image header */
-    .bgimg-1 {
-      background-position: center;
-      background-size: cover;
-      background-image: url("https://i.postimg.cc/K8Jq21NP/2880x1800-black-solid-color-background.jpg");
-      min-height: 100%;
-    }
-
     .w3-bar .w3-button {
       padding: 16px;
     }
@@ -51,9 +45,9 @@
   <!-- Navbar (sit on top) -->
   <div class="w3-top">
     <div class="w3-bar nav-color" id="myNavbar">
-      <!--<span class="w3-bar-item w3-wide w3-display-middle text-color">AUSTIN JACOBS</span>-->
-      <a href="#home"><img src="https://i.postimg.cc/DzyW13FR/logo-1-brand.jpg"
-          class="w3-image branding-image w3-display-middle" alt="Branding Image"></a>
+      <a href="index.html"><span class="w3-bar-item w3-wide w3-display-middle title-text-style">AUSTIN JACOBS</span>
+      <img src="images/IMG_1512.PNG" class="bird-title w3-display-middle" style="max-width: 25px;"></a>
+
       <!-- Right-sided navbar links -->
       <div class="w3-right w3-hide-small w3-padding">
         <a href="#about" class="w3-bar-item text-color nav-btn-hover"> ABOUT</a>
@@ -81,10 +75,10 @@
   <!-- Header with full-height image -->
   <header class="bgimg-1 w3-container" id="home">
     <div class="mobile-hello w3-center w3-text-white w3-mobile">
-      <div class="w3-hide-small text-color-cont-1" style="font-size:96px;">Hello. I'm
-        Austin.</div>
-      <div class="w3-xxlarge w3-hide-large w3-hide-medium text-color-cont-1">Hello. I'm
-        Austin.</div>
+      <div class="w3-hide-small text-color-cont-1" style="font-size:96px;"><span class="pacifico-span">Hello. I'm
+        Austin.</span></div>
+      <div class="w3-xxlarge w3-hide-large w3-hide-medium text-color-cont-1"><span class="pacifico-span">Hello. I'm
+        Austin.</span></div>
       <div class="w3-hide-small text-color-cont-2 develop-text-style-big" style="font-size:38px">I want to develop your
         perfect
         website.</div>
@@ -101,12 +95,12 @@
   <!-- About Section -->
   <div class="w3-container w3-mobile container-color" style="padding:60px 16px;" id="about">
     <div class="w3-hide-small w3-left w3-mobile">
-      <img class="profile-image w3-image w3-circle show-on-scroll" style="max-width: 35%; min-width: 200px;"
-        src="https://i.postimg.cc/HnV82NRR/Screen-Shot-2020-04-14-at-8-15-43-PM.png" alt="profile picture">
+      <img class="profile-image w3-image w3-circle show-on-scroll" style="max-width: 30%;"
+        src="images/personalphoto.png" alt="profile picture">
     </div>
     <div class="w3-center w3-mobile w3-hide-large w3-hide-medium">
       <img class="profile-image-2 w3-image w3-circle show-on-scroll" style="max-width: 35%; min-width: 200px;"
-        src="https://i.postimg.cc/HnV82NRR/Screen-Shot-2020-04-14-at-8-15-43-PM.png" alt="profile picture">
+        src="images/personalphoto.png" alt="profile picture">
     </div>
     <div class="about-me-intro w3-mobile w3-left">
       <p class="w3-hide-small about-me-intro-2 w3-left-align">I am a <a class="frontend-def"
@@ -127,19 +121,17 @@
         allow me to gain experience in industry.
     </div>
     <div class="signature-img-1 w3-hide-small">
-      <img class="w3-mobile w3-left" src="https://i.postimg.cc/02yy9sr3/Screen-Shot-2020-04-14-at-12-11-03-PM.png"
-        alt="my signature">
+      <img class="w3-mobile w3-left" src="images/signature.png" alt="my signature">
     </div>
 
     <div class="signature-img-2 w3-hide-medium w3-hide-large">
-      <img class="w3-mobile" src="https://i.postimg.cc/02yy9sr3/Screen-Shot-2020-04-14-at-12-11-03-PM.png"
-        alt="my signature">
+      <img class="w3-mobile" src="images/signature.png" alt="my signature">
     </div>
 
   </div>
   <aside>
     <img style="max-width: 35%" class="w3-display-right w3-image bird-img w3-hide-small w3-hide-medium"
-      src="https://i.postimg.cc/zvnPyBpr/IMG-1512.png" alt="oragami bird">
+      src="images/IMG_1512.PNG" alt="iPhone Mockups">
   </aside>
   <div class="w3-row-padding w3-center" style="margin-top:64px">
     <div class="w3-quarter">
@@ -152,7 +144,7 @@
     <div class="w3-quarter">
       <i class="fa fa-laptop-code w3-jumbo w3-center" style="padding-top: 20px;"></i>
       <p class="" style="font-size:26px">Languages</p>
-      <p style="font-size:18px; padding-bottom: 80px;">HTML | CSS | JavaScript</p>
+      <p style="font-size:18px; padding-bottom: 80px;">HTML | CSS | JavaScript | Python</p>
     </div>
     <div class="w3-quarter">
       <i class="fa fa-gem w3-jumbo" style="padding-top: 20px;"></i>
@@ -179,22 +171,23 @@
     </div>
     <div class="w3-row-padding" style="margin-top:75px">
       <div class="w3-third">
-        <img src="https://i.postimg.cc/7ZgmvBYj/Screen-Shot-2020-09-06-at-4-08-49-PM.png" style="width:100%"
-          onclick="onClick(this)" class="w3-hover-opacity" alt="REVIVE Website">
+        <img src="images/revive.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+          alt="REVIVE Website">
         <p class="image-description w3-mobile w3-center">FRONT END DEVELOPMENT | Beginner (Non-responsive)</p>
         <p class="w3-mobile w3-center" style="color: white"><a
             href="https://final-website-project-aj.glitch.me/index.html" target="_blank">Revive</p></a>
       </div>
       <div class="w3-third">
-        <img src="https://i.postimg.cc/Bvwj60my/Screen-Shot-2020-09-06-at-4-32-59-PM.png" style="width:100%"
-          onclick="onClick(this)" class="w3-hover-opacity" alt="Dry Oar Rafting">
-        <p class="image-description w3-mobile w3-center">FRONT END DEVELOPMENT | Beginner (Non-responsive)</p>
-        <p class="w3-mobile w3-center" style="color: white"><a href="https://wdd130winter20-aj.glitch.me/"
-            target="_blank">Dry Oar Rafting</p></a>
+        <img src="images/realweather.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+          alt="Real Weather Website">
+        <p class="image-description w3-mobile w3-center">FRONT END DEVELOPMENT | Intermediate (Responsive) </p>
+        <p class="w3-mobile w3-center" style="color: white"><a
+            href="https://www.austtjac.com/austinjacobs.github.io-assignmentportal/lesson9/preston-6.html"
+            target="_blank">Real Weather</p></a>
       </div>
       <div class="w3-third">
-        <img src="https://i.postimg.cc/2jn5phNg/Screen-Shot-2020-09-06-at-4-37-01-PM.png" style="width:100%"
-          onclick="onClick(this)" class="w3-hover-opacity" alt="Tip Calculator">
+        <img src="images/calc.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+          alt="Tip Calculator">
         <p class="image-description w3-mobile w3-center">JAVASCRIPT | Program </p>
         <p class="w3-mobile w3-center" style="color: white"><a href="https://tip-calculator-aust.glitch.me/"
             target="_blank">Tip Calculator</p></a>
@@ -202,40 +195,27 @@
     </div>
     <div class="w3-row-padding" style="margin-top:75px">
       <div class="w3-third">
-        <img src="https://i.postimg.cc/nzv7fwZd/Screen-Shot-2020-09-29-at-9-20-46-PM.png" style="width:100%"
-          onclick="onClick(this)" class="w3-hover-opacity" alt="College Assignment Portal">
+        <img src="images/assignmentportal.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+          alt="College Assignment Portal">
         <p class="image-description w3-mobile w3-center">FRONT END DEVELOPMENT | Beginner (Responsive) </p>
-        <p class="w3-mobile w3-center" style="color: white"><a href="https://www.austtjac.com/austinjacobs.github.io-assignmentportal/"
-            target="_blank">College Assignment Portal</p></a>
+        <p class="w3-mobile w3-center" style="color: white"><a
+            href="https://www.austtjac.com/austinjacobs.github.io-assignmentportal/" target="_blank">College Assignment
+            Portal</p></a>
       </div>
       <div class="w3-third">
-        <img src="https://i.postimg.cc/fyywfJHx/Screen-Shot-2020-09-29-at-9-21-10-PM.png" style="width:100%"
-          onclick="onClick(this)" class="w3-hover-opacity" alt="Design Principles Document">
-        <p class="image-description w3-mobile w3-center">FRONT END DEVELOPMENT | Beginner (Responsive) </p>
-        <p class="w3-mobile w3-center" style="color: white"><a href="https://www.austtjac.com/austinjacobs.github.io-assignmentportal/lesson2/design-principles.html"
-            target="_blank">Design Principles Document</p></a>
-      </div>
-      <div class="w3-third">
-        <img src="https://i.postimg.cc/tJKXZd3j/Screen-Shot-2020-10-15-at-7-12-35-PM.png" style="width:100%"
-          onclick="onClick(this)" class="w3-hover-opacity" alt="Real Weather Website">
+        <img src="images/dispensations.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+          alt="College Assignment Portal">
         <p class="image-description w3-mobile w3-center">FRONT END DEVELOPMENT | Intermediate (Responsive) </p>
-        <p class="w3-mobile w3-center" style="color: white"><a href="https://www.austtjac.com/austinjacobs.github.io-assignmentportal/lesson9/preston-6.html"
-            target="_blank">Real Weather</p></a>
-      </div>
-    </div>
-    <div class="w3-row-padding" style="margin-top:75px">
-      <div class="w3-third">
-        <img src="https://i.postimg.cc/MHQLQDgn/Screen-Shot-2020-10-30-at-5-56-44-PM.png" style="width:100%"
-          onclick="onClick(this)" class="w3-hover-opacity" alt="College Assignment Portal">
-        <p class="image-description w3-mobile w3-center">FRONT END DEVELOPMENT | Intermediate (Responsive) </p>
-        <p class="w3-mobile w3-center" style="color: white"><a href="Religion Project/index.html"
-            target="_blank">The Dispensations: Bible Prophets</p></a>
+        <p class="w3-mobile w3-center" style="color: white"><a href="Religion Project/index.html" target="_blank">The
+            Dispensations: Bible Prophets</p></a>
       </div>
       <div class="w3-third">
-        <img src="images/prophetsnew.png" style="width:100%"
-          onclick="onClick(this)" class="w3-hover-opacity" alt="Latter-day Saint Prophets">
-        <p class="image-description w3-mobile w3-center">FRONT END DEVELOPMENT | Intermediate (Responsive - API practice using JSON)  </p>
-        <p class="w3-mobile w3-center" style="color: white"><a href="https://www.austtjac.com/austinjacobs.github.io-assignmentportal/lesson9/prophets.html"
+        <img src="images/prophets.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity"
+          alt="Latter-day Saint Prophets">
+        <p class="image-description w3-mobile w3-center">FRONT END DEVELOPMENT | Intermediate (Responsive - API using
+          JSON) </p>
+        <p class="w3-mobile w3-center" style="color: white"><a
+            href="https://www.austtjac.com/austinjacobs.github.io-assignmentportal/lesson9/prophets.html"
             target="_blank">Latter-day Saint Prophets</p></a>
       </div>
     </div>
@@ -276,11 +256,14 @@
           style="padding:6px;"></i></a>
 
       <div class="twitter-API w3-center">
-        <a href="https://twitter.com/austtjac?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @austtjac</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        <a href="https://twitter.com/austtjac?ref_src=twsrc%5Etfw" class="twitter-follow-button"
+          data-show-count="false">Follow @austtjac</a>
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
       </div>
 
     </div>
-    <p>Copyright &copy; Austin Jacobs <span id="copyright-year"></span><br/>Last Updated: <span id="last-update"></span></p>
+    <p>Copyright &copy; Austin Jacobs <span id="copyright-year"></span><br />Last Updated: <span
+        id="last-update"></span></p>
   </footer>
   <script src="script.js"></script>
 </body>

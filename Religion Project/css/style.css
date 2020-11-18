@@ -77,6 +77,14 @@ body,
         margin: 20px;
     }
 
+    #ten {
+        background-color: white;
+        box-shadow: -1px 1px 20px 2px #555;
+        border-radius: 10px;
+        margin: 20px;
+        border: 1px black solid;
+    }
+
     #zero-name {
         color: black;
         text-decoration: none;
@@ -163,9 +171,24 @@ body,
         text-decoration: none;
     }
 
+    #ten-name {
+        color: black;
+        text-decoration: none;
+    }
+
+    #ten-name:hover {
+        background-color: #555;
+        color: white; 
+    }
+
     #video-name {
         color: black;
         text-decoration: none; 
+    }
+
+    #video-name:hover {
+        background-color: #555;
+        color: white; 
     }
 
     #nine-name:hover {
@@ -216,6 +239,16 @@ body,
         float: left;
         margin-right: 16px;
         padding-bottom: 16px;
+    }
+
+    .creation {
+        float: right;
+        margin-left: 16px;
+        padding-bottom: 16px;
+    }
+
+    .learned {
+        
     }
 
     #video-grid {

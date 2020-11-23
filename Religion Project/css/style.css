@@ -7,6 +7,33 @@ body,
         font-family: "Raleway", sans-serif;
     }
 
+    .active {
+        background-color: #f26d4c;
+    }
+
+    #title {
+        text-decoration: none;
+    }
+
+    #videos-title {
+        text-align: center;
+        margin-top: 6rem;
+        font-weight: bold;
+    }
+
+    #dispensations-title {
+        text-align: center;
+        margin-top: 6rem;
+        font-weight: bold;
+
+    }
+
+    #summary-title {
+        text-align: center;
+        margin-top: 6rem;
+        font-weight: bold;
+    }
+
     #zero {
         background-color: #f26d4c;
         box-shadow: -1px 1px 20px 2px #555;
@@ -75,14 +102,6 @@ body,
         box-shadow: -1px 1px 20px 2px #555;
         border-radius: 10px;
         margin: 20px;
-    }
-
-    #ten {
-        background-color: white;
-        box-shadow: -1px 1px 20px 2px #555;
-        border-radius: 10px;
-        margin: 20px;
-        border: 1px black solid;
     }
 
     #zero-name {
@@ -171,22 +190,22 @@ body,
         text-decoration: none;
     }
 
-    #ten-name {
+    .ten-name {
         color: black;
         text-decoration: none;
     }
 
-    #ten-name:hover {
+    .ten-name:hover {
         background-color: #555;
         color: white; 
     }
 
-    #video-name {
+    .video-name {
         color: black;
         text-decoration: none; 
     }
 
-    #video-name:hover {
+    .video-name:hover {
         background-color: #555;
         color: white; 
     }
@@ -247,8 +266,10 @@ body,
         padding-bottom: 16px;
     }
 
-    .learned {
-        
+    .christ {
+        float: right;
+        margin-left: 16px;
+        padding-bottom: 16px;
     }
 
     #video-grid {

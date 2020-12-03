@@ -37,7 +37,7 @@ body {
 }
 
 #results {
-    color: white;
+    color: black;
     position: fixed;
     left: 50%;
     top: 50%;
@@ -48,7 +48,7 @@ body {
     text-align: center;
     border-radius: 10px;
     padding: 10px;
-    background-color: red;
+    background-color: #f7ec12;
     display: none;
 }
 

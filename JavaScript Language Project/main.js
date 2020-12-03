@@ -116,7 +116,7 @@ const starWarsQuestions = [{
         correctAnswer: "d"
     },
     {
-        question: "In what year the original Star Wars film was first released?",
+        question: "In what year was the first Star Wars film released?",
         answers: {
             a: "1997",
             b: "1977",

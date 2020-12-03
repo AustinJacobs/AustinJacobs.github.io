@@ -243,3 +243,12 @@ makeQuiz();
 // on submit, show results
 submitButton.addEventListener('click', giveResults);
 
+function displayDiv() {
+    var T = document.getElementById("results"),
+        displayValue = "";
+    if (T.style.display == "")
+        displayValue = "block";
+
+    T.style.display = displayValue;
+}
+

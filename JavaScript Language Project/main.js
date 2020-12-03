@@ -1,79 +1,94 @@
-function buildQuiz() {
-    // variable to store the HTML output
-  const output = [];
+function makeQuiz() {
+    // Create a variable to hold the output.
+    const output = [];
 
-  // for each question...
-  myQuestions.forEach(
-    (currentQuestion, questionNumber) => {
+    // Use a forEach loop to loop through each of the questions.
+    starWarsQuestions.forEach(
+        (currentQuestion, questionNumber) => {
 
-      // variable to store the list of possible answers
-      const answers = [];
+            // Create a variable to store the list of possible answers.
+            const answers = [];
 
-      // and for each available answer...
-      for(letter in currentQuestion.answers){
+            // For each possible answer do the following. Create a radio button and set the value equal to its letter.
+            for (letter in currentQuestion.answers) {
 
-        // ...add an HTML radio button
-        answers.push(
-          `<label>
+                // ...add an HTML radio button
+                answers.push(
+                    `<label>
             <input type="radio" name="question${questionNumber}" value="${letter}">
             ${letter} :
             ${currentQuestion.answers[letter]}
           </label>`
-        );
-      }
+                );
+            }
 
-      // add this question and its answers to the output
-      output.push(
-        `<div class="question"> ${currentQuestion.question} </div>
+            // add this question and its answers to the output
+            output.push(
+                `<div class="question"> ${currentQuestion.question} </div><hr class="rule">
         <div class="answers"> ${answers.join('')} </div>`
-      );
-    }
-  );
+        
+            );
+        }
+    );
 
-  // finally combine our output list into one string of HTML and put it on the page
-  quizContainer.innerHTML = output.join('');
+    // finally combine our output list into one string of HTML and put it on the page
+    quizHolder.innerHTML = output.join('');
 }
 
-function showResults() {
+function giveResults() {
     // gather answer containers from our quiz
-  const answerContainers = quizContainer.querySelectorAll('.answers');
+    const answerHolders = quizHolder.querySelectorAll('.answers');
 
-  // keep track of user's answers
-  let numCorrect = 0;
+    // keep track of user's answers
+    let numCorrect = 0;
 
-  // for each question...
-  myQuestions.forEach( (currentQuestion, questionNumber) => {
+    // for each question...
+    starWarsQuestions.forEach((currentQuestion, questionNumber) => {
 
-    // find selected answer
-    const answerContainer = answerContainers[questionNumber];
-    const selector = `input[name=question${questionNumber}]:checked`;
-    const userAnswer = (answerContainer.querySelector(selector) || {}).value;
+        // find selected answer
+        const answerHolder = answerHolders[questionNumber];
+        const selector = `input[name=question${questionNumber}]:checked`;
+        const userAnswer = (answerHolder.querySelector(selector) || {}).value;
 
-    // if answer is correct
-    if(userAnswer === currentQuestion.correctAnswer){
-      // add to the number of correct answers
-      numCorrect++;
+        // if answer is correct
+        if (userAnswer === currentQuestion.correctAnswer) {
+            // add to the number of correct answers
+            numCorrect++;
 
-      // color the answers green
-      answerContainers[questionNumber].style.color = 'lightgreen';
+            // color the answers green
+            answerHolders[questionNumber].style.color = 'lightgreen';
+        }
+        // if answer is wrong or blank
+        else {
+            // color the answers red
+            answerHolders[questionNumber].style.color = 'red';
+        }
+    });
+
+    // show number of correct answers out of total
+    if (numCorrect < 5) {
+        resultsContainer.innerHTML = `Have you even seen Star Wars? You seem more like a Star Trek fan. You got ${numCorrect} out of ${starWarsQuestions.length} correct.`;
+    } 
+    
+    else if (numCorrect >= 8 && numCorrect <= 12) {
+        resultsContainer.innerHTML = `It wasn't perfect, but you have a decent knowledge of Star Wars. You got ${numCorrect} out of ${starWarsQuestions.length} correct.`;
+    } 
+    
+    else if (numCorrect >= 13 && numCorrect <= 14) {
+        resultsContainer.innerHTML = `Not bad for a Padawan learner. You might be ready for the Jedi trials now. You got ${numCorrect} out of ${starWarsQuestions.length} correct.`;
+    } 
+    
+    else {
+        resultsContainer.innerHTML = `With the knowledge you have, you might be more powerful than Master Yoda. May the force be with you! You got ${numCorrect} out of ${starWarsQuestions.length} correct.`;
     }
-    // if answer is wrong or blank
-    else{
-      // color the answers red
-      answerContainers[questionNumber].style.color = 'red';
-    }
-  });
-
-  // show number of correct answers out of total
-  resultsContainer.innerHTML = `${numCorrect} out of ${myQuestions.length}`;
 }
 
-const quizContainer = document.getElementById('quiz');
+const quizHolder = document.getElementById('quiz');
 const resultsContainer = document.getElementById('results');
 const submitButton = document.getElementById('submit');
 
-const myQuestions = [{
-        question: "Who are the only two characters who appear in every Star Wars movie??",
+const starWarsQuestions = [{
+        question: "Who are the only two characters who appear in every Star Wars movie?",
         answers: {
             a: "Luke Skywalker & Darth Vader",
             b: "Master Yoda & Obi-Wan Kenobi",
@@ -223,7 +238,8 @@ const myQuestions = [{
 ];
 
 // display quiz right away
-buildQuiz();
+makeQuiz();
 
 // on submit, show results
-submitButton.addEventListener('click', showResults);
+submitButton.addEventListener('click', giveResults);
+

@@ -35,6 +35,15 @@ function makeQuiz() {
     quizHolder.innerHTML = output.join('');
 }
 
+function displayDiv() {
+    var T = document.getElementById("results"),
+        displayValue = "";
+    if (T.style.display == "")
+        displayValue = "block";
+
+    T.style.display = displayValue;
+}
+
 function giveResults() {
     // Gather the answer containers from our quiz
     const answerHolders = quizHolder.querySelectorAll('.answers');
@@ -70,7 +79,7 @@ function giveResults() {
         resultsContainer.innerHTML = `Have you even seen Star Wars? You seem more like a Star Trek fan. You got ${numCorrect} out of ${starWarsQuestions.length} correct.`;
     } 
     
-    else if (numCorrect >= 8 && numCorrect <= 12) {
+    else if (numCorrect >= 6 && numCorrect <= 12) {
         resultsContainer.innerHTML = `It wasn't perfect, but you have a decent knowledge of Star Wars. You got ${numCorrect} out of ${starWarsQuestions.length} correct.`;
     } 
     
@@ -243,12 +252,5 @@ makeQuiz();
 // Show results on button click.
 submitButton.addEventListener('click', giveResults);
 
-function displayDiv() {
-    var T = document.getElementById("results"),
-        displayValue = "";
-    if (T.style.display == "")
-        displayValue = "block";
 
-    T.style.display = displayValue;
-}
 

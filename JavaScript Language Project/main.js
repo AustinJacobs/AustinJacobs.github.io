@@ -79,11 +79,11 @@ function giveResults() {
         resultsContainer.innerHTML = `Have you even seen Star Wars? You seem more like a Star Trek fan. You got ${numCorrect} out of ${starWarsQuestions.length} correct.`;
     } 
     
-    else if (numCorrect >= 6 && numCorrect <= 12) {
+    else if (numCorrect >= 6 && numCorrect <= 10) {
         resultsContainer.innerHTML = `It wasn't perfect, but you have a decent knowledge of Star Wars. You got ${numCorrect} out of ${starWarsQuestions.length} correct.`;
     } 
     
-    else if (numCorrect >= 13 && numCorrect <= 14) {
+    else if (numCorrect >= 11 && numCorrect <= 14) {
         resultsContainer.innerHTML = `Not bad for a Padawan learner. You might be ready for the Jedi trials now. You got ${numCorrect} out of ${starWarsQuestions.length} correct.`;
     } 
     

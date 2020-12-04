@@ -12,7 +12,7 @@ function makeQuiz() {
             // For each possible answer do the following. Create a radio button and set the value equal to its letter.
             for (letter in currentQuestion.answers) {
 
-                // ...add an HTML radio button
+                // Add an HTML radio button
                 answers.push(
                     `<label>
             <input type="radio" name="question${questionNumber}" value="${letter}">
@@ -22,7 +22,7 @@ function makeQuiz() {
                 );
             }
 
-            // add this question and its answers to the output
+            // Add this question and its answers to the output.
             output.push(
                 `<div class="question"> ${currentQuestion.question} </div><hr class="rule">
         <div class="answers"> ${answers.join('')} </div>`
@@ -31,41 +31,41 @@ function makeQuiz() {
         }
     );
 
-    // finally combine our output list into one string of HTML and put it on the page
+    // Combine our output list into one string of HTML and display it.
     quizHolder.innerHTML = output.join('');
 }
 
 function giveResults() {
-    // gather answer containers from our quiz
+    // Gather the answer containers from our quiz
     const answerHolders = quizHolder.querySelectorAll('.answers');
 
-    // keep track of user's answers
+    // Create a counter for the correct answers.
     let numCorrect = 0;
 
-    // for each question...
+    // Create a for loop.
     starWarsQuestions.forEach((currentQuestion, questionNumber) => {
 
-        // find selected answer
+        // Find the answer that the user has selected.
         const answerHolder = answerHolders[questionNumber];
         const selector = `input[name=question${questionNumber}]:checked`;
         const userAnswer = (answerHolder.querySelector(selector) || {}).value;
 
         // if answer is correct
         if (userAnswer === currentQuestion.correctAnswer) {
-            // add to the number of correct answers
+            // Add a correct answer to the counter
             numCorrect++;
 
-            // color the answers green
+            // Color the answers green.
             answerHolders[questionNumber].style.color = 'lightgreen';
         }
-        // if answer is wrong or blank
+        
         else {
-            // color the answers red
+            // Color the answers red.
             answerHolders[questionNumber].style.color = 'red';
         }
     });
 
-    // show number of correct answers out of total
+    // Display results to the user.
     if (numCorrect < 5) {
         resultsContainer.innerHTML = `Have you even seen Star Wars? You seem more like a Star Trek fan. You got ${numCorrect} out of ${starWarsQuestions.length} correct.`;
     } 
@@ -237,10 +237,10 @@ const starWarsQuestions = [{
     },
 ];
 
-// display quiz right away
+// Call the makeQuiz function.
 makeQuiz();
 
-// on submit, show results
+// Show results on button click.
 submitButton.addEventListener('click', giveResults);
 
 function displayDiv() {

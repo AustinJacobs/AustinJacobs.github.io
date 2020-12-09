@@ -272,6 +272,24 @@ body,
         padding-bottom: 16px;
     }
 
+    .apostasy {
+        float: left;
+        margin-right: 16px;
+        padding-bottom: 16px;
+    }
+
+    .smith {
+        float: right;
+        margin-left: 16px;
+        padding-bottom: 16px; 
+    }
+
+    .temple {
+        float: left;
+        margin-right: 16px;
+        padding-bottom: 16px;
+    }
+    
     #video-grid {
         display: grid;
         grid-template-columns: 1fr;

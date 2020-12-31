@@ -1,7 +1,8 @@
-function openNav() {
-    document.getElementById("myNav").style.width = "100%";
-  }
-  
-  function closeNav() {
-    document.getElementById("myNav").style.width = "0%";
+function toggleRightMenu() {
+    navMenuStatus = document.getElementById('rightMenu').style.display;
+    if ( navMenuStatus == 'none' ) {
+      document.getElementById('rightMenu').style.display = 'block';
+    } else {
+      document.getElementById('rightMenu').style.display = 'none';
+    }
   }

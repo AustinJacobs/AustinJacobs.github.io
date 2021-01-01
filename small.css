@@ -21,6 +21,7 @@ html {
 footer {
     color: black;
     padding: 1rem;
+    font-size: .7rem;
 }
 
 .bgimg {
@@ -102,7 +103,7 @@ footer {
 }
 
 .description-items {
-   padding-top: 10rem;
+   padding-top: 8rem;
 }
 
 .description {

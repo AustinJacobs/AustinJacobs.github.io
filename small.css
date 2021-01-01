@@ -28,11 +28,11 @@ footer {
     min-height: 100%;
     background-position: center;
     background-size: cover;
-    background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+    background-image: white;
 }
 
 #logo {
-    max-width: 12%;
+    max-width: 14%;
     margin-left: 2rem;
     margin-top: 2rem;
 }
@@ -40,7 +40,15 @@ footer {
 .container {
     display: inline-block;
     cursor: pointer;
-    margin: 2rem;
+    margin: 1rem;
+    margin-top: 1.3rem;
+    position: fixed;
+    background-color: #FF5732;
+    padding-top: .7rem;
+    padding-left: .9rem;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
 }
 
 .bar1 {
@@ -83,15 +91,19 @@ footer {
     width: 35px;
 }
 
+.change .container {
+    color: black;
+}
+
 #rightMenu {
     position: fixed;
     top: 100px;
     margin: 0 auto;
     width: 100%;
-    background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+    background-color: white;
     height: 100%;
     z-index: 1;
-    color: black;
+    color: #FF5732;
 }
 
 #rightMenu a {
@@ -100,6 +112,10 @@ footer {
     font-size: 3rem;
     text-decoration: none;
     margin-left: 2rem;
+}
+
+.period-color-orange {
+    color: #FF5732;
 }
 
 .description-items {
@@ -111,8 +127,17 @@ footer {
     text-align: left;
 }
 
+.bar {
+    width: 55px;
+    height: 3px;
+    background-color: #e0e0e0;
+    margin: 0 auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
 .button {
-    border: 1px solid black;
+    border: 1px solid #FF5732;
     border-radius: 20px;
     display: block;
     width: 180px;
@@ -127,6 +152,6 @@ footer {
 }
 
 .landing-description {
-    margin-top: 2rem;
+    margin-top: 1rem;
     text-align: left;
 }

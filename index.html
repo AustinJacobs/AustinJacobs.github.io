@@ -15,25 +15,33 @@
 <body>
   <div class="bgimg w3-display-container">
     <nav id='rightMenu' style='display:none;'>
-      <a href='#' onclick='toggleRightMenu()'>HOME</a>
-      <a href='#' onclick='toggleRightMenu()'>PORTFOLIO</a>
-      <a href='#' onclick='toggleRightMenu()'>CONTACT</a>
+      <a href='index.html' class="w3-animate-top" onclick='toggleRightMenu()'>HOME</a>
+      <a href='#' class="w3-animate-left" onclick='toggleRightMenu()'>ABOUT</a>
+      <a href='#' class="w3-animate-bottom" onclick='toggleRightMenu()'>PORTFOLIO</a>
+      <a href='contact.html' class="w3-animate-right" onclick='toggleRightMenu()'>CONTACT</a>
     </nav>
     <div class="w3-display-topleft">
-      <img id=logo src="images/bird_logo.png" alt="logo image">
+      <a href="index.html"><img id="logo" src="images/bird_logo.png" alt="logo image"></a>
     </div>
     <div class="container w3-display-topright" onclick="myFunction(this); toggleRightMenu();">
       <div class="bar1"></div>
       <div class="bar2"></div>
       <div class="bar3"></div>
     </div>
-    <div class="w3-display-middle">
-      <h1 class="w3-animate-top">COMING SOON</h1>
-      <hr class="w3-border-grey" style="margin:auto;width:40%">
-      <p class="w3-large w3-center">35 days left</p>
-    </div>
-    <footer class="w3-display-bottommiddle w3-padding-large w3-center">
-      <p>Copyright &copy; <span id="copyright-year"></span> <br>Austin Jacobs</p>
+    <section class="w3-container description-items">
+      <h1 class="description" class="w3-animate-left">QUICK.</h1>
+      <h1 class="description" class="w3-animate-top">MINIMAL.</h1>
+      <h1 class="description" class="w3-animate-top">RESPONSIVE.</h1>
+      <h1 class="description" class="w3-animate-top">WEBSITES.</h1>
+    </section>
+    <section id="landing-p" class="w3-container">
+      <p class="landing-description">I am a Front-End Web Developer based in Teton Valley, Idaho. I design and build mobile-first and responsive websites. I am currently studying at Brigham Young University of Idaho to become a Full Stack Web Developer.</p>
+    </section>
+    <section class="w3-container">
+      <a class="button-a" href="portfolio.html"><button class="w3-btn button">View Portfolio</button></a>
+    </section>
+    <footer class="w3-display-bottomleft w3-left">
+      <p>Copyright &copy; <span id="copyright-year"></span> Austin Jacobs</p>
     </footer>
   </div>
 

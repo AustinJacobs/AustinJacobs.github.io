@@ -2,4 +2,13 @@
     #logo {
         max-width: 6%;
     }
+
+    .description-items {
+        padding-top: 8rem;
+    }
+    
+    .description {
+        font-size: 6rem;
+        text-align: left;
+    }
   }

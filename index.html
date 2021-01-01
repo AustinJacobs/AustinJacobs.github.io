@@ -3,52 +3,66 @@
 <title>Austin Jacobs | Portfolio</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="preconnect" href="https://fonts.gstatic.com">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap" rel="stylesheet">
 <link href="normalize.css" rel="stylesheet">
 <link href="small.css" rel="stylesheet">
 <link href="large.css" rel="stylesheet">
 <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
   integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 
 <body>
-  <div class="bgimg w3-display-container">
-    <nav id='rightMenu' style='display:none;'>
-      <a href='index.html' class="w3-animate-top" onclick='toggleRightMenu()'>HOME</a>
-      <a href='#' class="w3-animate-left" onclick='toggleRightMenu()'>ABOUT</a>
-      <a href='#' class="w3-animate-bottom" onclick='toggleRightMenu()'>PORTFOLIO</a>
-      <a href='contact.html' class="w3-animate-right" onclick='toggleRightMenu()'>CONTACT</a>
-    </nav>
-    <div class="w3-display-topleft">
-      <a href="index.html"><img id="logo" src="images/bird_logo.png" alt="logo image"></a>
-    </div>
-    <div class="container w3-display-topright" onclick="myFunction(this); toggleRightMenu();">
+  <nav id='rightMenu' style='display:none;'>
+    <a href='index.html' class="w3-animate-top" onclick='toggleRightMenu()'>HOME</a>
+    <a href='#' class="w3-animate-left" onclick='toggleRightMenu()'>ABOUT</a>
+    <a href='#' class="w3-animate-bottom" onclick='toggleRightMenu()'>PORTFOLIO</a>
+    <a href='contact.html' class="w3-animate-right" onclick='toggleRightMenu()'>CONTACT</a>
+  </nav>
+  <header>
+    <a href="index.html"></a><img id="logo" src="images/bird_logo.png" alt="logo image"></a>
+    <div class="container" onclick="myFunction(this); toggleRightMenu();">
       <div class="bar1"></div>
       <div class="bar2"></div>
       <div class="bar3"></div>
     </div>
-    <section class="w3-container description-items">
-      <h1 class="description" class="w3-animate-left">QUICK<span class="period-color-orange">.</span></h1>
-      <h1 class="description" class="w3-animate-top">MINIMAL<span class="period-color-orange">.</span></h1>
-      <h1 class="description" class="w3-animate-top">RESPONSIVE<span class="period-color-orange">.</span></h1>
-      <h1 class="description" class="w3-animate-top">WEBSITES<span class="period-color-orange">.</span></h1>
+  </header>
+  <main>
+    <section id="landing-description">
+      <h1 class="description">QUICK<span class="period-color-orange">.</span></h1>
+      <h1 class="description">MINIMAL<span class="period-color-orange">.</span></h1>
+      <h1 class="description">RESPONSIVE<span class="period-color-orange">.</span></h1>
+      <h1 class="description">WEBSITES<span class="period-color-orange">.</span></h1>
     </section>
-    <div class="bar"></div>
-    <section id="landing-p" class="w3-container">
-      <p class="landing-description">I am a Front-End Web Developer based in Teton Valley, Idaho. I design and build mobile-first and responsive websites. I am currently studying at Brigham Young University of Idaho to become a Full Stack Web Developer.</p>
+    <div class="bar-left"></div>
+    <section data-aos="fade-right" class="landing-p-section">
+      <p class="landing-p">I am front-end web developer and college student based in Teton Valley, Idaho. I am currently
+        studying to become a fullstack web developer at Brigham Young University of Idaho.</p>
     </section>
-    <section class="w3-container">
-      <a class="button-a" href="portfolio.html"><button class="w3-btn button">View Portfolio</button></a>
+    <div class="bar-center"></div>
+    <section class="skills">
+      <div class="circles">
+        <i class="fas fa-code"></i>
+      </div>
+      <div class="bar-center"></div>
+      <div class="circles"></div>
+      <div class="bar-center"></div>
+      <div class="circles"></div>
+      <div class="bar-center"></div>
+      <div class="circles"></div>
+      <div class="bar-center"></div>
+
     </section>
-    <footer class="w3-display-bottommiddle w3-center">
-      <p>Copyright &copy; <span id="copyright-year"></span> Austin Jacobs</p>
-    </footer>
-  </div>
+  </main>
 
   <script src="bars.js"></script>
   <script src="nav.js"></script>
-  <script src="script.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
 </body>
 

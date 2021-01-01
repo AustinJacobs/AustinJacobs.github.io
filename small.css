@@ -24,31 +24,36 @@ footer {
     font-size: .7rem;
 }
 
-.bgimg {
+.background {
     min-height: 100%;
     background-position: center;
     background-size: cover;
     background-image: white;
 }
 
+header {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+}
+
 #logo {
-    max-width: 14%;
-    margin-left: 2rem;
-    margin-top: 2rem;
+    max-width: 16%;
+    justify-self: left;
+    align-self: center;
+    grid-row: 1;
+    margin-top: 1rem;
+    margin-left: 1rem;
 }
 
 .container {
-    display: inline-block;
     cursor: pointer;
-    margin: 1rem;
-    margin-top: 1.3rem;
-    position: fixed;
+    align-self: center;
+    justify-self: right;
+    grid-row: 1;
+    padding-right: 1rem;
     background-color: #FF5732;
-    padding-top: .7rem;
-    padding-left: .9rem;
-    border-radius: 50%;
-    width: 60px;
-    height: 60px;
+    padding: 1rem;
 }
 
 .bar1 {
@@ -118,40 +123,58 @@ footer {
     color: #FF5732;
 }
 
-.description-items {
-   padding-top: 8rem;
+#landing-description {
+    margin-right: 1rem;
+    margin-top: 3rem;
+    padding-left: 1rem;
 }
 
 .description {
     font-size: 3rem;
-    text-align: left;
 }
 
-.bar {
+.bar-left {
+    width: 55px;
+    height: 3px;
+    background-color: #e0e0e0;
+    margin-left: 1rem;
+}
+
+.landing-p-section {
+    margin-top: 1rem;
+}
+
+.landing-p {
+    background-color: #FF5732;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    margin-right: 1rem;
+    margin-top: 1rem;
+    color: black;
+    padding: 1rem;
+}
+
+.bar-center {
     width: 55px;
     height: 3px;
     background-color: #e0e0e0;
     margin: 0 auto;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
-.button {
-    border: 1px solid #FF5732;
-    border-radius: 20px;
-    display: block;
-    width: 180px;
-    padding: 1rem;
-    font-size: 1.2rem;
+.circles {
+    width: 100px;
+    height: 100px;
+    background-color: #FF5732;
     margin: 0 auto;
-    margin-top: 3rem;
+    border-radius: 50%;
 }
 
-.button-a {
-    text-decoration: none;
-}
-
-.landing-description {
-    margin-top: 1rem;
-    text-align: left;
+i {
+    font-size: 2.8rem;
+    margin: 0 auto;
+    display: block;
+    margin-left: 1.7rem;
+    margin-top: 1.8rem;
 }

@@ -1,3 +1,5 @@
-document.getElementById("copyright-year").innerHTML = (new Date().getFullYear());
+AOS.init({
+  duration: 1200,
+})
 
 

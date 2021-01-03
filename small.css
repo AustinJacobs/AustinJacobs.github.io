@@ -38,7 +38,7 @@ header {
 }
 
 #logo {
-    max-width: 16%;
+    max-width: 60px;
     justify-self: left;
     align-self: center;
     grid-row: 1;
@@ -127,6 +127,7 @@ header {
     margin-right: 1rem;
     margin-top: 3rem;
     padding-left: 1rem;
+    margin-bottom: 1rem;
 }
 
 .description {
@@ -134,18 +135,18 @@ header {
 }
 
 .bar-left {
-    width: 55px;
-    height: 3px;
-    background-color: #e0e0e0;
+    width: 65px;
+    height: 4px;
+    background-color: #FF5732;
     margin-left: 1rem;
 }
 
 .landing-p-section {
-    margin-top: 1rem;
+    margin-top: 2rem;
 }
 
 .landing-p {
-    background-color: #FF5732;
+    background-color: #e0e0e0;
     padding-right: 1rem;
     padding-left: 1rem;
     margin-right: 1rem;
@@ -154,27 +155,88 @@ header {
     padding: 1rem;
 }
 
+.landing-button {
+    display: block;
+    margin: 0 auto;
+    width: 200px;
+    height: 50px;
+    margin-top: 2rem;
+    background-color: #FF5732;
+    border: none;
+    margin-bottom: 3rem;
+}
+
+.text-decoration {
+    text-decoration: none;
+}
+
 .bar-center {
-    width: 55px;
-    height: 3px;
+    width: 150px;
+    height: 4px;
     background-color: #e0e0e0;
     margin: 0 auto;
     margin-top: 2rem;
     margin-bottom: 2rem;
 }
 
-.circles {
-    width: 100px;
-    height: 100px;
-    background-color: #FF5732;
-    margin: 0 auto;
-    border-radius: 50%;
+.objective {
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 
-i {
-    font-size: 2.8rem;
-    margin: 0 auto;
-    display: block;
-    margin-left: 1.7rem;
-    margin-top: 1.8rem;
+.landing-objective-heading {
+    text-align: left;
+}
+
+.landing-objective-p {
+    text-align: left;
+    margin-top: 1rem;
+}
+
+.bar-left-2 {
+    width: 65px;
+    height: 4px;
+    background-color: #FF5732;
+}
+
+.skills {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.landing-skills-heading {
+    text-align: left;
+}
+
+.landing-skills-p-top {
+    text-align: left;
+    margin-top: 1rem;
+}
+
+.landing-skills-p {
+    text-align: left;
+    margin-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.bar-left-2 {
+    width: 65px;
+    height: 4px;
+    background-color: #FF5732;
+}
+
+.bar-left-3 {
+    width: 65px;
+    height: 4px;
+    background-color: #e0e0e0;
+}
+
+.skills-title {
+    text-align: left;
+}
+
+.skills-div {
+    background-color: #FF5732;
+    padding: 1rem;
+    margin-top: 1rem;
 }

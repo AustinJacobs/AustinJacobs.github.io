@@ -54,6 +54,9 @@ header {
     padding-right: 1rem;
     background-color: #FF5732;
     padding: 1rem;
+    position: fixed;
+    right: 0;
+    z-index: 100;
 }
 
 .bar1 {

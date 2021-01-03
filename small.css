@@ -105,13 +105,14 @@ header {
 
 #rightMenu {
     position: fixed;
-    top: 100px;
+    top: 0;
     margin: 0 auto;
     width: 100%;
     background-color: white;
     height: 100%;
     z-index: 1;
     color: #FF5732;
+    padding-top: 4rem;
 }
 
 #rightMenu a {

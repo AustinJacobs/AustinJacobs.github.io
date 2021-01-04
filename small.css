@@ -22,16 +22,9 @@ html {
 footer {
     color: #303030;
     padding: 1rem;
-    font-size: 1rem;
+    font-size: 1.1rem;
     background-color: #e0e0e0;
     margin-top: 3rem;
-}
-
-.background {
-    min-height: 100%;
-    background-position: center;
-    background-size: cover;
-    background-image: white;
 }
 
 header {
@@ -47,6 +40,9 @@ header {
     grid-row: 1;
     margin-top: 1rem;
     margin-left: 1rem;
+    position: relative;
+    animation: animateleft 1s;
+
 }
 
 .container {
@@ -61,6 +57,8 @@ header {
     right: 0;
     z-index: 100;
     color: #303030;
+    position: relative;
+    animation: animateright 1s;
 }
 
 .bar1 {
@@ -127,6 +125,26 @@ header {
     margin-left: 2rem;
 }
 
+#menu-0 {
+    position: relative;
+    animation: animatetop .8s;
+}
+
+#menu-1 {
+    position: relative;
+    animation: animateleft .8s;
+}
+
+#menu-2 {
+    position: relative;
+    animation: animateright .8s;
+}
+
+#menu-3 {
+    position: relative;
+    animation: animatebottom .8s;
+}
+
 .period-color-orange {
     color: #FF5732;
 }
@@ -162,6 +180,8 @@ header {
     margin-top: 1rem;
     color: #303030;
     padding: 1rem;
+    position: relative;
+    animation: animatebottom 1s;
 }
 
 .landing-button {
@@ -172,7 +192,6 @@ header {
     margin-top: 2rem;
     background-color: #FF5732;
     border: none;
-    margin-bottom: 3rem;
     color: #303030;
 }
 
@@ -193,6 +212,10 @@ header {
     padding-left: 1rem;
     padding-right: 1rem;
     color: #303030;
+    background-color: #e0e0e0;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
 }
 
 .landing-objective-heading {
@@ -268,29 +291,96 @@ header {
     margin: 1rem;
 }
 
-#social-grid {
+.social-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     margin-top: 2rem;
 }
 
-.facebook {
-    justify-self: center;
-    display: block;
-    font-size: 3rem;
-    text-decoration: none;
-}
-
-.twitter {
-    justify-self: center;
-    display: block;
-    font-size: 3rem;
-    text-decoration: none;
-}
-
+.facebook,
+.twitter,
 .instagram {
     justify-self: center;
     display: block;
     font-size: 3rem;
     text-decoration: none;
+}
+
+.social-grid-footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    margin-top: 1rem;
+}
+
+.facebook-footer {
+    justify-self: center;
+    display: block;
+    font-size: 2rem;
+    text-decoration: none;
+    grid-column: 2/3;
+}
+
+.twitter-footer {
+    justify-self: center;
+    display: block;
+    font-size: 2rem;
+    text-decoration: none;
+    grid-column: 3/4;
+}
+
+.instagram-footer {
+    justify-self: center;
+    display: block;
+    font-size: 2rem;
+    text-decoration: none;
+    grid-column: 4/5;
+}
+
+#contact-heading {
+    margin-top: 3rem;
+    padding-left: 1rem;
+    margin-bottom: 1rem;
+    font-size: 3rem;
+    color: #303030;
+    text-align: center;
+    position: relative;
+    animation: animatetop 1s;
+}
+
+form {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.form-item {
+    justify-self: center;
+}
+
+.form-input {
+    width: 300px;
+    height: 40px;
+    padding: 1rem;
+    margin: 0 auto;
+    margin-top: 1rem;
+    border: 1px solid #FF5732;
+}
+
+.comments {
+    width: 300px;
+    height: 80px;
+    padding: 1rem;
+    margin: 0 auto;
+    margin-top: 1rem;
+    border: 1px solid #FF5732;
+}
+
+.form-button {
+    width: 300px;
+    margin: 0 auto;
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color: #FF5732;
+    color: #303030;
+    border: none;
 }

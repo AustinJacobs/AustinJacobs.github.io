@@ -8,20 +8,23 @@ h5,
 h6 {
     font-family: 'Roboto', sans-serif;
     font-weight: 900;
-    color: black;
+    color: #303030;
 }
 
 body,
 html {
     height: 100%;
     font-family: 'Roboto', sans-serif;
-    color: black;
+    color: #303030;
+    scroll-behavior: smooth;
 }
 
 footer {
-    color: black;
+    color: #303030;
     padding: 1rem;
-    font-size: .7rem;
+    font-size: 1rem;
+    background-color: #e0e0e0;
+    margin-top: 3rem;
 }
 
 .background {
@@ -57,12 +60,13 @@ header {
     position: fixed;
     right: 0;
     z-index: 100;
+    color: #303030;
 }
 
 .bar1 {
     width: 35px;
     height: 3px;
-    background-color: black;
+    background-color: #303030;
     margin: 8px 0;
     transition: 0.4s;
 }
@@ -70,7 +74,7 @@ header {
 .bar2 {
     width: 25px;
     height: 3px;
-    background-color: black;
+    background-color: #303030;
     margin: 8px 0;
     transition: 0.4s;
 }
@@ -78,7 +82,7 @@ header {
 .bar3 {
     width: 15px;
     height: 3px;
-    background-color: black;
+    background-color: #303030;
     margin: 8px 0;
     transition: 0.4s;
 }
@@ -100,7 +104,7 @@ header {
 }
 
 .change .container {
-    color: black;
+    color: #303030;
 }
 
 #rightMenu {
@@ -115,7 +119,7 @@ header {
     padding-top: 4rem;
 }
 
-#rightMenu a {
+.menu-links {
     text-align: left;
     display: block;
     font-size: 3rem;
@@ -136,6 +140,7 @@ header {
 
 .description {
     font-size: 3rem;
+    color: #303030;
 }
 
 .bar-left {
@@ -155,7 +160,7 @@ header {
     padding-left: 1rem;
     margin-right: 1rem;
     margin-top: 1rem;
-    color: black;
+    color: #303030;
     padding: 1rem;
 }
 
@@ -168,6 +173,7 @@ header {
     background-color: #FF5732;
     border: none;
     margin-bottom: 3rem;
+    color: #303030;
 }
 
 .text-decoration {
@@ -186,10 +192,12 @@ header {
 .objective {
     padding-left: 1rem;
     padding-right: 1rem;
+    color: #303030;
 }
 
 .landing-objective-heading {
     text-align: left;
+    color: #303030;
 }
 
 .landing-objective-p {
@@ -206,21 +214,25 @@ header {
 .skills {
     padding-left: 1rem;
     padding-right: 1rem;
+    color: #303030;
 }
 
 .landing-skills-heading {
     text-align: left;
+    color: #303030;
 }
 
 .landing-skills-p-top {
     text-align: left;
     margin-top: 1rem;
+    color: #303030;
 }
 
 .landing-skills-p {
     text-align: left;
     margin-top: 1rem;
     padding-bottom: 1rem;
+    color: #303030;
 }
 
 .bar-left-2 {
@@ -232,15 +244,53 @@ header {
 .bar-left-3 {
     width: 65px;
     height: 4px;
-    background-color: #e0e0e0;
+    background-color: white;
 }
 
 .skills-title {
     text-align: left;
+    color: #303030;
 }
 
 .skills-div {
     background-color: #FF5732;
     padding: 1rem;
     margin-top: 1rem;
+    color: #303030;
+}
+
+#footer-content {
+    text-align: center;
+}
+
+#twitter-button {
+    text-align: center;
+    margin: 1rem;
+}
+
+#social-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 2rem;
+}
+
+.facebook {
+    justify-self: center;
+    display: block;
+    font-size: 3rem;
+    text-decoration: none;
+}
+
+.twitter {
+    justify-self: center;
+    display: block;
+    font-size: 3rem;
+    text-decoration: none;
+}
+
+.instagram {
+    justify-self: center;
+    display: block;
+    font-size: 3rem;
+    text-decoration: none;
 }

@@ -14,10 +14,15 @@
 
 <body>
   <nav id='rightMenu' style='display:none;'>
-    <a href='index.html' class="w3-animate-top" onclick='toggleRightMenu()'>HOME</a>
-    <a href='#' class="w3-animate-left" onclick='toggleRightMenu()'>ABOUT</a>
-    <a href='#' class="w3-animate-bottom" onclick='toggleRightMenu()'>PORTFOLIO</a>
-    <a href='contact.html' class="w3-animate-right" onclick='toggleRightMenu()'>CONTACT</a>
+    <a class="menu-links" href='index.html' class="w3-animate-top" onclick='toggleRightMenu()'>HOME</a>
+    <a class="menu-links" href='#' class="w3-animate-left" onclick='toggleRightMenu()'>ABOUT</a>
+    <a class="menu-links" href='#' class="w3-animate-bottom" onclick='toggleRightMenu()'>PORTFOLIO</a>
+    <a class="menu-links" href='contact.html' class="w3-animate-right" onclick='toggleRightMenu()'>CONTACT</a>
+    <div id="social-grid">
+      <a href='#' class="w3-animate-bottom facebook" onclick='toggleRightMenu()'><i class="fab fa-facebook"></i></a>
+      <a href='#' class="w3-animate-bottom twitter" onclick='toggleRightMenu()'><i class="fab fa-twitter"></i></a>
+      <a href='#' class="w3-animate-bottom instagram" onclick='toggleRightMenu()'><i class="fab fa-instagram"></i></a>
+    </div>
   </nav>
   <header>
     <a href="index.html"></a><img id="logo" src="images/bird_logo.png" alt="logo image"></a>
@@ -58,31 +63,43 @@
     <section class="skills">
       <h2 class="landing-skills-heading">SKILLS</h2>
       <div class="bar-left-2"></div>
-      <p class="landing-skills-p-top">In 2021, everything needs a refresh, especially your old or outgrown website. My
-        goal is to design and create a website that you will love to call your own.</p>
+      <p class="landing-skills-p-top">I build semantic websites using up to date technologies including HTML5, CSS3 and
+        JavaScript. I have experience building sites that allow users to interact with the site, however, my knowledge
+        does not yet extend beyond the front end or, in other words, what you and your users will see. </p>
       <div class="skills-div">
         <h3 class="skills-title">HTML</h3>
         <div class="bar-left-3"></div>
-        <p class="landing-skills-p">In 2021, everything needs a refresh, especially your old or outgrown website. My
-          goal is to design and create a website that you will love to call your own.</p>
+        <p class="landing-skills-p">HTML5 allows developers like myself to do some really great things and build amazing
+          websites. In any work that I do for you, you can rest assured it will be built with the most up to date
+          technology including HTML5. </p>
       </div>
       <div class="skills-div">
         <h3 class="skills-title">CSS</h3>
         <div class="bar-left-3"></div>
-        <p class="landing-skills-p">In 2021, everything needs a refresh, especially your old or outgrown website. My
-          goal is to design and create a website that you will love to call your own.</p>
+        <p class="landing-skills-p">CSS is the perfect companion to HTML and JavaScript. I can use CSS to build
+          beautiful and elegant websites that will be eye catching and functional. No matter what styles you love, CSS
+          will allow me to build your dream website.</p>
       </div>
       <div class="skills-div">
         <h3 class="skills-title">JavaScript</h3>
         <div class="bar-left-3"></div>
-        <p class="landing-skills-p">In 2021, everything needs a refresh, especially your old or outgrown website. My
-          goal is to design and create a website that you will love to call your own.</p>
+        <p class="landing-skills-p">JavaScript is what makes your site 100% functional. With JavaScript I can build a
+          website that will add dynamic content to your site including up to date information that come from external
+          API's and other sources. </p>
       </div>
     </section>
   </main>
+  <footer>
+    <div id="footer-content">Copyright © <span id="current-year">©</span> Austin Jacobs</div>
+    <div id="twitter-button"><a href="https://twitter.com/austtjac?ref_src=twsrc%5Etfw" class="twitter-follow-button"
+        data-show-count="false">Follow @austtjac</a>
+      <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
+  </footer>
 
   <script src="bars.js"></script>
   <script src="nav.js"></script>
+  <script src="script.js"></script>
 
 </body>
 

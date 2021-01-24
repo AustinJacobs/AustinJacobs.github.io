@@ -1,8 +1,8 @@
-@media only screen and (min-width: 750px) {
+@media only screen and (min-width: 960px) {
     #logo {
-        max-width: 8%;
+        max-width: 60px;
+        margin-left: 2rem;
     }
-
 
     .bar {
         width: 3px;
@@ -20,6 +20,56 @@
     .description {
         font-size: 6rem;
         text-align: left;
-        margin-left: 2rem;
+        margin-left: 1.5rem;
     }
+
+    .bar-left {
+        margin-left: 3rem;
+    }
+
+    .landing-p-section {
+        max-width: 60%;
+    }
+    #contact-heading {
+        margin: 2rem;
+        margin-top: 4rem;
+    }
+
+    .form-button {
+        margin-bottom: 1rem;
+    }
+
+    .social-grid-footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        margin-top: 1rem;
+    }
+    
+    .facebook-footer {
+        justify-self: left;
+        display: block;
+        font-size: 2rem;
+        text-decoration: none;
+        grid-column: 3/4;
+        grid-row: 1;
+    }
+    
+    .twitter-footer {
+        justify-self: center;
+        display: block;
+        font-size: 2rem;
+        text-decoration: none;
+        grid-column: 3/4;
+        grid-row: 1;
+    }
+    
+    .instagram-footer {
+        justify-self: right;
+        display: block;
+        font-size: 2rem;
+        text-decoration: none;
+        grid-column: 3/4;
+        grid-row: 1;
+    }
+
 }

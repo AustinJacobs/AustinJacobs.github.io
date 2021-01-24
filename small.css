@@ -30,19 +30,23 @@ footer {
 header {
     display: grid;
     grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
     width: 100%;
 }
 
 #logo {
     max-width: 60px;
     justify-self: left;
-    align-self: center;
     grid-row: 1;
     margin-top: 1rem;
     margin-left: 1rem;
     position: relative;
     animation: animateleft 1s;
+}
 
+.logo {
+    grid-row: 1;
+    width: 60px;
 }
 
 .container {

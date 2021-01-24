@@ -30,6 +30,15 @@
     .landing-p-section {
         max-width: 60%;
     }
+
+    .landing-skills-p-top {
+        max-width: 50%;
+    }
+
+    .skills-div {
+        max-width: 100%;
+    }
+
     #contact-heading {
         margin: 2rem;
         margin-top: 4rem;

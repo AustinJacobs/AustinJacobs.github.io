@@ -388,3 +388,17 @@ form {
     color: #303030;
     border: none;
 }
+
+#grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+#temp {
+    margin: 0 auto;
+    grid-column: 1/2;
+    grid-row: 3/4;
+    justify-self: center;
+    align-self: center;
+}

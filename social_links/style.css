@@ -30,10 +30,10 @@ main {
 
 #div-1 {
     border-radius: 10px;
-    width: 100%;
+    max-width: 100%;
     margin: 0 auto;
     background-color: rgb(22, 22, 26);
-    margin-top: 6rem;
+    margin-top: 4rem;
     grid-column: 2/3;
 }
 
@@ -47,7 +47,7 @@ main {
 #logo-image {
     display: block;
     margin: 0 auto;
-    width: 80px;
+    width: 100px;
     border-radius: 50%;
     padding-top: 2rem;
     padding-bottom: 2rem;
@@ -65,7 +65,7 @@ main {
 #social-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    margin-top: 4rem;
+    margin-top: 3rem;
     padding-bottom: 2rem;
 }
 
@@ -116,12 +116,13 @@ main {
 
 #div-2 {
     border-radius: 10px;
-    width: 200px;
-    background-color: rgb(22, 22, 26);
+    width: 192px;
     margin-top: 1rem;
     grid-column: 2/3;
     background-color: #FF7900;
     padding: .5rem;
+    justify-self: left;
+    grid-row: 2;
 }
 
 .box-title {
@@ -140,4 +141,49 @@ a {
 .box-hr {
     width: 50px;
     margin-left: .5rem;
+}
+
+#div-3 {
+    border-radius: 10px;
+    width: 192px;
+    margin-top: 1rem;
+    grid-column: 2/3;
+    background-color: rgb(5, 173, 151);
+    padding: .5rem;
+    justify-self: right;
+    grid-row: 2;
+}
+
+#div-4 {
+    border-radius: 10px;
+    width: 400px;
+    background-color: rgb(22, 22, 26);
+    margin-top: 1rem;
+    grid-column: 2/3;
+    padding: .5rem;
+    justify-self: center;
+    grid-row: 3;
+}
+
+#lightroom {
+    max-width: 40px;
+}
+
+#footer-content {
+    margin: 0;
+    color: white;
+    grid-column: 2/3;
+    justify-self: center;
+    text-align: center;
+    margin-top: 5rem;
+    background-color: rgb(22, 22, 26);
+    color: #ff7900;
+    height: 50px;
+    max-width: 100%;
+    padding-top: 15px;
+    font-size: 14px;
+}
+
+.white {
+    color: white;
 }

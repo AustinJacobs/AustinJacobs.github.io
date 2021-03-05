@@ -218,12 +218,12 @@ a {
     margin: 0;
     color: white;
     grid-column: 2/3;
-    justify-self: center;
+    align-self: center;
     text-align: center;
     margin-top: 5rem;
     background-color: rgb(22, 22, 26);
     color: #ff7900;
-    height: 50px;
+    height: 80px;
     max-width: 100%;
     padding-top: 15px;
     font-size: 14px;
@@ -231,4 +231,13 @@ a {
 
 .white {
     color: white;
+}
+
+#center {
+    text-align: center;
+    display: block;
+}
+
+.orange {
+    color: #ff7900;
 }

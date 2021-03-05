@@ -169,6 +169,51 @@ a {
     max-width: 50px;
 }
 
+#div-5 {
+    border-radius: 10px;
+    width: 192px;
+    margin-top: 1rem;
+    grid-column: 2/3;
+    background-color: rgb(5, 173, 151);
+    padding: .5rem;
+    justify-self: left;
+    grid-row: 4;
+}
+
+#div-6 {
+    border-radius: 10px;
+    width: 192px;
+    margin-top: 1rem;
+    grid-column: 2/3;
+    background-color: #ff7900;
+    padding: .5rem;
+    justify-self: right;
+    grid-row: 4;
+}
+
+#div-7 {
+    border-radius: 10px;
+    width: 400px;
+    background-color: rgb(22, 22, 26);
+    margin-top: 1rem;
+    grid-column: 2/3;
+    padding: .5rem;
+    justify-self: center;
+    grid-row: 5;
+}
+
+.fa-python {
+    font-size: 40px;
+    margin-left: .5rem;
+    color: rgb(68, 113, 159);
+}
+
+.fa-js {
+    font-size: 40px;
+    margin-left: .5rem;
+    color: rgb(229, 212, 101);
+}
+
 #footer-content {
     margin: 0;
     color: white;

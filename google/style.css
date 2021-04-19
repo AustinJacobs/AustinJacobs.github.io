@@ -1,0 +1,40 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+p {
+    font-size: 13px;
+    font-family: sans-serif;
+}
+
+#info-div {
+    display: grid;
+    grid-template-columns: 60px 60px 1080px 60px 60px 60px 60px;
+}
+
+#about {
+    grid-column: 1/2;
+    padding: 21px;
+}
+
+#store {
+    grid-column: 2/3;
+    padding: 21px;
+}
+
+#mail {
+    grid-column: 4/5;
+    padding: 21px;
+}
+
+#images {
+    grid-column: 5/6;
+    padding: 21px;
+}
+
+#apps {
+    grid-column: 6/7;
+    padding: 17px;
+    padding-left: 25px;
+}

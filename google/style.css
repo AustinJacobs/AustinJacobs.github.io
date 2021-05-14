@@ -78,12 +78,11 @@ p {
 
 #search {
     grid-column: 2/3;
-    width: 584px;
+    width: 560px;
     justify-self: center;
-    height: 44px;
-    margin-top: 20px;
+    height: 39px;
+    margin-top: 22px;
     border-radius: 24px;
-    border-color: #dfe1e5;
-    z-index: 3;
+    border: 1px solid rgba(218,220,224);
     background-color: white;
 }

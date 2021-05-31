@@ -6,11 +6,9 @@ let cityIdentification = "";
 
 if (pagename == "Preston, Idaho") {
     cityIdentification = "5604473";
-}
-else if (pagename == "Soda Springs, Idaho") {
+} else if (pagename == "Soda Springs, Idaho") {
     cityIdentification = "5607916";
-}
-else {
+} else {
     cityIdentification = "5605242";
 }
 
@@ -39,7 +37,7 @@ fetch(weatherURL)
 
                 forecast_dow[forecast_number].innerHTML = DAY[date.getDay()];
                 forecast_temps[forecast_number].innerHTML = item.main.temp.toFixed(0);
-                
+
                 let imagesrc = "https://openweathermap.org/img/w/" + item.weather[0].icon + ".png";
                 forecast_icon[forecast_number].setAttribute("src", imagesrc);
                 forecast_icon[forecast_number].setAttribute("alt", imagesrc);

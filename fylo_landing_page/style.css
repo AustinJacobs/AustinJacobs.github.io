@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 1fr 1fr 7% 7% 7%;
+    background-color: white;
+    font-family: 'Raleway', sans-serif;
+    padding-right: 40px;
+}
+
+main {
+    font-family: 'Open Sans', sans-serif;
+}
+
+#logo {
+    grid-column: 1/2;
+    margin: 50px;
+}
+
+.nav-button {
+    color: hsl(238, 22%, 44%);
+    justify-self: center;
+    align-self: center;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.nav-button:nth-child(2) {
+    grid-column: 3/4;
+}
+
+.nav-button:nth-child(3) {
+    grid-column: 4/5;
+}
+
+.nav-button:nth-child(4) {
+    grid-column: 5/6;
+}
+
+h1 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+}
+

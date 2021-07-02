@@ -371,3 +371,39 @@ footer {
     grid-row: 4/5;
     padding-right: 11.5em;
 }
+
+.fab {
+    color: white;
+    font-size: 1.2em;
+}
+
+.social {
+    justify-self: left;
+    padding-top: .8em;
+    cursor: pointer;
+}
+
+.fab:hover {
+    color:hsl(238, 22%, 44%);
+    transform: rotate(20deg);
+}
+
+.social-1 {
+    grid-row: 2/3;
+    grid-column: 4/5;
+    padding-left: 2.2em;
+}
+
+.social-2 {
+    grid-row: 2/3;
+    grid-column: 4/5;
+    justify-self: center;
+    padding-right: 10em;
+}
+
+.social-3 {
+    grid-row: 2/3;
+    grid-column: 4/5;
+    justify-self: right;
+    padding-right: 12em;
+}

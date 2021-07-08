@@ -1,7 +1,4 @@
-/* Desktops and laptops ----------- */
-@media only screen and (min-width : 1224px) {
-    /* Styles */
-
+/* Smartphones (portrait) ----------- */
 
     * {
         margin: 0;
@@ -412,4 +409,3 @@
         justify-self: right;
         padding-right: 12em;
     }
-}

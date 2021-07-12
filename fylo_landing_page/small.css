@@ -174,3 +174,15 @@ h1 {
     justify-self: center;
     padding-left: 9rem;
 }
+
+.card {
+    background-color: white;
+    width: 70%;
+    margin: 0 auto;
+    padding: 2rem;
+    font-size: 13px;
+}
+
+.card-p {
+    margin-top: 1rem;
+}

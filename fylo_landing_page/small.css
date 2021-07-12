@@ -122,6 +122,7 @@ h1 {
 
 .arch-img {
     margin-top: 4rem;
+    max-width: 100%;
 }
 
 .bubbles-img {
@@ -175,14 +176,152 @@ h1 {
     padding-left: 9rem;
 }
 
+.quotes {
+    max-width: 5%;
+}
+
 .card {
     background-color: white;
-    width: 70%;
+    width: 78%;
     margin: 0 auto;
-    padding: 2rem;
-    font-size: 13px;
+    padding: 1.5rem;
+    box-shadow: 1px 1px 10px rgb(207, 207, 207);
 }
 
 .card-p {
     margin-top: 1rem;
+    color: hsl(238, 22%, 44%);
+    line-height: 1.75;
+    font-size: 11px;
+    margin-top: 5px;
+}
+
+.avatar-img {
+    max-width: 10%;
+    border-radius: 50%;
+    margin-top: 1rem;
+}
+
+.avatar-p {
+    float: right;
+    font-size: 10px;
+    padding-right: 9.5rem;
+    padding-top: 1.1rem;
+    font-weight: bold;
+}
+
+.avatar-p-1 {
+    float: right;
+    font-size: 7px;
+    padding-right: 8.3rem;
+    margin-top: -.7rem;
+}
+
+.access {
+    background-color:hsl(238, 22%, 44%);
+    margin-top: 5rem;
+    height: 21rem;
+}
+
+.access-h1 {
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: center;
+    padding-top: 3rem;
+    padding-bottom: .5rem;
+}
+
+.access-p {
+    color: white;
+    font-size: 14px;
+    text-align: center;
+    padding-bottom: 1.5rem;
+    margin-right: 3rem;
+    margin-left: 3rem;
+    line-height: 1.5;
+    font-weight: 400;
+}
+
+.access-boxes {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    max-width: 75%;
+    margin: 0px auto;
+}
+
+.email-entry {
+    height: 2.1rem;
+    margin: 0 .5rem 0 .5rem;
+    font-size: .6rem;
+    padding-left: .5rem;
+    border-radius: 3px;
+    border: 1px solid hsl(238, 22%, 44%);
+}
+
+.signup-button {
+    color: white;
+    border: rgb(47, 102, 244);
+    background-color: rgb(47, 102, 244);
+    border-radius: 3px;
+    font-size: .6rem;
+    font-weight: 600;
+    height: 2rem;
+    margin: .2rem .5rem 0 .5rem;
+}
+
+footer {
+    background-color: hsl(243, 87%, 12%);
+    height: 40rem;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.footer-logo {
+    margin: 4rem 0 2.5rem 2rem;
+}
+
+.contact {
+    display: grid;
+    grid-template-columns: 10% 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin: 0 0 2rem 2rem;
+}
+
+.contact-p-2 {
+    margin-top: .7rem;
+}
+
+.contact-logo-2 {
+    margin-top: .7rem;
+}
+
+.other-links {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    margin-left: 2rem;
+    gap: 1rem;
+    padding-top: 1.5rem;
+    cursor: pointer;
+}
+
+.other-links-2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    margin-left: 2rem;
+    gap: 1rem;
+    padding-top: 3rem;
+    cursor: pointer;
+}
+
+.social-links {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    margin: 0 auto;
+    width: 30%;
+    padding-top: 3rem;
+    cursor: pointer;
 }

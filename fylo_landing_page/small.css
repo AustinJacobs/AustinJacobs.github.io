@@ -25,6 +25,7 @@ h1 {
     font-size: 1.5rem;
     font-family: 'Open Sans', sans-serif;
     color: hsl(243, 87%, 12%);
+    margin: 0;
 }
 
 #logo {
@@ -74,6 +75,7 @@ h1 {
     padding-right: 20px;
     line-height: 1.5;
     margin-top: 2.5rem;
+    margin-bottom: 2rem;
 }
 
 .main-one-p {
@@ -93,7 +95,7 @@ h1 {
 
 .sub-entry {
     width: 85%;
-    margin:0 auto;
+    margin: 0 auto;
     margin-top: 2rem;
     height: 2.5rem;
     padding: 1rem;
@@ -104,7 +106,7 @@ h1 {
 
 .start {
     width: 85%;
-    margin:0 auto;
+    margin: 0 auto;
     margin-top: 1rem;
     height: 2.5rem;
     color: white;
@@ -118,6 +120,7 @@ h1 {
 .section-two {
     background-color: rgb(249, 248, 254);
     margin-top: -1rem;
+    height: 58rem;
 }
 
 .arch {
@@ -156,7 +159,7 @@ h1 {
     margin: 0 auto;
     margin-top: 2rem;
     margin-bottom: 2rem;
-    
+
 }
 
 .link-how-p {
@@ -218,8 +221,7 @@ h1 {
 }
 
 .access {
-    background-color:hsl(238, 22%, 44%);
-    margin-top: 5rem;
+    background-color: hsl(238, 22%, 44%);
     height: 21rem;
 }
 
@@ -246,14 +248,14 @@ h1 {
 .access-boxes {
     display: grid;
     grid-template-rows: 1fr 1fr;
-    max-width: 75%;
+    max-width: 80%;
     margin: 0px auto;
 }
 
 .email-entry {
-    height: 2.1rem;
+    height: 2.5rem;
     margin: 0 .5rem 0 .5rem;
-    font-size: .6rem;
+    font-size: .9rem;
     padding-left: .5rem;
     border-radius: 3px;
     border: 1px solid hsl(238, 22%, 44%);
@@ -264,16 +266,16 @@ h1 {
     border: rgb(47, 102, 244);
     background-color: rgb(47, 102, 244);
     border-radius: 3px;
-    font-size: .6rem;
+    font-size: .9rem;
     font-weight: 600;
-    height: 2rem;
+    height: 2.5rem;
     margin: .2rem .5rem 0 .5rem;
 }
 
 footer {
     background-color: hsl(243, 87%, 12%);
     height: 40rem;
-    color: white;
+    color: hsl(0, 0%, 75%);
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -323,5 +325,8 @@ footer {
     margin: 0 auto;
     width: 30%;
     padding-top: 3rem;
+}
+
+.fab {
     cursor: pointer;
 }

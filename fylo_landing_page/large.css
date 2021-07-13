@@ -79,4 +79,8 @@
         margin: 0;
         width: 50%;
     }
+
+    .arch {
+        margin-top: 8rem;
+    }
 }

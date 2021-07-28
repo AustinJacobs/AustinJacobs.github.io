@@ -4,6 +4,7 @@
 
     header {
         grid-template-columns: 20% 56% 8% 8% 8%;
+        margin-right: 2rem;
     }
 
     h1 {
@@ -19,12 +20,6 @@
 
     .nav-button {
         font-size: 1rem;
-    }
-
-    .folder-img {
-        display: grid;
-        grid-template-columns: 1fr;
-        margin-top: 4rem;
     }
 
     .section-one {
@@ -83,4 +78,83 @@
     .arch {
         margin-top: 8rem;
     }
+
+    .section-two {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        height: 35rem;
+    }
+
+    .bubbles-img {
+        grid-column: 2/3;
+        max-width: 85%;
+        justify-self: right;
+        padding-top: 3rem;
+        margin-right: 3rem;
+    }
+
+    .main-two {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
+    .main-h1-two {
+        text-align: left;
+        padding-left: 4rem;
+        margin-top: 1.5rem;
+        margin-bottom: 2rem;
+    }
+
+    .main-two-p {
+        color: hsl(238, 22%, 44%);
+        font-size: 1rem;
+        text-align: left;
+        margin-left: 4rem;
+        margin-right: 8rem;
+        line-height: 1.5;
+        margin-top: 1rem;
+    }
+
+    .link-how {
+        margin-top: 1rem;
+    }
+
+    .link-how-p {
+        justify-self: left;
+        font-size: .9rem;
+        margin-left: 4rem;
+    }
+
+    .arrow {
+        justify-self: left;
+        padding-left: 12.5rem;
+    }
+
+    .card {
+        width: 43%;
+        margin-left: 4rem;
+        padding: 1.5rem;
+        margin-top: 3rem;
+    }
+
+    .avatar-p {
+        padding-right: 65%;
+    }
+
+    .avatar-p-1 {
+        padding-right: 58%;
+    }
+
+    .access {
+        height: 18rem;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 1fr;
+    }
+
+    
+
+    
+
+
 }

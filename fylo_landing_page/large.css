@@ -146,15 +146,99 @@
     }
 
     .access {
-        height: 18rem;
+        height: auto;
         display: grid;
         grid-template-columns: 50% 50%;
-        grid-template-rows: 1fr;
     }
 
-    
+    .access-h1 {
+        font-size: 1.8rem;
+        text-align: left;
+        padding-top: 4rem;
+        padding-bottom: .5rem;
+        padding-left: 4rem;
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
 
-    
+    .access-p {
+        font-size: 1rem;
+        text-align: left;
+        margin-bottom: 3rem;
+        margin-right: 10rem;
+        margin-left: 4rem;
+        margin-top: 7rem;
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
 
+    .access-boxes {
+        max-width: 100%;
+        margin: 0px auto;
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+
+    .email-entry {
+        width: 26rem;
+        align-self: center;
+        margin-top: 4rem;
+    }
+
+    .signup-button {
+        width: 12rem;
+        align-self: top;
+    }
+
+    footer {
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+        grid-template-rows: 12rem 1fr;
+        height: auto;
+    }
+
+    .footer-logo {
+        margin: 6rem 0 2.5rem 4rem;
+        grid-row: 1/2;
+    }
+
+    .contact {
+        display: grid;
+        grid-template-columns: 10% 1fr;
+        grid-template-rows: 2rem 2rem;
+        margin: 0 0 2rem 4rem;
+        grid-row: 2/3;
+    }
+
+    .contact-logo-2 {
+        margin-top: .8rem;
+    }
+
+    .other-links {
+        display: grid;
+        grid-template-rows: 2rem 2rem 2rem 2rem;
+        margin-left: 5rem;
+        gap: 1rem;
+        padding-top: .2rem;
+        grid-row: 2/3;
+        margin-bottom: 6rem;
+    }
+
+    .other-links-2 {
+        grid-template-rows: 2rem 2rem 2rem;
+        margin-left: 5rem;
+        gap: 1rem;
+        padding-top: .2rem;
+        grid-row: 2/3;
+    }
+
+    .social-links {
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-items: center;
+        margin: 0 auto;
+        width: 40%;
+        padding-top: .3rem;
+        grid-row: 2/3;
+    }
 
 }

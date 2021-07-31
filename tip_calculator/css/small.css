@@ -1,0 +1,140 @@
+body {
+    font-size: 1.5em;
+    font-family: 'Space Mono', monospace;
+    background-color: hsl(185, 41%, 84%);
+    color: hsl(183, 100%, 15%)
+}
+
+.font {
+    font-size: .7em;
+    font-weight: 700;
+    margin: 0;
+}
+
+header {
+    background-color: hsl(185, 41%, 84%);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+}
+
+.logo {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    justify-self: center;
+    align-self: center;
+    margin: 2em;
+}
+
+.compute {
+    background-color: white;
+    padding: 2rem 2rem 0 2rem;
+    border-radius: 30px 30px 0px 0px;
+}
+
+.results {
+    background-color: white;
+    padding: 3.5rem 1.7rem 1.7rem 1.7rem;
+    margin-top: -1.5rem;
+}
+
+.bill_amount {
+    background-color: hsl(189, 41%, 97%);
+    border: none;
+    margin-top: .8rem;
+    border-radius: 5px;
+    height: 2em;
+    width: 96%;
+    text-align: end;
+    color: rgb(0, 71, 74);
+    font-weight: bolder;
+    font-size: 1em;
+    padding-right: .5em;
+}
+
+.input_dollar {
+    position: relative;
+}
+
+.input_dollar::before {
+    position: absolute;
+    top: 5px;
+    content:"$";
+    left: 5px;
+    color: hsl(184, 14%, 56%);
+    padding-left: .5em;
+}
+
+.tip {
+    margin-top: 2em;
+}
+
+.percent_grid {
+    margin-top: .8em;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: .8em;
+}
+
+.button {
+    background-color: rgb(0, 71, 74);
+    color: white;
+    height: 2em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: hsl(172, 67%, 45%);
+    color:rgb(0, 71, 74);
+}
+
+.custom {
+    background-color: hsl(189, 41%, 97%);
+    color: hsl(183, 100%, 15%);
+    height: 2em;
+    border: none;
+    border-radius: 5px;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.people {
+    margin-top: 2em;
+}
+
+.people_amount {
+    background-color: hsl(189, 41%, 97%);
+    border: none;
+    margin-top: .8rem;
+    border-radius: 5px;
+    height: 2em;
+    width: 96%;
+    text-align: end;
+    color: rgb(0, 71, 74);
+    font-weight: bolder;
+    font-size: 1em;
+    padding-right: .5em;
+}
+
+.people_entry {
+    position: relative;
+}
+
+.people_entry img{
+    position: absolute;
+    top: 1.25em;
+    left: .5em;
+}
+
+.results_card {
+    background-color: rgb(0, 71, 74);
+    color: hsl(185, 41%, 84%);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 1em;
+}
+

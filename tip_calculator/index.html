@@ -37,26 +37,27 @@
           </span>
         </div>
       </div>
-      <div class="tip">
-        <p class="tip_p font">
-          Select Tip %
-        </p>
-        <div class="percent_grid">
-          <button value="0.05" class="button">5%</button>
-          <button value="0.10" class="button">10%</button>
-          <button value="0.15" class="button">15%</button>
-          <button value="0.25" class="button">25%</button>
-          <button value="0.50" class="button">50%</button>
-          <button value="0.75" class="button">75%</button>
-        </div>
-      </div>
+
       <div class="people">
         <p class="people_p font">
           Number of People
         </p>
         <div class="people_entry">
-          <input type="number" class="people_amount" placeholder='0'>
+          <input id="num_people" type="number" class="people_amount" placeholder='0'>
           <img class="input_person" src="images/icon-person.svg" alt="Profile icon">
+        </div>
+      </div>
+      <div class="tip">
+        <p class="tip_p font">
+          Select Tip %
+        </p>
+        <div class="percent_grid">
+          <button onclick="tipCalc()" id="one" value="0.05" class="button">5%</button>
+          <button onclick="tipCalc()" id="two" value="0.10" class="button">10%</button>
+          <button onclick="tipCalc()" id="three" value="0.15" class="button">15%</button>
+          <button onclick="tipCalc()" id="four" value="0.25" class="button">25%</button>
+          <button onclick="tipCalc()" id="five" value="0.50" class="button">50%</button>
+          <button onclick="tipCalc()" id="six" value="0.75" class="button">75%</button>
         </div>
       </div>
     </section>
@@ -66,12 +67,12 @@
           <p class="font_two">Tip Amount</p>
           <p class="font_three">/ person</p>
         </div>
-        <p class="tip_result">$4.27</p>
+        <p id="no" class="tip_result"></p>
         <div class="result_two">
           <p class="font_two">Total</p>
           <p class="font_three">/ person</p>
         </div>
-        <p class="total_result">$32.79</p>
+        <p id="yes" class="total_result"></p>
         <div class="reset">
           <button id="reset">RESET</button>
         </div>

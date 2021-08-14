@@ -1,20 +1,36 @@
+let btnValue;
+
+function inFunction(element) {
+    btnValue = element.value;
+    console.log(btnValue);
+    return btnValue;
+}
+
 function tipCalc() {
     let bill = document.getElementById('bill').value;
-    let val1 = document.getElementById('one').value;
-    let val2 = document.getElementById('two').value;
-    let val3 = document.getElementById('three').value;
-    let val4 = document.getElementById('four').value;
-    let val5 = document.getElementById('five').value;
-    let val6 = document.getElementById('six').value;
+
     let people = document.getElementById('num_people').value;
 
-    let bill_before = bill * val3;
+    // This line gets the value from the inFunction.
+    let button_value = btnValue;
 
-    let bill_after = Math.floor(bill_before / people * 100) / 100;
+    let a = parseFloat(bill * button_value);
 
-    let total = (bill / people) + bill_after;
+    //console.log(a);
 
-    document.getElementById('no').innerHTML = '$' + bill_after;
+    let b = parseFloat(a / people);
+ 
+    //console.log(b);
 
-    document.getElementById('yes').innerHTML = '$' + total.toFixed(2);
+    let c = parseFloat((bill / people) + b);
+
+    //console.log(c);
+
+    document.getElementById('no').innerHTML = '$' + b.toFixed(2);
+
+    document.getElementById('yes').innerHTML = '$' + c.toFixed(2);
+}
+
+function reset() {
+    location.reload();
 }

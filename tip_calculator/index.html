@@ -52,12 +52,12 @@
           Select Tip %
         </p>
         <div class="percent_grid">
-          <button onclick="tipCalc()" id="one" value="0.05" class="button">5%</button>
-          <button onclick="tipCalc()" id="two" value="0.10" class="button">10%</button>
-          <button onclick="tipCalc()" id="three" value="0.15" class="button">15%</button>
-          <button onclick="tipCalc()" id="four" value="0.25" class="button">25%</button>
-          <button onclick="tipCalc()" id="five" value="0.50" class="button">50%</button>
-          <button onclick="tipCalc()" id="six" value="0.75" class="button">75%</button>
+          <button onclick="inFunction(this);tipCalc();" id="one" value="0.05" class="button">5%</button>
+          <button onclick="inFunction(this);tipCalc();" id="two" value="0.10" class="button">10%</button>
+          <button onclick="inFunction(this);tipCalc();" id="three" value="0.15" class="button">15%</button>
+          <button onclick="inFunction(this);tipCalc();" id="four" value="0.25" class="button">25%</button>
+          <button onclick="inFunction(this);tipCalc();" id="five" value="0.50" class="button">50%</button>
+          <button onclick="inFunction(this);tipCalc();" id="six" value="0.75" class="button">75%</button>
         </div>
       </div>
     </section>
@@ -74,7 +74,7 @@
         </div>
         <p id="yes" class="total_result"></p>
         <div class="reset">
-          <button id="reset">RESET</button>
+          <button id="reset" onclick="reset();">RESET</button>
         </div>
       </div>
     </section>

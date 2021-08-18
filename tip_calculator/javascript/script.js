@@ -18,11 +18,11 @@ function tipCalc() {
 
     //console.log(a);
 
-    let b = parseFloat(a / people);
+    let b = Math.round((a / people) * 100) / 100;
  
     //console.log(b);
 
-    let c = parseFloat((bill / people) + b);
+    let c = Math.round(((bill / people) + b) * 100) / 100;
 
     //console.log(c);
 

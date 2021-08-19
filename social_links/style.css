@@ -26,6 +26,7 @@ body {
 main {
     display: grid;
     grid-template-columns: 1fr 400px 1fr;
+    gap: 1em;
 }
 
 #div-1 {
@@ -117,12 +118,11 @@ main {
 #div-2 {
     border-radius: 10px;
     width: 192px;
-    margin-top: 1rem;
     grid-column: 2/3;
     background-color: #FF7900;
     padding: .5rem;
     justify-self: left;
-    grid-row: 2;
+    grid-row: 3;
 }
 
 .box-title {
@@ -146,23 +146,21 @@ a {
 #div-3 {
     border-radius: 10px;
     width: 192px;
-    margin-top: 1rem;
     grid-column: 2/3;
     background-color: rgb(5, 173, 151);
     padding: .5rem;
     justify-self: right;
-    grid-row: 2;
+    grid-row: 3;
 }
 
 #div-4 {
     border-radius: 10px;
     width: 400px;
     background-color: rgb(22, 22, 26);
-    margin-top: 1rem;
     grid-column: 2/3;
     padding: .5rem;
     justify-self: center;
-    grid-row: 3;
+    grid-row: 4;
 }
 
 #lightroom {
@@ -172,34 +170,31 @@ a {
 #div-5 {
     border-radius: 10px;
     width: 192px;
-    margin-top: 1rem;
     grid-column: 2/3;
     background-color: rgb(5, 173, 151);
     padding: .5rem;
     justify-self: left;
-    grid-row: 4;
+    grid-row: 5;
 }
 
 #div-6 {
     border-radius: 10px;
     width: 192px;
-    margin-top: 1rem;
     grid-column: 2/3;
     background-color: #ff7900;
     padding: .5rem;
     justify-self: right;
-    grid-row: 4;
+    grid-row: 5;
 }
 
 #div-7 {
     border-radius: 10px;
     width: 400px;
     background-color: rgb(22, 22, 26);
-    margin-top: 1rem;
     grid-column: 2/3;
     padding: .5rem;
     justify-self: center;
-    grid-row: 5;
+    grid-row: 6;
 }
 
 .fa-python {
@@ -240,4 +235,36 @@ a {
 
 .orange {
     color: #ff7900;
+}
+
+#div-8 {
+    border-radius: 10px;
+    max-width: 100%;
+    background-color: rgb(22, 22, 26);
+    grid-column: 2/3;
+    padding: 1rem;
+    text-align: left;
+    grid-row: 2;
+}
+
+.sites-rule {
+    width: 50px;
+    margin-top: 1rem;
+}
+
+.sites {
+    padding: 1rem 0 .1rem 0;
+    line-height: 1.5;
+}
+
+.color { 
+    color: #ff7900;
+}
+
+.link {
+    text-decoration: underline;
+}
+
+.responsive {
+    color: rgb(5, 173, 151);
 }

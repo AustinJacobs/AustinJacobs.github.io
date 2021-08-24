@@ -1,0 +1,22 @@
+body {
+    font-size: 18px;
+    background-color: black;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Fraunces', serif;
+}
+
+a, p {
+    font-family: 'Barlow', sans-serif;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 1fr 10%;
+    padding: 2em 1.5em 1.5em 1.5em;
+}
+
+nav {
+    display: none;
+}

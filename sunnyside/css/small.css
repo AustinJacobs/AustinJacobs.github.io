@@ -16,11 +16,10 @@ p {
     font-family: 'Barlow', sans-serif;
 }
 
-header {
+.header {
     display: grid;
     grid-template-columns: 1fr 10%;
     padding: 2em 1.5em 1.5em 1.5em;
-    background-color: rgb(63, 190, 252);
 }
 
 .hamburger-button {
@@ -30,6 +29,8 @@ header {
 nav {
     display: none;
     background-color: white;
+    position: relative;
+    top: -8em;
     margin: 1.5em;
 }
 
@@ -54,3 +55,36 @@ nav a {
     border: none;
 }
 
+.header-image {
+    max-width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+
+.slogan {
+    text-align: center;
+    font-size: 2.8rem;
+    letter-spacing: .1em;
+    color: white;
+    font-family: 'Fraunces', serif;
+}
+
+.egg-image {
+    max-width: 100%;
+    margin-top: 16em;
+}
+
+.all-h2 {
+    font-size: 2em;
+    text-align: center;
+    margin: 2em 1em 0 1em;
+}
+
+.white-background-p {
+    text-align: center;
+    margin: 1em 1.5em 0 1.5em;
+    line-height: 1.5em;
+    font-size: 1.2em;
+    color: hsl(232, 10%, 55%);
+}

@@ -6,10 +6,4 @@ function navFunction() {
      } else {
          x.style.display = "block";
      }
-
-     if(x.style.display === "block") {
-         y.style.marginTop = "-5.28em";
-     } else {
-         y.style.marginTop = "16em";
-     }
 }

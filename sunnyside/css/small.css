@@ -29,24 +29,32 @@ p {
 nav {
     display: none;
     background-color: white;
-    position: relative;
-    top: -8em;
-    margin: 1.5em;
+    position: absolute;
+    top: 100px;
+    width: 90%;
+    height: 40%;
+    padding-top: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
 }
 
 nav a {
     text-align: center;
     text-decoration: none;
     display: grid;
-    padding: 1em;
+    padding: 16px;
     color: hsl(232, 10%, 55%);
     font-size: 1.4em;
+    padding-top: 1.5rem;
 }
 
 .yellow-contact {
     font-family: 'Fraunces', serif;
     border-radius: 40px;
-    width: 70%;
+    width: 55%;
     height: 70px;
     margin: 0 auto;
     padding: 1em;
@@ -70,21 +78,20 @@ nav a {
     font-family: 'Fraunces', serif;
 }
 
+.arrow {
+    max-width: 100%;
+    display: block;
+    padding-top: 25px;
+    margin: 0 auto;
+}
+
 .egg-image {
     max-width: 100%;
-    margin-top: 16em;
+    margin-top: 9rem;
 }
 
 .all-h2 {
-    font-size: 2em;
+    font-size: 2.1rem;
     text-align: center;
-    margin: 2em 1em 0 1em;
-}
-
-.white-background-p {
-    text-align: center;
-    margin: 1em 1.5em 0 1.5em;
-    line-height: 1.5em;
-    font-size: 1.2em;
-    color: hsl(232, 10%, 55%);
+    margin-top: 50px;
 }

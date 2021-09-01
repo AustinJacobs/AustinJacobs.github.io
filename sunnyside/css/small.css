@@ -65,9 +65,10 @@ nav a {
 
 .header-image {
     max-width: 100%;
-    position: absolute;
+    position: relative;
     top: 0;
     z-index: -1;
+    display: block;
 }
 
 .slogan {
@@ -87,7 +88,6 @@ nav a {
 
 .egg-image {
     max-width: 100%;
-    margin-top: 9rem;
 }
 
 .all-h2 {

@@ -1,44 +1,26 @@
 import random
-import string
-
-number_of_letters = int(input('Enter the number of letters you want in the password: '))
-number_of_digits = int(input('Enter the number of digits you want in the password: '))
-number_of_symbols = int(input('Enter the number of symbols you want in the password: '))
-
-def shuffle(string):
-    tempList = list(string)
-    random.shuffle(tempList)
-    return ''.join(tempList)
-
-def letters(number_of_letters):
-    for letter in range(number_of_letters):
-        string.ascii_letters
-        random.choice(string.ascii_letters)
-        print(random.choice(string.ascii_letters))
-        return random.choice(string.ascii_letters)
-
-def digits(number_of_digits):
-    for digit in range(number_of_digits):
-        random.randint(0, 9)
-        print(random.randint(0, 9))
-        return random.randint(0, 9)
-
-def symbols(number_of_symbols):
-    for symbol in range(number_of_symbols):
-        chr(random.randint(35,38))
-        print(chr(random.randint(35,38)))
-        return chr(random.randint(35,38))
-
-# def createPassword(letter, number, symbol):
-#     password = str(letter) + str(number) + str(symbol)
-#     password = shuffle(password)
-#     print(password)
-
 
 def main():
-    letters(number_of_letters)
-    digits(number_of_digits)
-    symbols(number_of_symbols)
-    # createPassword(letters(number_of_letters), digits(number_of_digits), symbols(number_of_symbols))
+    uppercaseLetter1 = str(chr(random.randint(65,90)))
+    uppercaseLetter2 = str(chr(random.randint(65,90)))
+
+    lowercaseLetter1 = str(chr(random.randint(97,122)))
+    lowercaseLetter2 = str(chr(random.randint(97,122)))
+
+    randomDigit1 = str(random.randint(0,9))
+    randomDigit2 = str(random.randint(0,9))
+
+    randomSymbol1 = str(chr(random.randint(35,38)))
+    randomSymbol2 = str(chr(random.randint(35,38)))
+
+    finalPassword = createPassword(uppercaseLetter1, uppercaseLetter2, lowercaseLetter1, lowercaseLetter2, randomDigit1, randomDigit2, randomSymbol1, randomSymbol2)
+
+    print(finalPassword)
+    
+def createPassword(a, b, c, d, e, f, g, h):
+    password = a + b + c + d + e + f + g + h
+    tempList = list(password)
+    random.shuffle(tempList)
+    return ''.join(tempList)
 
 main()

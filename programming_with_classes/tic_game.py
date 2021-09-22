@@ -1,56 +1,79 @@
-# Assignment Tic, Tac, Toe Game. Completed by Austin Jacobs
+# Assignment Tic, Tac, Toe. Completed by Austin Jacobs
+
+gameBoard = {'1': '1' , '2': '2' , '3': '3' ,
+         '4': '4' , '5': '5' , '6': '6' ,
+         '7': '7' , '8': '8' , '9': '9'}
+
+board_keys = []
+
+for key in gameBoard:
+    board_keys.append(key)
+
+def createBoard(board):
+    print(board['1'] + '|' + board['2'] + '|' + board['3'])
+    print('-+-+-')
+    print(board['4'] + '|' + board['5'] + '|' + board['6'])
+    print('-+-+-')
+    print(board['7'] + '|' + board['8'] + '|' + board['9'])
 
 def main():
-    player = next_player("")
-    board = create_board()
-    while not (is_winner(board) or is_draw(board)):
-        display_board(board)
-        make_move(player, board)
-        player = next_player(player)
-    display_board(board)
-    print("Good game. Thanks for playing!") 
+    turn = 'X'
+    count = 0
 
-def create_board():
-    board = []
-    for square in range(9):
-        board.append(square + 1)
-    return board
+    while count < 10:
+        createBoard(gameBoard)
+        move = input(f"\n{turn}'s turn to choose a square (1-9):  ")
+        print("")
 
-def display_board(board):
-    print()
-    print(f"{board[0]}|{board[1]}|{board[2]}")
-    print('-+-+-')
-    print(f"{board[3]}|{board[4]}|{board[5]}")
-    print('-+-+-')
-    print(f"{board[6]}|{board[7]}|{board[8]}")
-    print()
-    
-def is_draw(board):
-    for square in range(9):
-        if board[square] != "x" and board[square] != "o":
-            return False
-    return True 
-    
-def is_winner(board):
-    return (board[0] == board[1] == board[2] or
-            board[3] == board[4] == board[5] or
-            board[6] == board[7] == board[8] or
-            board[0] == board[3] == board[6] or
-            board[1] == board[4] == board[7] or
-            board[2] == board[5] == board[8] or
-            board[0] == board[4] == board[8] or
-            board[2] == board[4] == board[6])
+        if gameBoard[move] == move:
+            gameBoard[move] = turn
+            count += 1
+        else:
+            print("Choose a spot that hasn't been taken.")
+            continue
 
-def make_move(player, board):
-    square = int(input(f"{player}'s turn to choose a square (1-9): "))
-    board[square - 1] = player
+        if count >=5:
+            if gameBoard['7'] == gameBoard['8'] == gameBoard['9'] != ' ': 
+                createBoard(gameBoard)
+                print(f"\nGood game. Thanks for playing!. {turn}'s won!")                            
+                break
+            elif gameBoard['4'] == gameBoard['5'] == gameBoard['6'] != ' ': 
+                createBoard(gameBoard)
+                print(f"\nGood game. Thanks for playing!. {turn}'s won!")                
+                break
+            elif gameBoard['1'] == gameBoard['2'] == gameBoard['3'] != ' ': 
+                createBoard(gameBoard)
+                print(f"\nGood game. Thanks for playing!. {turn}'s won!")                
+                break
+            elif gameBoard['1'] == gameBoard['4'] == gameBoard['7'] != ' ': 
+                createBoard(gameBoard)
+                print(f"\nGood game. Thanks for playing!. {turn}'s won!")                
+                break
+            elif gameBoard['2'] == gameBoard['5'] == gameBoard['8'] != ' ': 
+                createBoard(gameBoard)
+                print(f"\nGood game. Thanks for playing!. {turn}'s won!")                
+                break
+            elif gameBoard['3'] == gameBoard['6'] == gameBoard['9'] != ' ': 
+                createBoard(gameBoard)
+                print(f"\nGood game. Thanks for playing!. {turn}'s won!")                
+                break 
+            elif gameBoard['7'] == gameBoard['5'] == gameBoard['3'] != ' ': 
+                createBoard(gameBoard)
+                print(f"\nGood game. Thanks for playing!. {turn}'s won!")                
+                break
+            elif gameBoard['1'] == gameBoard['5'] == gameBoard['9'] != ' ': 
+                createBoard(gameBoard)
+                print(f"\nGood game. Thanks for playing!. {turn}'s won!")                
+                break
 
+        if count == 9:
+            print(f"Game Over!")
+            print("It's a draw!")
 
-def next_player(current):
-    if current == "" or current == "o":
-        return "x"
-    elif current == "x":
-        return "o"
+        if turn =='X':
+            turn = 'O'
+        else:
+            turn = 'X'
 
 if __name__ == "__main__":
     main()

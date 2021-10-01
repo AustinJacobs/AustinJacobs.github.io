@@ -13,14 +13,14 @@ function showPosition(position) {
     x = position.coords.latitude;
     y = position.coords.longitude;
 
-    let map = L.map('mapid').setView([x, y], 13);
+    let map = L.map('demo').setView([x, y], 12);
 
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
     }).addTo(map);
 
     L.marker([x, y]).addTo(map)
-        .bindPopup('Current Location' + `</br>` + 'Latitude = ' + lat + `</br>` + 'Longitude = ' + long)
+        .bindPopup('Current Location' + `</br>` + 'Latitude = ' + x + `</br>` + 'Longitude = ' + y)
         .openPopup();
 }
 
@@ -31,8 +31,9 @@ function mapUpdate() {
     let jsObject = {};
     let lat;
     let long;
-    let country;
     let region;
+    let postal;
+    let time;
     let city;
     let provider;
     $(function () {
@@ -46,14 +47,17 @@ function mapUpdate() {
                 jsObject = data;
                 lat = jsObject.location.lat;
                 long = jsObject.location.lng;
-                country = jsObject.location.country;
                 region = jsObject.location.region;
                 city = jsObject.location.city;
                 provider = jsObject.location.isp;
+                postal = jsObject.location.postalCode;
+                time = jsObject.location.timezone;
+                provider = jsObject.isp;
+                
 
                 // API used to populate the map on the index.html file.
 
-                let map = L.map('mapid').setView([lat, long], 13);
+                let map = L.map('mapid').setView([lat, long], 12);
 
                 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
                     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
@@ -66,3 +70,12 @@ function mapUpdate() {
         });
     });
 };
+
+let date = new Date();
+let year = date.getFullYear();
+
+document.getElementById("date").innerHTML = year + `</br>`;
+
+let modified = document.lastModified;
+
+document.getElementById("update").innerHTML = modified;

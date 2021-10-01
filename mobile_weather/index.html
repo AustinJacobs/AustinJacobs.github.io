@@ -10,6 +10,10 @@
     <link rel="stylesheet" href="css/small.css">
     <link rel="stylesheet" href="css/medium.css">
     <link rel="stylesheet" href="css/large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
         integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
@@ -17,9 +21,31 @@
 </head>
 
 <body onload="getLocation()">
+    <h1>IP Address Tracker</h1>
+    <div id="ip-input">
+        <input type="number">
+        <button onclick="mapUpdate()"><img src="images/icon-arrow.svg" alt="Icon arrow"></button>
+    </div>
+    <div id="information">
+        <p class="tags">IP ADDRESS</p>
+        <p class="data">192.212.174.101</p>
+        <p class="tags">LOCATION</p>
+        <p class="data">Brooklyn, NY 10001</p>
+        <p class="tags">TIMEZONE</p>
+        <p class="data">UTC -05:00</p>
+        <p class="tags">ISP</p>
+        <p class="data">SpaceX Starlink</p>
+    </div>
 
-    <div id="mapid"></div>
     <div id="demo"></div>
+    <div id="mapid"></div>
+    <footer>
+        <p id="footer-content"><span class="white">© Austin Jacobs <span id="date"></span>
+                <span id="center">Last Update: </span><span class="orange" id="update"></span>
+        </p>
+    
+    </footer>
+
 
     <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
         integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
@@ -28,5 +54,8 @@
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="app.js"></script>
 </body>
+
+
+
 
 </html>

@@ -1,3 +1,69 @@
-#mapid {
-    height: 300px;
+body {
+    font-family: 'Rubik', sans-serif;
+    font-size: 18px;
+    background-color: #2a363b;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    margin: 30px;
+    color: white;
+}
+
+#ip-input {
+    display: grid;
+    grid-template-columns: 85% 15%;
+    margin: 20px;
+}
+
+input {
+    grid-column: 1/2;
+    height: 45px;
+    border-radius: 12px 0 0 12px;
+    border: none;
+}
+
+button {
+    grid-column: 2/3;
+    background-color: #99b898;
+    border: none;
+    border-radius: 0 15px 15px 0;
+}
+
+#information {
+    background-color: white;
+    padding: 12px;
+    margin: 20px;
+    border-radius: 12px;
+    z-index: 4;
+    border: none;
+}
+
+.data {
+    text-align: center;
+    margin-top: -5px;
+    color: #2a363b;
+}
+
+.tags {
+    font-size: 10px;
+    color:hsl(0, 0%, 59%);
+    text-align: center;
+}
+
+#demo {
+    height: 380px;
+    margin: 20px;
+    border-radius: 12px;
+    border: none;
+}
+
+footer {
+    background-color: #2a363b;
+    padding: 8px;
+    text-align: center;
+    color: white;
+    font-family: 'Rubik', sans-serif;
+    font-size: 14px;
 }

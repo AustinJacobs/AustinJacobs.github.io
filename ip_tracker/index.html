@@ -23,18 +23,18 @@
 <body onload="getLocation()">
     <h1>IP Address Tracker</h1>
     <div id="ip-input">
-        <input type="number">
+        <input id="ip_address" type="text">
         <button onclick="mapUpdate()"><img src="images/icon-arrow.svg" alt="Icon arrow"></button>
     </div>
     <div id="information">
         <p class="tags">IP ADDRESS</p>
-        <p class="data">192.212.174.101</p>
+        <p id="tag_ip" class="data"></p>
         <p class="tags">LOCATION</p>
-        <p class="data">Brooklyn, NY 10001</p>
+        <p id="tag_region" class="data"></p>
         <p class="tags">TIMEZONE</p>
-        <p class="data">UTC -05:00</p>
+        <p id="tag_time" class="data"></p>
         <p class="tags">ISP</p>
-        <p class="data">SpaceX Starlink</p>
+        <p id="tag_isp" class="data"></p>
     </div>
 
     <div id="demo"></div>

@@ -1,5 +1,5 @@
 // Current location API.
-var x = document.getElementById("demo");
+let x = document.getElementById("demo");
 
 function getLocation() {
     if (navigator.geolocation) {
@@ -26,16 +26,21 @@ function showPosition(position) {
 
 // API used for tracking the IP Address
 function mapUpdate() {
-    var ip = "8.8.8.8";
-    var api_key = '#';
+    let demoMap = document.getElementById('demo');
+    demoMap.style.display = 'none';
+    let newIP = document.getElementById('ip_address').value;
+
+    var ip = newIP;
+    var api_key = 'at_IbJxZ5zsWtAQjGEY0fiJnGkZgxfBa';
     let jsObject = {};
-    let lat;
-    let long;
+    let lat = '';
+    let long = '';
     let region;
     let postal;
     let time;
     let city;
     let provider;
+
     $(function () {
         $.ajax({
             url: "https://geo.ipify.org/api/v1",
@@ -53,19 +58,13 @@ function mapUpdate() {
                 postal = jsObject.location.postalCode;
                 time = jsObject.location.timezone;
                 provider = jsObject.isp;
-                
 
-                // API used to populate the map on the index.html file.
+                document.getElementById('tag_ip').innerHTML = newIP;
+                document.getElementById('tag_region').innerHTML = city + ", " + region + ' ' + postal;
+                document.getElementById('tag_time').innerHTML = 'UTC: ' + time;
+                document.getElementById('tag_isp').innerHTML = provider;
 
-                let map = L.map('mapid').setView([lat, long], 12);
-
-                L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-                    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-                }).addTo(map);
-
-                L.marker([lat, long]).addTo(map)
-                    .bindPopup('Current Location' + `</br>` + 'Latitude = ' + lat + `</br>` + 'Longitude = ' + long)
-                    .openPopup();
+                console.log(jsObject);
             }
         });
     });

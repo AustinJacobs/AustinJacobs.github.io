@@ -31,7 +31,7 @@ function mapUpdate() {
     let newIP = document.getElementById('ip_address').value;
 
     var ip = newIP;
-    var api_key = 'at_IbJxZ5zsWtAQjGEY0fiJnGkZgxfBa';
+    var api_key = '#';
     let jsObject = {};
     let lat = '';
     let long = '';

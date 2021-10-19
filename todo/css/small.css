@@ -1,0 +1,117 @@
+html,
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgb(57, 81, 156);
+}
+
+header>h1 {
+    text-align: center;
+    color: white;
+    font-size: 3em;
+}
+
+ul {
+    padding: 0;
+}
+
+.checked {
+    text-decoration: line-through;
+}
+
+.todos_div {
+    display: grid;
+    grid-template-columns: 15% 1fr 15%;
+    align-items: center;
+    background-color: rgb(8, 26, 81);
+    color: white;
+    font-size: 20px;
+    margin: 0 10px 0 10px;
+    max-width: 100%;
+    border: 1px solid rgb(29, 53, 130);
+}
+
+.todos_words {
+    margin: 10px;
+}
+
+.close {
+    background-color: transparent;
+    border: none;
+    color: white;
+    justify-self: center;
+}
+
+.checkboxes {
+    transform: scale(1.8);
+    justify-self: center;
+}
+
+.task_stats {
+    display: grid;
+    grid-template-columns: 30% 1fr;
+    grid-template-rows: 1fr;
+    background-color: rgb(8, 26, 81);
+    margin: -20px 10px 0 10px;
+    border: 1px solid rgb(29, 53, 130);
+    color: white;
+}
+
+.filter {
+    display: grid;
+    grid-template-columns: 15% 35% 40%;
+    gap: 5px;
+    justify-content: left;
+    align-items: center;
+}
+
+.filter > button {
+    padding: 0;
+    margin: 0;
+    height: 30px;
+    background-color: transparent;
+    color: white;
+    border: none;
+    font-size: 14px;
+}
+
+.left {
+    grid-column: 1/2;
+    justify-self: left;
+    align-self: center;
+    padding-left: 15px;
+    font-size: 14px;
+}
+
+#position {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+}
+
+.task_text_div {
+    display: grid;
+    grid-template-columns: 1fr 15%;
+    margin: 0 10px 0 10px;
+    gap: 10px;
+    height: 40px;
+}
+
+.task_text_div > input{
+    width: 100%;
+    border: 1px solid rgb(29, 53, 130);
+}
+
+.task_text_div > button{
+    font-size: 30px;
+}
+
+.add_button_div {
+    justify-self: end;
+}
+
+#add_btn {
+    padding: 0;
+    margin: 0;
+    align-self: center;
+    border: 1px solid rgb(29, 53, 130);
+}

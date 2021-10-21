@@ -17,18 +17,46 @@ h1 {
     margin: 20px;
 }
 
-input {
+#ip_address {
     grid-column: 1/2;
     height: 45px;
     border-radius: 12px 0 0 12px;
     border: none;
 }
 
-button {
+#key {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 20px;
+}
+
+#api {
+    border: none;
+    grid-column: 1/2;
+    padding: 10px;
+    border-radius: 12px;
+}
+
+#first {
     grid-column: 2/3;
     background-color: #99b898;
     border: none;
-    border-radius: 0 15px 15px 0;
+    border-radius: 0 12px 13px 0;
+}
+
+#reset {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 20px;
+}
+
+#second {
+    width: 100%;
+    background-color: #99b898;
+    border: none;
+    grid-column: 1/2;
+    padding: 10px;
+    border-radius: 12px;
 }
 
 #information {

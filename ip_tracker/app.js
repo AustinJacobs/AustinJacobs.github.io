@@ -1,37 +1,23 @@
 // Current location API.
 let x = document.getElementById("demo");
 
-function getLocation() {
-    if (navigator.geolocation) {
-        navigator.geolocation.getCurrentPosition(showPosition);
-    } else {
-        x.innerHTML = "Geolocation is not supported by this browser.";
-    }
-}
+// function getLocation() {
+//     if (navigator.geolocation) {
+//         navigator.geolocation.getCurrentPosition(mapUpdate);
+//     } else {
+//         x.innerHTML = "Geolocation is not supported by this browser.";
+//     }
+// }
 
-function showPosition(position) {
-    x = position.coords.latitude;
-    y = position.coords.longitude;
-
-    let map = L.map('demo').setView([x, y], 12);
-
-    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-    }).addTo(map);
-
-    L.marker([x, y]).addTo(map)
-        .bindPopup('Current Location' + `</br>` + 'Latitude = ' + x + `</br>` + 'Longitude = ' + y)
-        .openPopup();
+function reloadPage() {
+    location.reload();
 }
 
 // API used for tracking the IP Address
 function mapUpdate() {
-    let demoMap = document.getElementById('demo');
-    demoMap.style.display = 'none';
     let newIP = document.getElementById('ip_address').value;
-
-    var ip = newIP;
-    var api_key = '#';
+    let ip = newIP;
+    let api_key = document.getElementById("api").value;
     let jsObject = {};
     let lat = '';
     let long = '';
@@ -64,7 +50,15 @@ function mapUpdate() {
                 document.getElementById('tag_time').innerHTML = 'UTC: ' + time;
                 document.getElementById('tag_isp').innerHTML = provider;
 
-                console.log(jsObject);
+                let map = L.map('demo').setView([lat, long], 12);
+
+                L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+                }).addTo(map);
+
+                L.marker([lat, long]).addTo(map)
+                    .bindPopup('Current Location' + `</br>` + 'Latitude = ' + lat + `</br>` + 'Longitude = ' + long)
+                    .openPopup();
             }
         });
     });

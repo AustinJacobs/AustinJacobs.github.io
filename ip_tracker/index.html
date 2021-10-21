@@ -20,11 +20,12 @@
         crossorigin="" />
 </head>
 
-<body onload="getLocation()">
+<body>
     <h1>IP Address Tracker</h1>
+    <div id="key"><input type="password" id="api" name="api_key" placeholder="Enter a IP Geolocation API key..."></div>
     <div id="ip-input">
-        <input id="ip_address" type="text">
-        <button onclick="mapUpdate()"><img src="images/icon-arrow.svg" alt="Icon arrow"></button>
+        <input id="ip_address" type="text" placeholder="Enter an IP Address...">
+        <button id="first" onclick="mapUpdate()"><img src="images/icon-arrow.svg" alt="Icon arrow"></button>
     </div>
     <div id="information">
         <p class="tags">IP ADDRESS</p>
@@ -36,14 +37,14 @@
         <p class="tags">ISP</p>
         <p id="tag_isp" class="data"></p>
     </div>
+    <div id="reset"><button id="second" onclick="reloadPage()">Reset</button></div>
 
     <div id="demo"></div>
-    <div id="mapid"></div>
     <footer>
         <p id="footer-content"><span class="white">© Austin Jacobs <span id="date"></span>
                 <span id="center">Last Update: </span><span class="orange" id="update"></span>
         </p>
-    
+
     </footer>
 
 

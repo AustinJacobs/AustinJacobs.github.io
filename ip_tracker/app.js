@@ -17,7 +17,7 @@ function reloadPage() {
 function mapUpdate() {
     let newIP = document.getElementById('ip_address').value;
     let ip = newIP;
-    let api_key = document.getElementById("api").value;
+    let api_key = "at_IbJxZ5zsWtAQjGEY0fiJnGkZgxfBa";
     let jsObject = {};
     let lat = '';
     let long = '';

@@ -1,0 +1,128 @@
+body {
+  background-color: #2b2d42;
+  color: #edf2f4;
+  font-family: 'Montserrat', sans-serif;
+}
+
+#navigation {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  list-style: none;
+  justify-items: center;
+  align-items: center;
+  padding: 10px;
+  width: 300px;
+  margin: 0 auto;
+}
+
+#navigation>a>li {
+  font-size: 18px;
+  padding: 10px;
+}
+
+#navigation>a {
+  color: #edf2f4;
+  text-decoration: none;
+}
+
+#search_bar {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+  gap: 10px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+#search_input {
+  width: 280px;
+  border-radius: 20px;
+  font-size: 16px;
+  padding: 10px;
+  background-color: #ef233c;
+  border: none;
+  background-position: 260px 5px;
+  background-image: url('http://www.kirupa.com/images/search.png');
+  background-repeat: no-repeat;
+  background-size: 25px;
+}
+
+::placeholder {
+  color: #edf2f4;
+}
+
+#search_button {
+  width: 150px;
+  background-color: #8d99ae;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  padding: 10px;
+}
+
+#featured {
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 300px;
+  margin: 0 auto;
+}
+
+.poster {
+  max-width: 120px;
+}
+
+.featured {
+  max-width: 300px;
+}
+
+.heading_p {
+  font-size: 28px;
+  margin: 0;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+
+.movie_title {
+  font-size: 20px;
+}
+
+#genre {
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 300px;
+  margin: 0 auto;
+}
+
+div {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+.menuBox {
+  width: 315px;
+  height: 50px;
+  overflow: scroll;
+  white-space: nowrap;
+}
+
+.menuSection {
+  width: 100%;
+  height: 50px;
+  display: table-cell;
+  overflow: hidden;
+}
+
+.menuItem {
+  width: 100;
+  height: 30px;
+  text-align: center;
+  color: #edf2f4;
+  margin: 5px;
+  font-size: 18px;
+  border-radius: 6px;
+  border: none;
+  background-color: #8d99ae;
+}

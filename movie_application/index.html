@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Movie App</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- change the path below to scss/styles.scss to use SASS -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Quicksand:wght@400;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+    integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+  <header>
+    <ul id="navigation">
+      <a href="series.html">
+        <li>Series</li>
+      </a>
+      <a href="movies.html">
+        <li>Movies</li>
+      </a>
+      <a href="list.html">
+        <li>My List</li>
+      </a>
+    </ul>
+  </header>
+  <main>
+    <div id="search_bar">
+      <input type="text" id="search_input" placeholder=" Search a series or movie...">
+      <button id="search_button">Find Content</button>
+    </div>
+    <div id="featured">
+      <p class="heading_p">Featured</p>
+      <div id="list"></div>
+    </div>
+    <div id="genre">
+      <p class="heading_p">Genre</p>
+      <div class="menuBox">
+        <div class="menuSection">
+          <button class="menuItem">All</button>
+        </div>
+        <div class="menuSection">
+          <button class="menuItem">Action</button>
+        </div>
+        <div class="menuSection">
+          <button class="menuItem">Adventure</button>
+        </div>
+        <div class="menuSection">
+          <button class="menuItem">Comedy</button>
+        </div>
+        <div class="menuSection">
+          <button class="menuItem">Romance</button>
+        </div>
+        <div class="menuSection">
+          <button class="menuItem">Horror</button>
+        </div>
+        <div class="menuSection">
+          <button class="menuItem">Fantasy</button>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+
+  </footer>
+
+  <!-- <script src="js/index.js"></script> -->
+  <script src="js/featured.js"></script>
+</body>
+
+</html>

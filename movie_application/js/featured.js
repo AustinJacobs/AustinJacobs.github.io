@@ -2,7 +2,7 @@ let ids = ["tt6264654", "tt3420504", "tt7991608", "tt5433138", "tt3480822", "tt0
 
 let imdbID = ids[Math.floor(Math.random()*ids.length)];
 
-let url = `http://www.omdbapi.com/?i=${imdbID}&apikey=116296b7`;
+let url = `https://www.omdbapi.com/?i=${imdbID}&apikey=116296b7`;
 
 fetch(url)
     .then((response) => response.json())

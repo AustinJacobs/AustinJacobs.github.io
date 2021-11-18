@@ -10,21 +10,59 @@
   <link rel="stylesheet" href="css/styles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Quicksand:wght@400;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+    integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
 
 <body>
   <header>
     <ul id="navigation">
-      <a href="series.html"><li>Series</li></a>
-      <a href="movies.html"><li>Movies</li></a>
-      <a href="list.html"><li>My List</li></a>
+      <a href="series.html">
+        <li>Series</li>
+      </a>
+      <a href="movies.html">
+        <li>Movies</li>
+      </a>
+      <a href="list.html">
+        <li>My List</li>
+      </a>
+      <li><button id="search_button"><i class="fas fa-search"></i></button></li>
     </ul>
   </header>
   <main>
     <div id="featured">
-      <h1>Featured</h1>
+      <p class="heading_p">Featured</p>
       <div id="list"></div>
+    </div>
+    <div id="genre">
+      <p class="heading_p">Genre</p>
+      <div class="menuBox">
+        <div class="menuSection">
+          <button class="menuItem">All</button>
+        </div>
+        <div class="menuSection">
+          <button class="menuItem">Action</button>
+        </div>
+        <div class="menuSection">
+          <button class="menuItem">Adventure</button>
+        </div>
+        <div class="menuSection">
+          <button class="menuItem">Comedy</button>
+        </div>
+        <div class="menuSection">
+          <button class="menuItem">Romance</button>
+        </div>
+        <div class="menuSection">
+          <button class="menuItem">Horror</button>
+        </div>
+        <div class="menuSection">
+          <button class="menuItem">Fantasy</button>
+        </div>
+      </div>
     </div>
   </main>
   <footer>

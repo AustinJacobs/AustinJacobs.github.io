@@ -7,6 +7,7 @@
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- change the path below to scss/styles.scss to use SASS -->
+  <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/styles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,49 +21,28 @@
 
 <body>
   <header>
-    <ul id="navigation">
-      <a href="series.html">
-        <li>Series</li>
-      </a>
-      <a href="movies.html">
-        <li>Movies</li>
-      </a>
-      <a href="list.html">
-        <li>My List</li>
-      </a>
-      <li><button id="search_button"><i class="fas fa-search"></i></button></li>
-    </ul>
+    <h1 id="page_title">TITLE</h1>
   </header>
   <main>
-    <div id="featured">
-      <p class="heading_p">Featured</p>
-      <div id="list"></div>
+    <div id="search_bar">
+      <a href="" id="search_link"><i class="fas fa-search"></i></a>
+      <input type="text" id="title_input" placeholder="Search">
     </div>
-    <div id="genre">
-      <p class="heading_p">Genre</p>
-      <div class="menuBox">
-        <div class="menuSection">
-          <button class="menuItem">All</button>
-        </div>
-        <div class="menuSection">
-          <button class="menuItem">Action</button>
-        </div>
-        <div class="menuSection">
-          <button class="menuItem">Adventure</button>
-        </div>
-        <div class="menuSection">
-          <button class="menuItem">Comedy</button>
-        </div>
-        <div class="menuSection">
-          <button class="menuItem">Romance</button>
-        </div>
-        <div class="menuSection">
-          <button class="menuItem">Horror</button>
-        </div>
-        <div class="menuSection">
-          <button class="menuItem">Fantasy</button>
-        </div>
-      </div>
+    <div id="picks">
+      <h2>Top Picks</h2>
+      <hr class="hr-small">
+      <div id="list"></div>
+      <div id="list-two"></div>
+    </div>
+    <div id="menu">
+      <a class="menu_link" href=""><i class="fas fa-home menu_i"></i></a>
+      <a class="menu_link" href=""><i class="fas fa-video menu_i"></i></a>
+      <a class="menu_link" href=""><i class="fas fa-tv menu_i"></i></a>
+      <a class="menu_link" href=""><i class="fas fa-list menu_i"></i></a>
+      <p class="menu_text">HOME</p>
+      <p class="menu_text">MOVIES</p>
+      <p class="menu_text">SHOWS</p>
+      <p class="menu_text">MY LIST</p>
     </div>
   </main>
   <footer>

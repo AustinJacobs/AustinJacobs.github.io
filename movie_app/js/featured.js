@@ -1,8 +1,4 @@
-let ids = ["tt6264654", "tt3420504", "tt7991608", "tt5433138", "tt3480822", "tt0870154", "tt9777666"];
-
-let imdbID = ids[Math.floor(Math.random()*ids.length)];
-
-let url = `http://www.omdbapi.com/?i=${imdbID}&apikey=116296b7`;
+let url = "https://api.themoviedb.org/3/movie/popular?api_key=fd940caa3dfcfc92860ced4170dcd511&language=en&page=1";
 
 fetch(url)
     .then((response) => response.json())
@@ -20,7 +16,7 @@ fetch(url)
         movieInfo.classList.add("movie_title")
         movieInfo.appendChild(image);
         movieList.appendChild(movieInfo);
-        image.setAttribute("src", jsObject.Poster);
-        image.setAttribute("alt", `A movie poster for ${jsObject.Title}`)
+        image.setAttribute("src", "https://image.tmdb.org/t/p/w500" + jsObject.results[0].poster_path);
+        image.setAttribute("alt", `A movie poster for ${jsObject.results[0].original_title}`)
         image.classList.add("featured");
     });

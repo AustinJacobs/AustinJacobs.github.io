@@ -4,96 +4,86 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
-#navigation {
+#page_title {
+  text-align: center;
+}
+
+#menu {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 40px;
-  list-style: none;
-  color: white;
-  justify-items: center;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  background-color: #ef233c;
+  overflow: hidden;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
   align-items: center;
-  padding: 10px;
-  width: 300px;
-  margin: 0 auto;
+  justify-items: center;
+  padding-top: 10px;
 }
 
-#navigation > a > li {
-  font-size: 18px;
-  padding: 10px;
+.menu_i {
+  font-size: 22px;
 }
 
-#navigation > a {
+.menu_text {
+  grid-template-rows: 2/3;
+  font-size: 10px;
+  margin: 0;
+}
+
+.menu_link {
+  color: #edf2f4;
+}
+
+#search_bar {
+  position: relative;
+}
+
+#search_bar .fa-search {
+  position: absolute;
+  top: 16px;
+  left: 35px;
+  font-size: 20px;
   color: #ef233c;
-  text-decoration: none;
 }
 
-#featured {
+#title_input {
+  text-indent: 30px;
+  height: 40px;
+  width: 85%;
+  margin: 0 auto;
+  display: block;
+  padding: 5px;
+  padding-left: 20px;
+  font-size: 20px;
+  border: none;
+  border-radius: 14px;
+  background: #3d3f59;
+  color: #edf2f4;
+}
+
+::placeholder {
+  color: #edf2f4;
+}
+
+#picks {
   display: grid;
   grid-template-columns: 1fr;
-  width: 300px;
-  margin: 0 auto;
+  margin: 20px;
 }
 
-.poster {
-  max-width: 120px;
+.hr-small {
+  width: 50px;
+  margin-top: -5px;
+  margin-left: 1px;
+  height: 1px;
+  background-color: #ef233c;
+  border: none;
 }
 
 .featured {
-  max-width: 300px;
-}
-
-.heading_p {
-  font-size: 28px;
-  margin: 0;
-  margin-bottom: 10px;
-  margin-top: 20px;
-}
-
-.movie_title {
-  font-size: 20px;
-}
-
-#genre {
-  display: grid;
-  grid-template-columns: 1fr;
-  width: 300px;
-  margin: 0 auto;
-}
-
-#search_button {
-  background-color: transparent;
-  border: none;
-  font-size: 16px;
-  color: #edf2f4;
-}
-
-div {
-  box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-}
-
-.menuBox {
-  width: 315px;
-  height: 50px;
-  overflow: scroll;
-  white-space: nowrap;
-}
-
-.menuSection {
-  width: 100%;
-  height: 50px;
-  display: table-cell;
-  overflow: hidden;
-}
-
-.menuItem {
-  width: 100;
-  height: 30px;
-  text-align: center;
-  color: #edf2f4;
-  margin: 5px;
-  font-size: 18px;
-  border-radius: 6px;
-  border: none;
-  background-color: #8d99ae;
+  max-width: 150px;
+  border-radius: 10px;
+  margin-top: 10px;
 }

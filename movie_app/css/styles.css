@@ -67,12 +67,6 @@ body {
   color: #edf2f4;
 }
 
-#picks {
-  display: grid;
-  grid-template-columns: 1fr;
-  margin: 20px;
-}
-
 .hr-small {
   width: 50px;
   margin-top: -5px;
@@ -86,4 +80,38 @@ body {
   max-width: 150px;
   border-radius: 10px;
   margin-top: 10px;
+}
+
+#popular-movies {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+}
+
+#upcoming-movies {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  margin-bottom: 60px;
+}
+
+#all-movies {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  margin-bottom: 60px;
+}
+
+.section-titles {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 20px;
+}
+
+.active {
+  color: #3d3f59;
+}
+
+#load-all-movies {
+  margin-bottom: 80px;
 }

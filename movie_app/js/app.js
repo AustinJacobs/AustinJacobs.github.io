@@ -1,12 +1,12 @@
 import {
-    renderMovies,
+    renderTrendingMovies,
     renderTopMovies,
-    renderAllMovies
-} from './movies.js'
+    renderTrendingTv
+} from './home.js'
 
 function App() {
-    renderMovies()
+    renderTrendingMovies()
     renderTopMovies()
-    renderAllMovies()
+    renderTrendingTv()
 }
 App()

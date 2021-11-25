@@ -1,40 +1,43 @@
-const popularDiv = document.getElementById("popular-movies");
-const upcomingDiv = document.getElementById("upcoming-movies");
-const allDiv = document.getElementById("all-movies");
-
-import {
-    getPopularMovies,
-    getTopMovies,
-    getAllMovies
-} from "./api.js";
 import {
     config
 } from "./config.js";
 
-export async function renderMovies() {
-    const movies = await getPopularMovies()
-    console.log(movies)
-    popularDiv.innerHTML = movies?.slice(0, 4).map(movie => renderSingleMovie(movie)).join("")
-}
+const BASE_URL = config.api_base_url
+const API_KEY = config.api_key
+const moviesDiv = document.getElementById("all-movies");
+let searchButton = document.getElementById("search-button-movies");
 
-export async function renderTopMovies() {
-    const movies = await getTopMovies()
-    console.log(movies)
-    upcomingDiv.innerHTML = movies?.slice(0, 4).map(movie => renderSingleMovie(movie)).join("")
-}
+searchButton.addEventListener("click", function () {
+    let userQuery = document.getElementById("title_input").value;
+    let page = 'page-1'
 
-export async function renderAllMovies() {
-    const movies = await getAllMovies()
-    console.log(movies)
-    allDiv.innerHTML = movies?.map(movie => renderSingleMovie(movie)).join("")
-}
+    let searchURL = `${BASE_URL}search/movie?api_key=${API_KEY}&language=en-US&query=${userQuery}&${page}&include_adult=false`
+
+    async function fetchMovies() {
+        let data = []
+        try {
+            const response = await fetch(searchURL)
+            const responseData = await response.json()
+            data = responseData?.results
+            console.log(data);
+        } catch (error) {
+
+        }
+
+        moviesDiv.innerHTML = data?.map(movie => renderSingleMovie(movie)).join("")
+    }
+    fetchMovies();
+})
 
 function renderSingleMovie(movie) {
-    return (
-        `
-        <div>
-            <img src="${config.image_base_url + movie?.poster_path}" class="featured">
-        </div>
-        `
-    )
+    if (movie.poster_path != null) {
+        return (
+            `
+            <div>
+                <img src="${config.image_base_url + movie?.poster_path}" class="featured" alt=${movie.original_title}>
+                <p class="title-centered">${movie.original_title}</p>
+            </div>
+            `
+        )
+    }
 }

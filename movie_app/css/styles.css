@@ -109,6 +109,16 @@ body {
   justify-items: center;
 }
 
+#searched-movies {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+}
+
+#searched-titles {
+  display: none;
+}
+
 .title-centered {
   text-align: center;
   font-size: 14px;

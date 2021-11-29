@@ -24,17 +24,33 @@ export async function renderTopMovies() {
 }
 
 export async function renderTrendingTv() {
-    const movies = await getTrendingTv()
-    console.log(movies)
-    trendingTvDiv.innerHTML = movies?.slice(0, 10).map(movie => renderSingleMovie(movie)).join("")
+    const shows = await getTrendingTv()
+    console.log(shows)
+    trendingTvDiv.innerHTML = shows?.slice(0, 10).map(tv => renderSingleShow(tv)).join("")
 }
 
 function renderSingleMovie(movie) {
-    return (
-        `
-        <div>
-            <img src="${config.image_base_url + movie?.poster_path}" class="featured">
-        </div>
-        `
-    )
+    if (movie.poster_path != null) {
+        return (
+            `
+            <div>
+                <img src="${config.image_base_url + movie?.poster_path}" class="featured" alt=${movie.title}>
+                <p class="title-centered">${movie.title}</p>
+            </div>
+            `
+        )
+    }
+}
+
+function renderSingleShow(tv) {
+    if (tv.poster_path != null) {
+        return (
+            `
+            <div>
+                <img src="${config.image_base_url + tv?.poster_path}" class="featured" alt=${tv.name}>
+                <p class="title-centered">${tv.name}</p>
+            </div>
+            `
+        )
+    }
 }

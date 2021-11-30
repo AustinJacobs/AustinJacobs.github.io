@@ -6,6 +6,23 @@ body {
 
 #page_title {
   text-align: center;
+  grid-column: 2/3;
+  margin-top: 25px;
+  color:#ef233c;
+}
+
+header {
+  display: grid;
+  grid-template-columns: 70px 1fr 70px;
+  align-items: center;
+  justify-items: center;
+  background-color: #edf2f4;
+}
+
+#logo-image {
+  grid-column: 1/2;
+  max-width: 45px;
+  margin-left: 20px;
 }
 
 #menu {
@@ -38,6 +55,18 @@ body {
 
 #search_bar {
   position: relative;
+  margin-top: 30px;
+}
+
+#search-button-series {
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  top: 16px;
+  left: 25px;
+  font-size: 20px;
+  color: #ef233c;
+  cursor: pointer;
 }
 
 #search-button-movies {
@@ -51,7 +80,7 @@ body {
   cursor: pointer;
 }
 
-#title_input {
+.search_input {
   text-indent: 30px;
   height: 40px;
   width: 85%;
@@ -85,31 +114,13 @@ body {
   margin-top: 10px;
 }
 
-#trending-movies {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  justify-items: center;
-}
-
-#top-movies {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  justify-items: center;
-}
-
 #trending-tv {
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-items: center;
 }
 
-#all-movies {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  justify-items: center;
-}
-
-#searched-movies {
+.media-output {
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-items: center;

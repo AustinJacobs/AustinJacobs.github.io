@@ -44,13 +44,14 @@ async function fetchMovies() {
     }
     moviesDiv.innerHTML = data?.results.map(movie => renderSingleMovie(movie)).join("")
 }
+
 fetchMovies();
 
 function renderSingleMovie(movie) {
     if (movie.poster_path != null) {
         return (
             `
-            <div>
+            <div id="${movie.id}" class="media-div">
                 <img src="${config.image_base_url + movie?.poster_path}" class="featured" alt=${movie.title}>
                 <p class="title-centered">${movie.title}</p>
             </div>
@@ -58,3 +59,12 @@ function renderSingleMovie(movie) {
         )
     }
 }
+
+
+// Why does this work when I use an ID but not when I use the class that is added to the created div elements?
+const targetDiv = document.getElementById("2345");
+
+targetDiv.addEventListener("click", function (e) {
+    let x = e.target.getAttribute("id");
+    alert(x);
+})

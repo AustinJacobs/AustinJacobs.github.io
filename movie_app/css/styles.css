@@ -1,28 +1,29 @@
 body {
-  background-color: #2b2d42;
+  background-color: rgb(18, 18, 18);
   color: #edf2f4;
   font-family: 'Montserrat', sans-serif;
 }
 
 #page_title {
   text-align: center;
-  grid-column: 2/3;
-  margin-top: 25px;
+  grid-column: 1/2;
   color:#ef233c;
+  font-size: 14px;
+  margin-bottom: 10px;
 }
 
 header {
   display: grid;
-  grid-template-columns: 70px 1fr 70px;
+  grid-template-columns: 1fr;
   align-items: center;
   justify-items: center;
-  background-color: #edf2f4;
+  background-color: rgb(226, 226, 226);
 }
 
 #logo-image {
   grid-column: 1/2;
   max-width: 45px;
-  margin-left: 20px;
+  margin-top: 10px;
 }
 
 #menu {
@@ -50,7 +51,7 @@ header {
 }
 
 .menu_link {
-  color: #edf2f4;
+  color: rgb(226, 226, 226);
 }
 
 #search_bar {
@@ -91,12 +92,12 @@ header {
   font-size: 20px;
   border: none;
   border-radius: 14px;
-  background: #3d3f59;
-  color: #edf2f4;
+  background: rgb(30, 30, 30);
+  color: rgb(226, 226, 226);
 }
 
 ::placeholder {
-  color: #edf2f4;
+  color: rgb(226, 226, 226);
 }
 
 .hr-small {
@@ -130,6 +131,10 @@ header {
   display: none;
 }
 
+#searched-titles-tv {
+  display: none;
+}
+
 .title-centered {
   text-align: center;
   font-size: 14px;
@@ -143,11 +148,11 @@ header {
 }
 
 .active {
-  color: #3d3f59;
+  color: rgb(30, 30, 30);
 }
 
 .icon-image {
-  margin-bottom: 60px;
+  margin-bottom: 40px;
   max-width: 200px;
 }
 
@@ -155,8 +160,15 @@ header {
   color: #ef233c;
 }
 
+a:link {
+  text-decoration: none;
+}
+
 footer {
   text-align: center;
   font-size: 12px;
   margin-bottom: 30px;
+  background-color: rgb(30, 30, 30);
+  color: rgb(133, 133, 133);
+  padding: 20px;
 }

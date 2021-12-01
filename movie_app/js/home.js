@@ -34,8 +34,8 @@ function renderSingleMovie(movie) {
         return (
             `
             <div>
-                <img src="${config.image_base_url + movie?.poster_path}" class="featured" alt=${movie.title}>
-                <p class="title-centered">${movie.title}</p>
+            <img src="${config.image_base_url + movie?.poster_path}" class="featured" alt=${movie.title}>
+            <p class="title-centered">${movie.title}</p>
             </div>
             `
         )

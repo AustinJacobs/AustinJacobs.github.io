@@ -7,7 +7,7 @@ body {
 #page_title {
   text-align: center;
   grid-column: 1/2;
-  color:#ef233c;
+  color: #ef233c;
   font-size: 14px;
   margin-bottom: 10px;
 }
@@ -107,18 +107,7 @@ header {
   height: 1px;
   background-color: #ef233c;
   border: none;
-}
-
-.featured {
-  max-width: 150px;
-  border-radius: 10px;
-  margin-top: 10px;
-}
-
-#trending-tv {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  justify-items: center;
+  margin-bottom: 15px;
 }
 
 .media-output {
@@ -139,6 +128,8 @@ header {
   text-align: center;
   font-size: 14px;
   max-width: 150px;
+  word-wrap: normal;
+  white-space: normal;
 }
 
 .section-titles {
@@ -171,4 +162,44 @@ footer {
   background-color: rgb(30, 30, 30);
   color: rgb(133, 133, 133);
   padding: 20px;
+}
+
+div.scrollmenu {
+  overflow: auto;
+  white-space: nowrap;
+}
+
+div.scrollmenu-genres {
+  overflow: auto;
+  white-space: nowrap;
+  margin-top:30px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+div.scrollmenu-genres a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  text-decoration: none;
+  background-color: #ef233c;
+  border-radius: 14px;
+}
+
+.featured {
+  max-width: 150px;
+  border-radius: 10px;
+}
+
+div.scrollmenu div {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+div.scrollmenu a:hover {
+  background-color: rgb(133, 133, 133);
 }

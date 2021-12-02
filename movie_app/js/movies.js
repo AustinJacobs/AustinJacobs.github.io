@@ -45,8 +45,6 @@ async function fetchMovies() {
     moviesDiv.innerHTML = data?.results.map(movie => renderSingleMovie(movie)).join("")
 }
 
-fetchMovies();
-
 function renderSingleMovie(movie) {
     if (movie.poster_path != null) {
         return (
@@ -60,11 +58,19 @@ function renderSingleMovie(movie) {
     }
 }
 
+fetchMovies()
 
-// Why does this work when I use an ID but not when I use the class that is added to the created div elements?
-const targetDiv = document.getElementById("2345");
+// // Why does this work when I use an ID but not when I use the class that is added to the created div elements?
+// let targetDiv = document.querySelector(".media-div");
 
-targetDiv.addEventListener("click", function (e) {
-    let x = e.target.getAttribute("id");
-    alert(x);
-})
+// targetDiv.addEventListener("click", function (e) {
+//     let x = e.target.getAttribute("id");
+//     console.log(x);
+// })
+
+// document.querySelectorAll('.media-div').forEach(item => {
+//     item.addEventListener('click', e => {
+//         let x = e.target.getAttribute("id");
+//         console.log(x);
+//     })
+// })

@@ -165,9 +165,9 @@ footer {
 }
 
 div.scrollmenu {
-  overflow: auto;
   white-space: nowrap;
   overflow-y: hidden;
+  overflow-x: auto;
 }
 
 div.scrollmenu-genres {

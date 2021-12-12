@@ -1,3 +1,4 @@
+
 import {
     config
 } from "./config.js"
@@ -10,33 +11,33 @@ export async function getTrendingMovies() {
     try {
         const response = await fetch(`${BASE_URL}trending/movie/week?api_key=${API_KEY}`)
         const responseData = await response.json()
-        data = responseData?.results
+        data = responseData.results
     } catch (error) {
-
+        console.log(error)
     }
     return data
 }
 
-export async function getTopMovies(page = 1) {
+export async function getTopMovies() {
     let data = []
     try {
-        const response = await fetch(`${BASE_URL}movie/top_rated?api_key=${API_KEY}&page=${page}`)
+        const response = await fetch(`${BASE_URL}movie/top_rated?api_key=${API_KEY}`)
         const responseData = await response.json()
-        data = responseData?.results
+        data = responseData.results
     } catch (error) {
-
+        console.log(error)
     }
     return data
 }
 
-export async function getTrendingTv() {
+export async function getUpcomingMovies() {
     let data = []
     try {
-        const response = await fetch(`${BASE_URL}trending/tv/week?api_key=${API_KEY}`)
+        const response = await fetch(`${BASE_URL}movie/upcoming?api_key=${API_KEY}`)
         const responseData = await response.json()
-        data = responseData?.results;
+        data = responseData.results
     } catch (error) {
-
+        console.log(error)
     }
     return data
 }

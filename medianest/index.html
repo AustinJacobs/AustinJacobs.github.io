@@ -9,6 +9,9 @@
   <!-- change the path below to scss/styles.scss to use SASS -->
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/styles-medium.css">
+  <link rel="stylesheet" href="css/styles-large.css">
+  <link rel="stylesheet" href="css/styles-extra-large.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Quicksand:wght@400;600&display=swap"
@@ -19,42 +22,55 @@
 
 </head>
 
-<body>
+<body id="no-scroll">
   <header>
-    <img id="logo-image" src="images/logo-cropped200x200.png" alt="TV with a play button.">
+    <a href="index.html"><img id="logo-image" src="images/logo-cropped200x200.png" alt="TV with a play button."></a>
     <h1 id="page_title">MEDIANEST</h1>
   </header>
+  <div id="modal">
+    <div id="modal-content-top">
+      <button id="exit"><i class="fas fa-chevron-circle-left"></i></i></button>
+      <p id="movie-detail">Movie Details</p>
+      <img id="modal-logo-image" src="images/logo-cropped200x200.png" alt="TV with a play button.">
+    </div>
+    <div id="modal-content-main"></div>
+  </div>
+  <p class="errors">Sorry, we are encountering an error. Try again later.</p>
   <main>
     <div class="section-titles">
       <h2>Movies Tending Now</h2>
       <hr class="hr-small">
       <div class="scrollmenu">
         <div id="trending-movies"></div>
+        <p class="errors">Sorry, we are encountering an error. Try again later.</p>
       </div>
+      <p class="slide">Swipe left for more content <i class="fas fa-long-arrow-alt-right"></i></p>
     </div>
     <div class="section-titles">
       <h2>Top Rated Movies</h2>
       <hr class="hr-small">
       <div class="scrollmenu">
         <div id="top-movies"></div>
+        <p class="errors">Sorry, we are encountering an error. Try again later.</p>
       </div>
+      <p class="slide">Swipe left for more content <i class="fas fa-long-arrow-alt-right"></i></p>
     </div>
     <div class="section-titles">
-      <h2>TV Shows Trending Now</h2>
+      <h2>Upcoming Movies</h2>
       <hr class="hr-small">
       <div class="scrollmenu">
-        <div id="trending-tv"></div>
+        <div id="upcoming-movies"></div>
+        <p class="errors">Sorry, we are encountering an error. Try again later.</p>
       </div>
+      <p class="slide">Swipe left for more content <i class="fas fa-long-arrow-alt-right"></i></p>
     </div>
     <div id="menu">
       <a class="menu_link" href="index.html"><i class="fas fa-home menu_i active"></i></a>
       <a class="menu_link" href="movies.html"><i class="fas fa-video menu_i"></i></a>
       <a class="menu_link" href="series.html"><i class="fas fa-tv menu_i"></i></a>
-      <a class="menu_link" href="list.html"><i class="fas fa-list menu_i"></i></a>
       <p class="menu_text">HOME</p>
       <p class="menu_text">MOVIES</p>
       <p class="menu_text">SHOWS</p>
-      <p class="menu_text">MY LIST</p>
     </div>
     <footer>
       <p>Images and other movie/show information from TMDb.</p>

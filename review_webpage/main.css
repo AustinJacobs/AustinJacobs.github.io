@@ -38,7 +38,7 @@ header h1 a:active {
     color: #DEB887;
 }
 
-:any-link:visited {
+a:visited {
     color: rgb(78, 34, 134);
 }
 

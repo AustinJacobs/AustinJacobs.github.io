@@ -38,9 +38,9 @@ header h1 a:active {
     color: #DEB887;
 }
 
-/* a:visited {
-    color: rgb(78, 34, 134);
-} */
+header h1 a:visited {
+    color: red;
+}
 
 header a {
     color: #FAEBD7;
@@ -58,6 +58,10 @@ header ul li {
 
 header ul li a:active {
     color: #DEB887;
+}
+
+header ul li a:visited {
+    color: red;
 }
 
 main a {
@@ -101,6 +105,14 @@ section h2 {
 
 article section h2 a:active {
     color: #DEB887;
+}
+
+article section h2 a:visited {
+    color: red;
+}
+
+article section p a:visited {
+    color: red;
 }
 
 .post-content h2 a {

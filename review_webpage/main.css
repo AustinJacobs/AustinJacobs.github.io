@@ -38,9 +38,9 @@ header h1 a:active {
     color: #DEB887;
 }
 
-a:visited {
+/* a:visited {
     color: rgb(78, 34, 134);
-}
+} */
 
 header a {
     color: #FAEBD7;

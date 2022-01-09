@@ -1,55 +1,24 @@
-// IF ELSE
+// Speed Limit is 70 MPH
+// 5 => 1 Point
+// Math.floor(1.3) => 1
+// More than 12 points => license suspended
 
-let hour = 20;
+checkSpeed(130)
 
-if (hour >= 6 && hour < 12) {
-    console.log("Good Morning");
-} else if (hour >= 12 && hour < 18) {
-    console.log('Good afternoon!');
-} else {
-    console.log('Good evening!');
-}
+function checkSpeed(speed) {
+    const speedLimit = 70;
+    const milePerPoint = 5;
 
-// SWITCH
+    if (speed < speedLimit + milePerPoint) {
+        console.log('OK')
+    }
 
-let role = 'moderator';
-
-switch (role) {
-    case 'guest':
-        console.log('Guest User');
-        break;
-
-    case 'moderator':
-        console.log('Moderator User');
-        break
-
-    default:
-        console.log("Unknown User");
-}
-
-// FOR
-
-for (let i = 1; i <= 5; i++) {
-    if (i % 2 !== 0) {
-        console.log(i)
+    else {
+        const points = Math.floor((speed - speedLimit) / milePerPoint);
+        if (points >= 12) {
+            console.log('License Suspended')
+        } else {
+            console.log('Points: ', points)
+        }
     }
 }
-
-// WHILE
-
-// let i = 1;
-// while (i <= 5) {
-//     if (i % 2 !== 0) {
-//         console.log(i)
-//     }
-//     i++
-// }
-
-// DO WHILE
-
-let i = 0;
-
-do {
-    if (i % 2 !== 0) console.log(i);
-    i++;
-} while (i <= 5);

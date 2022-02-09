@@ -72,7 +72,7 @@
 // console.log(numbers.indexOf(1) !== -1);
 // console.log(numbers.includes(1));
 
-// let numbers = [1, 2, 3, 4, 5, 6];
+// let numbers = [1, 2, 3, 4, 5, 6, 7];
 // // push 
 // numbers.push(7);
 // console.log(numbers);

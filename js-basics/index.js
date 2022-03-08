@@ -56,9 +56,8 @@
 // // End
 // numbers.push(5, 6)
 
-// // Beginning 
+// // Beginning
 // numbers.unshift(1, 2);
-
 
 // // Middle
 // numbers.splice(2, 0, 'a', 'b');
@@ -73,7 +72,7 @@
 // console.log(numbers.includes(1));
 
 // let numbers = [1, 2, 3, 4, 5, 6, 7];
-// // push 
+// // push
 // numbers.push(7);
 // console.log(numbers);
 // // pop
@@ -120,11 +119,11 @@
 //     console.log(numbers);
 // }
 
-// showNumbers(10);
+showNumbers(10);
 
-// function showNumbers(limit) {
-//   for (let i = 0; i <= limit; i++) {
-//     const message = (i % 2 === 0) ? 'EVEN' : 'ODD';
-//     console.log(i, message);
-//   }
-// }
+function showNumbers(limit) {
+    for (let i = 0; i <= limit; i++) {
+        const message = i % 2 === 0 ? 'EVEN' : 'ODD';
+        console.log(i, message);
+    }
+}

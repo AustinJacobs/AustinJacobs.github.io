@@ -118,7 +118,7 @@
 // for (i = 0; i < numbers.length; i++) {
 //     console.log(numbers);
 // }
-
+ 
 showNumbers(10);
 
 function showNumbers(limit) {

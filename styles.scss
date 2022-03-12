@@ -1,0 +1,147 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Cabin&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+$font-headings: 'Montserrat', sans-serif;
+$font-body: 'Cabin', sans-serif;
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $font-headings;
+}
+
+p,
+span {
+  font-family: $font-body;
+}
+
+// Site Colors
+$color-orange: #e3805e;
+$color-green: #6ab99f;
+$color-white: #e0e3ec;
+$color-purple: #bd6abb;
+$color-grey: #adaeb7;
+$color-black: #101119;
+$color-yellow: #f9d71c;
+
+// Padding - Margin Values
+
+// Border-radius mixin
+@mixin border-radius {
+  border-radius: 10px;
+}
+
+// Set Breakpoint Sizes
+@mixin for-phone-only {
+  @media (max-width: 599px) {
+    @content;
+  }
+}
+
+@mixin for-tablet-portrait-up {
+  @media (min-width: 600px) {
+    @content;
+  }
+}
+
+@mixin for-tablet-landscape-up {
+  @media (min-width: 900px) {
+    @content;
+  }
+}
+
+@mixin for-desktop-up {
+  @media (min-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin for-big-desktop-up {
+  @media (min-width: 1800px) {
+    @content;
+  }
+}
+
+// usage
+//   .my-box {
+//     padding: 10px;
+
+//     @include for-desktop-up {
+//       padding: 20px;
+//     }
+//   }
+
+// BODY STYLES
+body {
+  background-color: $color-black;
+}
+
+// HEADER STYLES
+
+// Styles for light and dark mode toggle.
+// This is the Control Panel
+// Change $scale to adjust size of button
+// Change $time to adjust transition time.
+$scale: 80px;
+$time: 2s;
+
+// A Template (Mixin) of all common codes, to stop repitition
+@mixin common($a, $b, $c, $d, $e, $f, $g) {
+  display: $a;
+  flex-direction: $b;
+  justify-content: $c;
+  align-items: $d;
+  width: $e;
+  height: $f;
+  background-color: $g;
+  transition: all $time ease;
+}
+
+// To change the default Configurations
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+// for hiding the small tick box
+.checkbox-hack {
+  display: none;
+}
+
+// Style rules for the .btn class
+.btn {
+  align-self: center;
+  margin: 15px 0;
+  margin-left: 30px;
+}
+
+// Style rules for the .box class
+.box {
+  @include common(flex, column, center, null, $scale, $scale/2, black);
+  position: relative;
+  border-radius: $scale/4;
+  cursor: pointer;
+  border: 3px solid $color-white;
+
+  // Style rules for the roller .ball class
+  .ball {
+    @include common(null, null, null, null, $scale/2, $scale/2, $color-purple);
+    position: absolute;
+    border-radius: 50%;
+    border: 3px solid $color-white;
+    transform: translateX(-5%);
+  }
+
+  // Style rules for the .scene(.sun, .moon) class
+  .scene {
+    @include common(flex, row, space-between, null, null, null, null);
+    padding: 5px 10px 0px 10px;
+    svg {
+      width: $scale/3;
+    }
+  }
+}

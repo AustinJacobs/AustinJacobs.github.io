@@ -1,1 +1,93 @@
-/* No CSS *//*# sourceMappingURL=styles.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Cabin&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
+}
+
+p,
+span {
+  font-family: "Cabin", sans-serif;
+}
+
+body {
+  background-color: #101119;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.checkbox-hack {
+  display: none;
+}
+
+.btn {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin: 15px 0;
+  margin-left: 30px;
+}
+
+.box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 80px;
+  height: 40px;
+  background-color: black;
+  -webkit-transition: all 2s ease;
+  transition: all 2s ease;
+  position: relative;
+  border-radius: 20px;
+  cursor: pointer;
+  border: 3px solid #e0e3ec;
+}
+
+.box .ball {
+  width: 40px;
+  height: 40px;
+  background-color: #bd6abb;
+  -webkit-transition: all 2s ease;
+  transition: all 2s ease;
+  position: absolute;
+  border-radius: 50%;
+  border: 3px solid #e0e3ec;
+  -webkit-transform: translateX(-5%);
+          transform: translateX(-5%);
+}
+
+.box .scene {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-transition: all 2s ease;
+  transition: all 2s ease;
+  padding: 5px 10px 0px 10px;
+}
+
+.box .scene svg {
+  width: 26.66667px;
+}
+/*# sourceMappingURL=styles.css.map */

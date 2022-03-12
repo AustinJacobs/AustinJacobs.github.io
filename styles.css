@@ -15,28 +15,31 @@ span {
 
 body {
   background-color: #101119;
+  color: #e0e3ec;
 }
 
-* {
-  margin: 0px;
-  padding: 0px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+header {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 30% 1fr 20%;
+      grid-template-columns: 30% 1fr 20%;
+  height: 100px;
 }
 
-.checkbox-hack {
+header .checkbox-hack {
   display: none;
 }
 
-.btn {
+header .btn {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
   margin: 15px 0;
-  margin-left: 30px;
+  -ms-grid-column-align: center;
+      justify-self: center;
 }
 
-.box {
+header .box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -55,10 +58,10 @@ body {
   position: relative;
   border-radius: 20px;
   cursor: pointer;
-  border: 3px solid #e0e3ec;
+  border: 2px solid #e0e3ec;
 }
 
-.box .ball {
+header .box .ball {
   width: 40px;
   height: 40px;
   background-color: #bd6abb;
@@ -66,12 +69,12 @@ body {
   transition: all 2s ease;
   position: absolute;
   border-radius: 50%;
-  border: 3px solid #e0e3ec;
+  border: 2px solid #e0e3ec;
   -webkit-transform: translateX(-5%);
           transform: translateX(-5%);
 }
 
-.box .scene {
+header .box .scene {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -87,7 +90,94 @@ body {
   padding: 5px 10px 0px 10px;
 }
 
-.box .scene svg {
+header .box .scene svg {
   width: 26.66667px;
+}
+
+header .logo {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3/4;
+  max-width: 100%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+header .logo a {
+  text-decoration: none;
+}
+
+header .logo a .logo-content {
+  color: #e3805e;
+  font-size: 3em;
+  margin: 0;
+}
+
+header .logo a .logo-content .logo-content-2 {
+  color: #6ab99f;
+}
+
+main {
+  margin: 1em;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+main .card {
+  border-radius: 10px;
+  width: 150px;
+  height: 150px;
+  background-color: #adaeb7;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  margin: 1em 0 1em 0;
+}
+
+footer {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+}
+
+footer .icon-one {
+  max-width: 30%;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+footer .icon-two {
+  max-width: 30%;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+footer .icon-three {
+  max-width: 30%;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+footer p {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-column: 1/4;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  color: #e0e3ec;
 }
 /*# sourceMappingURL=styles.css.map */

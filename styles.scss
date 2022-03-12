@@ -28,6 +28,13 @@ $color-black: #101119;
 $color-yellow: #f9d71c;
 
 // Padding - Margin Values
+$pixel-spacing: 10px;
+$base-spacing: 1em;
+$double-spacing: 2em;
+$triple-spacing: 3em;
+
+// Lines, border, hr
+$base-thickness: 2px;
 
 // Border-radius mixin
 @mixin border-radius {
@@ -77,71 +84,142 @@ $color-yellow: #f9d71c;
 // BODY STYLES
 body {
   background-color: $color-black;
+  color: $color-white;
 }
 
 // HEADER STYLES
+header {
+  display: grid;
+  grid-template-columns: 30% 1fr 20%;
+  height: 100px;
 
-// Styles for light and dark mode toggle.
-// This is the Control Panel
-// Change $scale to adjust size of button
-// Change $time to adjust transition time.
-$scale: 80px;
-$time: 2s;
+  // Styles for light and dark mode toggle.
+  // Change $scale to adjust size of button
+  // Change $time to adjust transition time.
+  $scale: 80px;
+  $time: 2s;
 
-// A Template (Mixin) of all common codes, to stop repitition
-@mixin common($a, $b, $c, $d, $e, $f, $g) {
-  display: $a;
-  flex-direction: $b;
-  justify-content: $c;
-  align-items: $d;
-  width: $e;
-  height: $f;
-  background-color: $g;
-  transition: all $time ease;
-}
-
-// To change the default Configurations
-* {
-  margin: 0px;
-  padding: 0px;
-  box-sizing: border-box;
-}
-
-// for hiding the small tick box
-.checkbox-hack {
-  display: none;
-}
-
-// Style rules for the .btn class
-.btn {
-  align-self: center;
-  margin: 15px 0;
-  margin-left: 30px;
-}
-
-// Style rules for the .box class
-.box {
-  @include common(flex, column, center, null, $scale, $scale/2, black);
-  position: relative;
-  border-radius: $scale/4;
-  cursor: pointer;
-  border: 3px solid $color-white;
-
-  // Style rules for the roller .ball class
-  .ball {
-    @include common(null, null, null, null, $scale/2, $scale/2, $color-purple);
-    position: absolute;
-    border-radius: 50%;
-    border: 3px solid $color-white;
-    transform: translateX(-5%);
+  // A Template (Mixin) of all common codes, to stop repitition
+  @mixin common($a, $b, $c, $d, $e, $f, $g) {
+    display: $a;
+    flex-direction: $b;
+    justify-content: $c;
+    align-items: $d;
+    width: $e;
+    height: $f;
+    background-color: $g;
+    transition: all $time ease;
   }
 
-  // Style rules for the .scene(.sun, .moon) class
-  .scene {
-    @include common(flex, row, space-between, null, null, null, null);
-    padding: 5px 10px 0px 10px;
-    svg {
-      width: $scale/3;
+  // for hiding the small tick box
+  .checkbox-hack {
+    display: none;
+  }
+
+  // Style rules for the .btn class
+  .btn {
+    align-self: center;
+    margin: 15px 0;
+    justify-self: center;
+  }
+
+  // Style rules for the .box class
+  .box {
+    @include common(flex, column, center, null, $scale, $scale/2, black);
+    position: relative;
+    border-radius: $scale/4;
+    cursor: pointer;
+    border: 2px solid $color-white;
+
+    // Style rules for the roller .ball class
+    .ball {
+      @include common(
+        null,
+        null,
+        null,
+        null,
+        $scale/2,
+        $scale/2,
+        $color-purple
+      );
+      position: absolute;
+      border-radius: 50%;
+      border: 2px solid $color-white;
+      transform: translateX(-5%);
     }
+
+    // Style rules for the .scene(.sun, .moon) class
+    .scene {
+      @include common(flex, row, space-between, null, null, null, null);
+      padding: 5px 10px 0px 10px;
+      svg {
+        width: $scale/3;
+      }
+    }
+  }
+
+  .logo {
+    grid-column: 3/4;
+    max-width: 100%;
+    align-self: center;
+    justify-self: center;
+
+    a {
+      text-decoration: none;
+
+      .logo-content {
+        color: $color-orange;
+        font-size: 3em;
+        margin: 0;
+
+        .logo-content-2 {
+          color: $color-green;
+        }
+      }
+    }
+  }
+}
+
+main {
+  margin: $base-spacing;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  .card {
+    @include border-radius;
+    width: 150px;
+    height: 150px;
+    background-color: #adaeb7;
+    justify-self: center;
+    margin: $base-spacing 0 $base-spacing 0;
+  }
+}
+
+footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+
+  .icon-one {
+    max-width: 30%;
+    justify-self: center;
+    align-self: center;
+  }
+
+  .icon-two {
+    max-width: 30%;
+    justify-self: center;
+    align-self: center;
+  }
+
+  .icon-three {
+    max-width: 30%;
+    justify-self: center;
+    align-self: center;
+  }
+
+  p {
+    grid-column: 1/4;
+    justify-self: center;
+    color: #e0e3ec;
   }
 }

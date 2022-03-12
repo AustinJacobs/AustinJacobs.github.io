@@ -1,19 +1,18 @@
 // let date = new Date();
 // let year = date.getFullYear();
 
-// document.getElementById('date').innerHTML = year;
+// document.getElementById('update').innerHTML = year;
 
 // let x = document.lastModified;
-
-// document.getElementById('update').innerHTML = x;
 
 // Code for toggling the light and dark mode.
 
 // Selecting all the required classes from HTML to change
-var body = document.body;
-var check = document.querySelector('#check');
-var box = document.querySelector('.box');
-var ball = document.querySelector('.ball');
+let body = document.body;
+let check = document.querySelector('#check');
+let box = document.querySelector('.box');
+let ball = document.querySelector('.ball');
+let changeColor = document.querySelectorAll('.change');
 
 // Targeting my social media links********************
 // var youtube = document.querySelector('.youtube');
@@ -28,18 +27,13 @@ check.addEventListener('change', function () {
   if (this.checked == true) {
     box.setAttribute(
       'style',
-      'background-color:#e0e3ec; border: 3px solid #101119;'
+      'background-color:#e0e3ec; border: 2px solid #101119;'
     );
     ball.setAttribute(
       'style',
-      'transform:translatex(95%); background-color:#6ab99f; border: 3px solid #101119;'
+      'transform:translatex(95%); background-color:#6ab99f; border: 2px solid #101119;'
     );
     body.setAttribute('style', 'background-color:#e0e3ec; color:#101119');
-
-    // Targeting my social media links********************
-    // youtube.setAttribute('style', 'border:2px solid white;');
-    // instagram.setAttribute('style', 'border:2px solid white;');
-    // // *******************************
   }
 
   //   conditions to apply when checkbox is unchecked
@@ -47,17 +41,12 @@ check.addEventListener('change', function () {
   if (this.checked == false) {
     box.setAttribute(
       'style',
-      'background-color:#101119; color:white; border: 3px solid #e0e3ec;'
+      'background-color:#101119; color:white; border: 2px solid #e0e3ec;'
     );
     ball.setAttribute(
       'style',
-      'transform:translatex(-5%); background-color:#bd6abb; border: 3px solid #e0e3ec;'
+      'transform:translatex(-5%); background-color:#bd6abb; border: 2px solid #e0e3ec;'
     );
     body.setAttribute('style', 'background-color:#101119; color:#e0e3ec;');
-
-    // Targeting my social media links********************
-    // youtube.setAttribute('style', 'border:2px solid black; color:black;');
-    // instagram.setAttribute('style', 'border:2px solid black;');
-    // // *******************************
   }
 });

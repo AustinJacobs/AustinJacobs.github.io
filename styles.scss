@@ -97,7 +97,7 @@ header {
   // Change $scale to adjust size of button
   // Change $time to adjust transition time.
   $scale: 60px;
-  $time: 2s;
+  $time: 1s;
 
   // A Template (Mixin) of all common codes, to stop repitition
   @mixin common($a, $b, $c, $d, $e, $f, $g) {
@@ -180,6 +180,9 @@ header {
   }
 }
 
+//Left to right Keyframe
+
+
 // Fade in Keyframe
 @keyframes fadein {
   from {
@@ -247,7 +250,7 @@ main {
     .name-container {
       z-index: 2;
       color: $color-purple;
-      font-size: 2em;
+      font-size: 1.75em;
       border-top: 6px solid $color-green;
       border-bottom: 6px solid $color-green;
       margin: $base-spacing 0 0 0;
@@ -257,14 +260,19 @@ main {
         margin: 0;
         font-weight: 700;
         padding: $pixel-spacing;
+
+        span {
+          font-family: $font-headings;
+          color: $color-orange;
+        }
       }
     }
 
     .role-container {
       p {
-        font-size: 2em;
+        font-size: 1.5em;
         margin: $pixel-spacing;
-        padding-top: $pixel-spacing;
+        padding:$pixel-spacing 0 $pixel-spacing 0;
       }
     }
   }

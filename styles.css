@@ -13,9 +13,28 @@ span {
   font-family: "Cabin", sans-serif;
 }
 
+p {
+  line-height: 1.5;
+}
+
 body {
   background-color: #101119;
   color: #e0e3ec;
+  font-size: 16px;
+}
+
+.hr-headings {
+  width: 50px;
+  height: 6px;
+  margin-left: 0;
+  background-color: #6ab99f;
+  border: none;
+}
+
+.highlight {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(60%, rgba(16, 17, 25, 0)), color-stop(40%, #e3805e));
+  background: linear-gradient(180deg, rgba(16, 17, 25, 0) 60%, #e3805e 40%);
+  display: inline;
 }
 
 header {
@@ -202,15 +221,42 @@ main .section-one .role-container p {
 }
 
 main .section-two {
-  background-color: #adaeb7;
-}
-
-main .section-two .description-container {
   margin: 1em;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
 }
 
-main .section-two .description-container h1 {
-  color: #bd6abb;
+main .section-three {
+  margin: 1em;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+}
+
+main .section-three .work .work-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  margin: -1em 0 0 0;
+}
+
+main .section-three .work .work-container a {
+  width: 150px;
+  height: 150px;
+  background-color: #adaeb7;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  border-radius: 10px;
+  margin-top: 2em;
+  text-decoration: none;
+}
+
+main .section-three .work .work-container a .card {
+  text-align: center;
 }
 
 footer {

@@ -18,6 +18,10 @@ span {
   font-family: $font-body;
 }
 
+p {
+  line-height: 1.5;
+}
+
 // Site Colors
 $color-orange: #e3805e;
 $color-green: #6ab99f;
@@ -85,6 +89,24 @@ $base-thickness: 2px;
 body {
   background-color: $color-black;
   color: $color-white;
+  font-size: 16px;
+}
+
+.hr-headings {
+  width: 50px;
+  height: 6px;
+  margin-left: 0;
+  background-color: $color-green;
+  border: none;
+}
+
+.highlight {
+  background: linear-gradient(
+    180deg,
+    rgba(16, 17, 25, 0) 60%,
+    $color-orange 40%
+  );
+  display: inline;
 }
 
 // HEADER STYLES
@@ -180,9 +202,6 @@ header {
   }
 }
 
-//Left to right Keyframe
-
-
 // Fade in Keyframe
 @keyframes fadein {
   from {
@@ -272,18 +291,41 @@ main {
       p {
         font-size: 1.5em;
         margin: $pixel-spacing;
-        padding:$pixel-spacing 0 $pixel-spacing 0;
+        padding: $pixel-spacing 0 $pixel-spacing 0;
       }
     }
   }
 
   .section-two {
-    background-color: $color-grey;
+    margin: $base-spacing;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
 
-    .description-container {
-      margin: $base-spacing;
-      h1 {
-        color: $color-purple;
+  .section-three {
+    margin: $base-spacing;
+    display: grid;
+    grid-template-columns: 1fr;
+
+    .work {
+
+      .work-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: -1em 0 0 0;
+
+        a {
+          width: 150px;
+          height: 150px;
+          background-color: $color-grey;
+          justify-self: center;
+          @include border-radius;
+          margin-top: $double-spacing;
+          text-decoration: none;
+          .card {
+            text-align: center;
+          }
+        }
       }
     }
   }

@@ -26,7 +26,7 @@ body {
 .hr-headings {
   width: 50px;
   height: 6px;
-  margin-left: 0;
+  margin: 0 0 0 0;
   background-color: #6ab99f;
   border: none;
 }
@@ -259,38 +259,60 @@ main .section-three .work .work-container a .card {
   text-align: center;
 }
 
+main .section-four {
+  margin: 1em;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+}
+
+main .section-four .contact {
+  margin-bottom: 1em;
+}
+
+main .section-four .contact .email {
+  margin-top: 1em;
+}
+
+main .section-four .contact .email span {
+  font-size: 1.5em;
+}
+
+main .section-four .contact .email a {
+  font-size: 1.5em;
+  text-decoration: none;
+  color: #e3805e;
+  font-family: "Cabin", sans-serif;
+}
+
 footer {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 2em;
 }
 
-footer .icon-one {
-  max-width: 30%;
+footer a {
   -ms-grid-column-align: center;
       justify-self: center;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+  font-size: 3em;
 }
 
-footer .icon-two {
-  max-width: 30%;
-  -ms-grid-column-align: center;
-      justify-self: center;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+footer a .fa-linkedin-in {
+  color: #adaeb7;
 }
 
-footer .icon-three {
-  max-width: 30%;
-  -ms-grid-column-align: center;
-      justify-self: center;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+footer a .fa-instagram {
+  color: #adaeb7;
+}
+
+footer a .fa-github {
+  color: #adaeb7;
 }
 
 footer p {
@@ -299,6 +321,5 @@ footer p {
   grid-column: 1/4;
   -ms-grid-column-align: center;
       justify-self: center;
-  color: #e0e3ec;
 }
 /*# sourceMappingURL=styles.css.map */

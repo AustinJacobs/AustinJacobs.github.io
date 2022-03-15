@@ -95,9 +95,10 @@ body {
 .hr-headings {
   width: 50px;
   height: 6px;
-  margin-left: 0;
+  margin: 0 0 0 0;
   background-color: $color-green;
   border: none;
+
 }
 
 .highlight {
@@ -308,7 +309,6 @@ main {
     grid-template-columns: 1fr;
 
     .work {
-
       .work-container {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -329,33 +329,56 @@ main {
       }
     }
   }
+
+  .section-four {
+    margin: $base-spacing;
+    display: grid;
+    grid-template-columns: 1fr;
+
+    .contact {
+      margin-bottom: $base-spacing;
+      .email {
+        margin-top: $base-spacing;
+
+        span {
+          font-size: 1.5em;
+        }
+
+        a {
+          font-size: 1.5em;
+          text-decoration: none;
+          color: $color-orange;
+          font-family: $font-body;
+        }
+      }
+    }
+  }
 }
 
 footer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  margin-top: $double-spacing;
 
-  .icon-one {
-    max-width: 30%;
+  a {
     justify-self: center;
     align-self: center;
-  }
+    font-size: 3em;
+    .fa-linkedin-in {
+      color: $color-grey;
+    }
 
-  .icon-two {
-    max-width: 30%;
-    justify-self: center;
-    align-self: center;
-  }
+    .fa-instagram {
+      color: $color-grey;
+    }
 
-  .icon-three {
-    max-width: 30%;
-    justify-self: center;
-    align-self: center;
+    .fa-github {
+      color: $color-grey;
+    }
   }
 
   p {
     grid-column: 1/4;
     justify-self: center;
-    color: #e0e3ec;
   }
 }

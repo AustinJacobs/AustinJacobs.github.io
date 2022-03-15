@@ -37,6 +37,12 @@ body {
   display: inline;
 }
 
+.highlight-purple {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(60%, rgba(16, 17, 25, 0)), color-stop(40%, #bd6abb));
+  background: linear-gradient(180deg, rgba(16, 17, 25, 0) 60%, #bd6abb 40%);
+  display: inline;
+}
+
 header {
   display: -ms-grid;
   display: grid;
@@ -236,27 +242,28 @@ main .section-three {
       grid-template-columns: 1fr;
 }
 
-main .section-three .work .work-container {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
-  margin: -1em 0 0 0;
+main .section-three .work .mockup {
+  padding: 1em;
+  margin-top: 1em;
+  border-top: 6px solid #adaeb7;
 }
 
-main .section-three .work .work-container a {
-  width: 150px;
-  height: 150px;
-  background-color: #adaeb7;
-  -ms-grid-column-align: center;
-      justify-self: center;
-  border-radius: 10px;
-  margin-top: 2em;
-  text-decoration: none;
+main .section-three .work .mockup img {
+  width: 100%;
 }
 
-main .section-three .work .work-container a .card {
-  text-align: center;
+main .section-three .work .mockup h2 {
+  margin: 0;
+  margin-top: 50px;
+  display: inline-block;
+}
+
+main .section-three .work .mockup form input {
+  border-radius: 50px;
+  padding: 10px 1em;
+  border: none;
+  background-color: #6ab99f;
+  font-family: "Cabin", sans-serif;
 }
 
 main .section-four {

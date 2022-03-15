@@ -92,13 +92,19 @@ body {
   font-size: 16px;
 }
 
+// hr {
+//   width: 100%;
+//   height: 6px;
+//   background-color: $color-grey;
+//   border: none;
+// }
+
 .hr-headings {
   width: 50px;
   height: 6px;
   margin: 0 0 0 0;
   background-color: $color-green;
   border: none;
-
 }
 
 .highlight {
@@ -106,6 +112,15 @@ body {
     180deg,
     rgba(16, 17, 25, 0) 60%,
     $color-orange 40%
+  );
+  display: inline;
+}
+
+.highlight-purple {
+  background: linear-gradient(
+    180deg,
+    rgba(16, 17, 25, 0) 60%,
+    $color-purple 40%
   );
   display: inline;
 }
@@ -309,27 +324,33 @@ main {
     grid-template-columns: 1fr;
 
     .work {
-      .work-container {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        margin: -1em 0 0 0;
+      .mockup {
+        padding: $base-spacing;
+        margin-top: $base-spacing;
+        border-top: 6px solid $color-grey;
 
-        a {
-          width: 150px;
-          height: 150px;
-          background-color: $color-grey;
-          justify-self: center;
-          @include border-radius;
-          margin-top: $double-spacing;
-          text-decoration: none;
-          .card {
-            text-align: center;
+        img {
+          width: 100%;
+        }
+
+        h2 {
+          margin: 0;
+          margin-top: 50px;
+          display: inline-block;
+        }
+
+        form {
+          input {
+            border-radius: 50px;
+            padding: $pixel-spacing $base-spacing;
+            border: none;
+            background-color: $color-green;
+            font-family: $font-body;
           }
         }
       }
     }
   }
-
   .section-four {
     margin: $base-spacing;
     display: grid;

@@ -31,6 +31,16 @@ body {
   border: none;
 }
 
+.hr-center {
+  width: 100px;
+  height: 6px;
+  margin: 0 auto;
+  background-color: #e3805e;
+  border: none;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
 .highlight {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(60%, rgba(16, 17, 25, 0)), color-stop(40%, #e3805e));
   background: linear-gradient(180deg, rgba(16, 17, 25, 0) 60%, #e3805e 40%);
@@ -244,7 +254,6 @@ main .section-three {
 
 main .section-three .work .mockup {
   padding: 1em;
-  margin-top: 4em;
 }
 
 main .section-three .work .mockup img {
@@ -265,33 +274,6 @@ main .section-three .work .mockup form input {
   font-family: "Cabin", sans-serif;
 }
 
-main .section-four {
-  margin: 1em;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr;
-      grid-template-columns: 1fr;
-}
-
-main .section-four .contact {
-  margin-bottom: 1em;
-}
-
-main .section-four .contact .email {
-  margin-top: 1em;
-}
-
-main .section-four .contact .email span {
-  font-size: 1.5em;
-}
-
-main .section-four .contact .email a {
-  font-size: 1.5em;
-  text-decoration: none;
-  color: #e3805e;
-  font-family: "Cabin", sans-serif;
-}
-
 footer {
   display: -ms-grid;
   display: grid;
@@ -301,6 +283,7 @@ footer {
 }
 
 footer a {
+  margin-top: 10px;
   -ms-grid-column-align: center;
       justify-self: center;
   -ms-flex-item-align: center;
@@ -327,5 +310,31 @@ footer p {
   grid-column: 1/4;
   -ms-grid-column-align: center;
       justify-self: center;
+}
+
+footer .section-four {
+  margin: 1em;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-column: 1/4;
+}
+
+footer .section-four .contact {
+  margin-bottom: 1em;
+}
+
+footer .section-four .contact .email {
+  margin-top: 1em;
+}
+
+footer .section-four .contact .email span {
+  font-size: 1.5em;
+}
+
+footer .section-four .contact .email a {
+  font-size: 1.5em;
+  text-decoration: none;
+  color: #e3805e;
+  font-family: "Cabin", sans-serif;
 }
 /*# sourceMappingURL=styles.css.map */

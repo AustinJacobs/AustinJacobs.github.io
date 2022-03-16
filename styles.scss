@@ -107,6 +107,16 @@ body {
   border: none;
 }
 
+.hr-center {
+  width: 100px;
+  height: 6px;
+  margin: 0 auto;
+  background-color: $color-orange;
+  border: none;
+  margin-top: $double-spacing;
+  margin-bottom: $double-spacing;
+}
+
 .highlight {
   background: linear-gradient(
     180deg,
@@ -326,7 +336,6 @@ main {
     .work {
       .mockup {
         padding: $base-spacing;
-        margin-top: 4em;
 
         img {
           width: 100%;
@@ -350,29 +359,6 @@ main {
       }
     }
   }
-  .section-four {
-    margin: $base-spacing;
-    display: grid;
-    grid-template-columns: 1fr;
-
-    .contact {
-      margin-bottom: $base-spacing;
-      .email {
-        margin-top: $base-spacing;
-
-        span {
-          font-size: 1.5em;
-        }
-
-        a {
-          font-size: 1.5em;
-          text-decoration: none;
-          color: $color-orange;
-          font-family: $font-body;
-        }
-      }
-    }
-  }
 }
 
 footer {
@@ -381,6 +367,7 @@ footer {
   margin-top: $double-spacing;
 
   a {
+    margin-top: $pixel-spacing;
     justify-self: center;
     align-self: center;
     font-size: 3em;
@@ -400,5 +387,27 @@ footer {
   p {
     grid-column: 1/4;
     justify-self: center;
+  }
+
+  .section-four {
+    margin: $base-spacing;
+    grid-column: 1/4;
+    .contact {
+      margin-bottom: $base-spacing;
+      .email {
+        margin-top: $base-spacing;
+
+        span {
+          font-size: 1.5em;
+        }
+
+        a {
+          font-size: 1.5em;
+          text-decoration: none;
+          color: $color-orange;
+          font-family: $font-body;
+        }
+      }
+    }
   }
 }

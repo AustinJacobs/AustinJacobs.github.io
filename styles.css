@@ -59,6 +59,7 @@ header {
   -ms-grid-columns: 30% 1fr 20%;
       grid-template-columns: 30% 1fr 20%;
   height: 100px;
+  background-color: #101119;
 }
 
 header .checkbox-hack {
@@ -143,6 +144,7 @@ header .logo {
 
 header .logo a {
   text-decoration: none;
+  color: #e0e3ec;
 }
 
 header .logo a .logo-content {

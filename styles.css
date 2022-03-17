@@ -27,7 +27,7 @@ body {
   width: 50px;
   height: 6px;
   margin: 0 0 0 0;
-  background-color: #6ab99f;
+  background-color: #e0e3ec;
   border: none;
 }
 
@@ -35,21 +35,21 @@ body {
   width: 100px;
   height: 6px;
   margin: 0 auto;
-  background-color: #e3805e;
+  background-color: #e0e3ec;
   border: none;
   margin-top: 2em;
   margin-bottom: 2em;
 }
 
 .highlight {
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(60%, rgba(16, 17, 25, 0)), color-stop(40%, #e3805e));
-  background: linear-gradient(180deg, rgba(16, 17, 25, 0) 60%, #e3805e 40%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(60%, rgba(16, 17, 25, 0)), color-stop(40%, #adaeb7));
+  background: linear-gradient(180deg, rgba(16, 17, 25, 0) 60%, #adaeb7 40%);
   display: inline;
 }
 
 .highlight-purple {
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(60%, rgba(16, 17, 25, 0)), color-stop(40%, #bd6abb));
-  background: linear-gradient(180deg, rgba(16, 17, 25, 0) 60%, #bd6abb 40%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(60%, rgba(16, 17, 25, 0)), color-stop(40%, #adaeb7));
+  background: linear-gradient(180deg, rgba(16, 17, 25, 0) 60%, #adaeb7 40%);
   display: inline;
 }
 
@@ -146,13 +146,12 @@ header .logo a {
 }
 
 header .logo a .logo-content {
-  color: #e3805e;
   font-size: 3em;
   margin: 0;
 }
 
 header .logo a .logo-content .logo-content-2 {
-  color: #6ab99f;
+  color: #adaeb7;
 }
 
 @keyframes fadein {
@@ -211,10 +210,9 @@ main .section-one .image-container img {
 
 main .section-one .name-container {
   z-index: 2;
-  color: #bd6abb;
   font-size: 1.75em;
-  border-top: 6px solid #6ab99f;
-  border-bottom: 6px solid #6ab99f;
+  border-top: 6px solid #e0e3ec;
+  border-bottom: 6px solid #e0e3ec;
   margin: 1em 0 0 0;
 }
 
@@ -227,7 +225,6 @@ main .section-one .name-container h1 {
 
 main .section-one .name-container h1 span {
   font-family: "Montserrat", sans-serif;
-  color: #e3805e;
 }
 
 main .section-one .role-container p {
@@ -270,7 +267,7 @@ main .section-three .work .mockup form input {
   border-radius: 50px;
   padding: 10px 1em;
   border: none;
-  background-color: #6ab99f;
+  background-color: #e0e3ec;
   font-family: "Cabin", sans-serif;
 }
 
@@ -334,7 +331,6 @@ footer .section-four .contact .email span {
 footer .section-four .contact .email a {
   font-size: 1.5em;
   text-decoration: none;
-  color: #e3805e;
   font-family: "Cabin", sans-serif;
 }
 /*# sourceMappingURL=styles.css.map */

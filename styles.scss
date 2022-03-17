@@ -141,6 +141,10 @@ header {
   grid-template-columns: 30% 1fr 20%;
   height: 100px;
   background-color: $color-black;
+  position: fixed;
+  width: 100%;
+  z-index: 20;
+  opacity: 50%;
 
   // Styles for light and dark mode toggle.
   // Change $scale to adjust size of button
@@ -296,8 +300,6 @@ main {
     .name-container {
       z-index: 2;
       font-size: 1.75em;
-      border-top: 6px solid $color-white;
-      border-bottom: 6px solid $color-white;
       margin: $base-spacing 0 0 0;
 
       h1 {

@@ -60,6 +60,10 @@ header {
       grid-template-columns: 30% 1fr 20%;
   height: 100px;
   background-color: #101119;
+  position: fixed;
+  width: 100%;
+  z-index: 20;
+  opacity: 50%;
 }
 
 header .checkbox-hack {
@@ -213,8 +217,6 @@ main .section-one .image-container img {
 main .section-one .name-container {
   z-index: 2;
   font-size: 1.75em;
-  border-top: 6px solid #e0e3ec;
-  border-bottom: 6px solid #e0e3ec;
   margin: 1em 0 0 0;
 }
 

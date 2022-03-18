@@ -26,8 +26,8 @@ body {
 header {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 30% 1fr 30%;
-      grid-template-columns: 30% 1fr 30%;
+  -ms-grid-columns: 25% 1fr 25%;
+      grid-template-columns: 25% 1fr 25%;
   height: 100px;
   background-color: #101119;
 }
@@ -86,7 +86,7 @@ header .logo a .logo-content .logo-content-2 {
   border-radius: 15px;
   cursor: pointer;
   border: 2px solid #e0e3ec;
-  margin: 0 auto;
+  margin-left: 15px;
 }
 
 .box .ball {
@@ -122,72 +122,12 @@ header .logo a .logo-content .logo-content-2 {
   width: 20px;
 }
 
-.ham-button {
-  -ms-grid-column-align: center;
-      justify-self: center;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-}
-
-html {
-  font-family: 'Lato', sans-serif;
-}
-
-body {
-  margin: 0;
-  overflow-x: hidden;
-  height: 100vh;
-  width: 100vw;
-}
-
-ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.msg {
-  font-family: 'Pacifico', cursive;
-  font-size: 8vw;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  height: 100%;
-  max-height: 100%;
-  max-width: 100%;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  color: #fefefe;
-  background-color: #1184f0;
-}
-
-.features {
-  font-family: 'Lato', sans-serif;
-  font-size: 1rem;
-  text-transform: uppercase;
-}
-
-.features li {
-  width: 100%;
-  text-align: center;
-  padding: 0.25em;
-}
-
 .drawer-list {
   position: fixed;
   right: 0;
   top: 0;
   height: 100vh;
-  width: 100vw;
+  width: 80vw;
   -webkit-transform: translate(100vw, 0);
           transform: translate(100vw, 0);
   /* ie workaround */
@@ -201,8 +141,8 @@ ul {
   transition: width 475ms ease-out, transform 450ms ease, border-radius 0.8s 0.1s ease;
   transition: width 475ms ease-out, transform 450ms ease, border-radius 0.8s 0.1s ease, -webkit-transform 450ms ease;
   border-bottom-left-radius: 100vw;
-  background-color: #3d88ce;
-  background-color: rgba(12, 106, 194, 0.8);
+  background-color: #161822;
+  background-color: #161822;
 }
 
 @media (min-width: 768px) {
@@ -219,6 +159,7 @@ ul {
   overflow: auto;
   overflow-x: hidden;
   pointer-events: auto;
+  font-family: "Cabin", sans-serif;
 }
 
 .drawer-list li {
@@ -240,8 +181,8 @@ ul {
 
 .drawer-list li a {
   text-decoration: none;
-  color: #fefefe;
-  text-align: center;
+  color: #e0e3ec;
+  text-align: left;
   display: block;
   padding: 1rem;
   font-size: calc(24px - 0.5vw);
@@ -256,8 +197,8 @@ ul {
 
 .drawer-list li a:hover {
   cursor: pointer;
-  background-color: #88c2f8;
-  background-color: rgba(17, 132, 240, 0.5);
+  background-color: #161822;
+  background-color: #161822;
 }
 
 input.hamburger {
@@ -646,6 +587,14 @@ input.hamburger:checked ~ label > i:after {
 }
 
 label.hamburger {
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3/4;
   z-index: 9999;
   position: relative;
   display: block;
@@ -662,7 +611,7 @@ label.hamburger > i {
   width: 100%;
   height: 2px;
   top: 50%;
-  background-color: #e0e3ec;
+  background-color: #52796f;
   pointer-events: auto;
   -webkit-transition-duration: 0.35s;
           transition-duration: 0.35s;
@@ -676,7 +625,7 @@ label.hamburger > i:before, label.hamburger > i:after {
   width: 50%;
   height: 2px;
   left: 50%;
-  background-color: #e0e3ec;
+  background-color: #52796f;
   content: '';
   -webkit-transition: -webkit-transform 0.35s;
   transition: -webkit-transform 0.35s;
@@ -696,15 +645,13 @@ label.hamburger > i:after {
           transform: translate(-50%, 14px);
 }
 
-label.hamburger {
-  -ms-grid-column-align: center;
-      justify-self: center;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-  -ms-grid-column: 3;
-  -ms-grid-column-span: 1;
-  grid-column: 3/4;
+.emoji {
+  font-size: 2em;
+  margin-left: 1em;
+}
+
+.toggle-text {
+  color: #e0e3ec;
 }
 
 footer {

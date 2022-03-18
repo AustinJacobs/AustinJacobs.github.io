@@ -26,7 +26,9 @@ p {
 $color-white: #e0e3ec;
 $color-grey: #adaeb7;
 $color-black: #101119;
-$color-yellow: #f9d71c;
+$color-black-shade: #161822;
+$color-yellow: #e9c46a;
+$color-green: #52796f;
 
 // Padding - Margin Values
 $pixel-spacing: 10px;
@@ -92,7 +94,7 @@ body {
 // HEADER STYLES
 header {
   display: grid;
-  grid-template-columns: 30% 1fr 30%;
+  grid-template-columns: 25% 1fr 25%;
   height: 100px;
   background-color: $color-black;
 
@@ -153,7 +155,7 @@ $time: 1s;
   border-radius: $scale/4;
   cursor: pointer;
   border: 2px solid $color-white;
-  margin: 0 auto;
+  margin-left: 15px;
 
   // Style rules for the roller .ball class
   .ball {
@@ -172,11 +174,6 @@ $time: 1s;
       width: $scale/3;
     }
   }
-}
-
-.ham-button {
-  justify-self: center;
-  align-self: center;
 }
 
 @mixin transition {
@@ -199,50 +196,8 @@ $time: 1s;
   #{$attribute}: $color;
 }
 
-html {
-  font-family: 'Lato', sans-serif;
-}
-
-body {
-  margin: 0;
-  overflow-x: hidden;
-  height: 100vh;
-  width: 100vw;
-}
-
-ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-$main: #1184f0;
-$text: #fefefe;
-$contrast: darken($main, 10%);
-.msg {
-  font-family: 'Pacifico', cursive;
-  font-size: 8vw;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: 100%;
-  max-height: 100%;
-  max-width: 100%;
-  align-items: center;
-  color: $text;
-  background-color: $main;
-}
-
-.features {
-  font-family: 'Lato', sans-serif;
-  font-size: 1rem;
-  text-transform: uppercase;
-  li {
-    width: 100%;
-    text-align: center;
-    padding: 0.25em;
-  }
-}
+$main: $color-black;
+$text: $color-white;
 
 .drawer-list {
   position: fixed;
@@ -257,9 +212,9 @@ $contrast: darken($main, 10%);
   pointer-events: none;
   padding-top: 125px;
   transition: width 475ms ease-out, transform 450ms ease,
-    border-radius 0.8s 0.1s ease;
+  border-radius 0.8s 0.1s ease;
   border-bottom-left-radius: 100vw;
-  @include alpha-attribute('background-color', rgba($contrast, 0.8), white);
+  @include alpha-attribute('background-color', $color-black-shade, $color-black);
   @media (min-width: 768px) {
     width: 40vw;
   }
@@ -271,6 +226,7 @@ $contrast: darken($main, 10%);
     overflow: auto;
     overflow-x: hidden;
     pointer-events: auto;
+    font-family: $font-body;
   }
   li {
     list-style: none;
@@ -287,7 +243,7 @@ $contrast: darken($main, 10%);
     a {
       text-decoration: none;
       color: $text;
-      text-align: center;
+      text-align: left;
       display: block;
       padding: 1rem;
       font-size: calc(24px - 0.5vw);
@@ -297,7 +253,7 @@ $contrast: darken($main, 10%);
       }
       &:hover {
         cursor: pointer;
-        @include alpha-attribute('background-color', rgba($main, 0.5), white);
+        @include alpha-attribute('background-color', $color-black-shade, $color-black-shade);
       }
     }
   }
@@ -333,6 +289,9 @@ input.hamburger {
 }
 
 label.hamburger {
+  justify-self: center;
+  align-self: center;
+  grid-column: 3/4;
   z-index: 9999;
   position: relative;
   display: block;
@@ -346,7 +305,7 @@ label.hamburger {
     width: 100%;
     height: 2px;
     top: 50%;
-    background-color: $color-white;
+    background-color: $color-green;
     pointer-events: auto;
     transition-duration: 0.35s;
     transition-delay: 0.35s;
@@ -357,7 +316,7 @@ label.hamburger {
       width: 50%;
       height: 2px;
       left: 50%;
-      background-color: $color-white;
+      background-color: $color-green;
       content: '';
       transition: transform 0.35s;
       transform-origin: 50% 50%;
@@ -371,10 +330,13 @@ label.hamburger {
   }
 }
 
-label.hamburger {
-  justify-self: center;
-  align-self: center;
-  grid-column: 3/4;
+.emoji {
+  font-size: 2em;
+  margin-left: 1em;
+}
+
+.toggle-text {
+  color: $color-white;
 }
 
 footer {

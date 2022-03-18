@@ -23,10 +23,7 @@ p {
 }
 
 // Site Colors
-$color-orange: #e3805e;
-$color-green: #6ab99f;
 $color-white: #e0e3ec;
-$color-purple: #bd6abb;
 $color-grey: #adaeb7;
 $color-black: #101119;
 $color-yellow: #f9d71c;
@@ -92,127 +89,15 @@ body {
   font-size: 16px;
 }
 
-// hr {
-//   width: 100%;
-//   height: 6px;
-//   background-color: $color-grey;
-//   border: none;
-// }
-
-.hr-headings {
-  width: 50px;
-  height: 6px;
-  margin: 0 0 0 0;
-  background-color: $color-white;
-  border: none;
-}
-
-.hr-center {
-  width: 100px;
-  height: 6px;
-  margin: 0 auto;
-  background-color: $color-white;
-  border: none;
-  margin-top: $double-spacing;
-  margin-bottom: $double-spacing;
-}
-
-.highlight {
-  background: linear-gradient(
-    180deg,
-    rgba(16, 17, 25, 0) 60%,
-    $color-grey 40%
-  );
-  display: inline;
-}
-
-.highlight-purple {
-  background: linear-gradient(
-    180deg,
-    rgba(16, 17, 25, 0) 60%,
-    $color-grey 40%
-  );
-  display: inline;
-}
-
 // HEADER STYLES
 header {
   display: grid;
-  grid-template-columns: 30% 1fr 20%;
+  grid-template-columns: 30% 1fr 30%;
   height: 100px;
   background-color: $color-black;
-  position: fixed;
-  width: 100%;
-  z-index: 20;
-  opacity: 50%;
-
-  // Styles for light and dark mode toggle.
-  // Change $scale to adjust size of button
-  // Change $time to adjust transition time.
-  $scale: 60px;
-  $time: 1s;
-
-  // A Template (Mixin) of all common codes, to stop repitition
-  @mixin common($a, $b, $c, $d, $e, $f, $g) {
-    display: $a;
-    flex-direction: $b;
-    justify-content: $c;
-    align-items: $d;
-    width: $e;
-    height: $f;
-    background-color: $g;
-    transition: all $time ease;
-  }
-
-  // for hiding the small tick box
-  .checkbox-hack {
-    display: none;
-  }
-
-  // Style rules for the .btn class
-  .btn {
-    align-self: center;
-    margin: 15px 0;
-    justify-self: center;
-  }
-
-  // Style rules for the .box class
-  .box {
-    @include common(flex, column, center, null, $scale, $scale/2, black);
-    position: relative;
-    border-radius: $scale/4;
-    cursor: pointer;
-    border: 2px solid $color-white;
-
-    // Style rules for the roller .ball class
-    .ball {
-      @include common(
-        null,
-        null,
-        null,
-        null,
-        $scale/2,
-        $scale/2,
-        $color-purple
-      );
-      position: absolute;
-      border-radius: 50%;
-      border: 2px solid $color-white;
-      transform: translateX(-5%);
-    }
-
-    // Style rules for the .scene(.sun, .moon) class
-    .scene {
-      @include common(flex, row, space-between, null, null, null, null);
-      padding: 5px 5px 0px 10px;
-      svg {
-        width: $scale/3;
-      }
-    }
-  }
 
   .logo {
-    grid-column: 3/4;
+    grid-column: 1/2;
     max-width: 100%;
     align-self: center;
     justify-self: center;
@@ -233,133 +118,263 @@ header {
   }
 }
 
-// Fade in Keyframe
-@keyframes fadein {
-  from {
-    opacity: 0;
+// Styles for light and dark mode toggle.
+// Change $scale to adjust size of button
+// Change $time to adjust transition time.
+$scale: 60px;
+$time: 1s;
+
+// A Template (Mixin) of all common codes, to stop repitition
+@mixin common($a, $b, $c, $d, $e, $f, $g) {
+  display: $a;
+  flex-direction: $b;
+  justify-content: $c;
+  align-items: $d;
+  width: $e;
+  height: $f;
+  background-color: $g;
+  transition: all $time ease;
+}
+
+// for hiding the small tick box
+.checkbox-hack {
+  display: none;
+}
+
+// Style rules for the .btn class
+.btn {
+  margin: 15px 0;
+}
+
+// Style rules for the .box class
+.box {
+  @include common(flex, column, center, null, $scale, $scale/2, black);
+  position: relative;
+  border-radius: $scale/4;
+  cursor: pointer;
+  border: 2px solid $color-white;
+  margin: 0 auto;
+
+  // Style rules for the roller .ball class
+  .ball {
+    @include common(null, null, null, null, $scale/2, $scale/2, $color-white);
+    position: absolute;
+    border-radius: 50%;
+    border: 2px solid $color-white;
+    transform: translateX(-5%);
   }
-  to {
-    opacity: 1;
+
+  // Style rules for the .scene(.sun, .moon) class
+  .scene {
+    @include common(flex, row, space-between, null, null, null, null);
+    padding: 5px 5px 0px 10px;
+    svg {
+      width: $scale/3;
+    }
   }
 }
 
-/* Firefox < 16 */
-@-moz-keyframes fadein {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
+.ham-button {
+  justify-self: center;
+  align-self: center;
+}
+
+@mixin transition {
+  @for $i from 1 through 50 {
+    &:nth-child(#{$i}) {
+      transition: transform
+        1s
+        #{$i *
+        0.08}s
+        cubic-bezier(0.29, 1.4, 0.44, 0.96);
+    }
   }
 }
 
-/* Safari, Chrome and Opera > 12.1 */
-@-webkit-keyframes fadein {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
+@mixin alpha-attribute($attribute, $color, $background) {
+  $percent: alpha($color) * 100%;
+  $opaque: opacify($color, 1);
+  $solid-color: mix($opaque, $background, $percent);
+  #{$attribute}: $solid-color;
+  #{$attribute}: $color;
+}
+
+html {
+  font-family: 'Lato', sans-serif;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+  height: 100vh;
+  width: 100vw;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+$main: #1184f0;
+$text: #fefefe;
+$contrast: darken($main, 10%);
+.msg {
+  font-family: 'Pacifico', cursive;
+  font-size: 8vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  max-height: 100%;
+  max-width: 100%;
+  align-items: center;
+  color: $text;
+  background-color: $main;
+}
+
+.features {
+  font-family: 'Lato', sans-serif;
+  font-size: 1rem;
+  text-transform: uppercase;
+  li {
+    width: 100%;
+    text-align: center;
+    padding: 0.25em;
   }
 }
 
-/* Internet Explorer */
-@-ms-keyframes fadein {
-  from {
-    opacity: 0;
+.drawer-list {
+  position: fixed;
+  right: 0;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+  transform: translate(100vw, 0);
+  /* ie workaround */
+  -ms-transform: translatex(-100vw);
+  box-sizing: border-box;
+  pointer-events: none;
+  padding-top: 125px;
+  transition: width 475ms ease-out, transform 450ms ease,
+    border-radius 0.8s 0.1s ease;
+  border-bottom-left-radius: 100vw;
+  @include alpha-attribute('background-color', rgba($contrast, 0.8), white);
+  @media (min-width: 768px) {
+    width: 40vw;
   }
-  to {
-    opacity: 1;
+  ul {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+    overflow-x: hidden;
+    pointer-events: auto;
+  }
+  li {
+    list-style: none;
+    text-transform: uppercase;
+    pointer-events: auto;
+    white-space: nowrap;
+    box-sizing: border-box;
+    transform: translatex(100vw);
+    /* ie workaround */
+    -ms-transform: translatex(-100vw);
+    &:last-child {
+      margin-bottom: 2em;
+    }
+    a {
+      text-decoration: none;
+      color: $text;
+      text-align: center;
+      display: block;
+      padding: 1rem;
+      font-size: calc(24px - 0.5vw);
+      @media (min-width: 768px) {
+        text-align: right;
+        padding: 0.5rem;
+      }
+      &:hover {
+        cursor: pointer;
+        @include alpha-attribute('background-color', rgba($main, 0.5), white);
+      }
+    }
   }
 }
 
-main {
-  display: grid;
-  grid-template-columns: 1fr;
-
-  .section-one {
-    margin: $base-spacing;
-    display: grid;
-    grid-template-columns: 1fr;
-
-    .image-container {
-      max-width: 100%;
-
-      img {
-        width: 100%;
-        margin: 0 auto;
-        display: block;
-        -webkit-animation: fadein 4s; /* Safari, Chrome and Opera > 12.1 */
-        -moz-animation: fadein 4s; /* Firefox < 16 */
-        -ms-animation: fadein 4s; /* Internet Explorer */
-        -o-animation: fadein 4s; /* Opera < 12.1 */
-        animation: fadein 4s;
-      }
-    }
-
-    .name-container {
-      z-index: 2;
-      font-size: 1.75em;
-      margin: $base-spacing 0 0 0;
-
-      h1 {
-        padding: 0;
-        margin: 0;
-        font-weight: 700;
-        padding: $pixel-spacing;
-
-        span {
-          font-family: $font-headings;
+input.hamburger {
+  display: none;
+  &:checked {
+    & ~ .drawer-list {
+      transform: translatex(0);
+      border-bottom-left-radius: 0;
+      li {
+        transform: translatex(0);
+        @include transition;
+        a {
+          padding-right: 15px;
         }
       }
     }
-
-    .role-container {
-      p {
-        font-size: 1.5em;
-        margin: $pixel-spacing;
-        padding: $pixel-spacing 0 $pixel-spacing 0;
-      }
-    }
-  }
-
-  .section-two {
-    margin: $base-spacing;
-    display: grid;
-    grid-template-columns: 1fr;
-  }
-
-  .section-three {
-    margin: $base-spacing;
-    display: grid;
-    grid-template-columns: 1fr;
-
-    .work {
-      .mockup {
-        padding: $base-spacing;
-
-        img {
-          width: 100%;
+    & ~ label {
+      > i {
+        background-color: transparent;
+        transform: rotate(90deg);
+        &:before {
+          transform: translate(-50%, -50%) rotate(45deg);
         }
-
-        h2 {
-          margin: 0;
-          margin-top: 50px;
-          display: inline-block;
-        }
-
-        form {
-          input {
-            border-radius: 50px;
-            padding: $pixel-spacing $base-spacing;
-            border: none;
-            background-color: $color-white;
-            font-family: $font-body;
-          }
+        &:after {
+          transform: translate(-50%, -50%) rotate(-45deg);
         }
       }
     }
   }
+}
+
+label.hamburger {
+  z-index: 9999;
+  position: relative;
+  display: block;
+  height: 50px;
+  width: 50px;
+  &:hover {
+    cursor: pointer;
+  }
+  > i {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    top: 50%;
+    background-color: $color-white;
+    pointer-events: auto;
+    transition-duration: 0.35s;
+    transition-delay: 0.35s;
+    &:before,
+    &:after {
+      position: absolute;
+      display: block;
+      width: 50%;
+      height: 2px;
+      left: 50%;
+      background-color: $color-white;
+      content: '';
+      transition: transform 0.35s;
+      transform-origin: 50% 50%;
+    }
+    &:before {
+      transform: translate(-50%, -14px);
+    }
+    &:after {
+      transform: translate(-50%, 14px);
+    }
+  }
+}
+
+label.hamburger {
+  justify-self: center;
+  align-self: center;
+  grid-column: 3/4;
 }
 
 footer {
@@ -388,26 +403,5 @@ footer {
   p {
     grid-column: 1/4;
     justify-self: center;
-  }
-
-  .section-four {
-    margin: $base-spacing;
-    grid-column: 1/4;
-    .contact {
-      margin-bottom: $base-spacing;
-      .email {
-        margin-top: $base-spacing;
-
-        span {
-          font-size: 1.5em;
-        }
-
-        a {
-          font-size: 1.5em;
-          text-decoration: none;
-          font-family: $font-body;
-        }
-      }
-    }
   }
 }

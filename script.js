@@ -13,13 +13,9 @@ let check = document.querySelector('#check');
 let box = document.querySelector('.box');
 let ball = document.querySelector('.ball');
 let changeColor = document.querySelectorAll('.change');
-
-// Targeting my social media links********************
-// var youtube = document.querySelector('.youtube');
-// var instagram = document.querySelector('.instagram');
-// // *******************************
-
-// Adding an eventListener function to change color everytime var check is changed.(checked & unchecked)
+let header = document.querySelector('.header');
+let logo = document.querySelector('.logo-content');
+let hamburger = document.querySelector('.menu-bars');
 
 check.addEventListener('change', function () {
   //   conditions to apply when checkbox is checked
@@ -31,13 +27,21 @@ check.addEventListener('change', function () {
     );
     ball.setAttribute(
       'style',
-      'transform:translatex(95%); background-color:#6ab99f; border: 2px solid #101119;'
+      'transform:translatex(95%); background-color:#101119; border: 2px solid #101119;'
     );
     body.setAttribute('style', 'background-color:#e0e3ec; color:#101119');
+    body.style.transitionDuration = '1s';
+
+    header.setAttribute('style', 'background-color:#e0e3ec;');
+    header.style.transitionDuration = '1s';
+
+    logo.setAttribute('style', 'color:#101119;');
+    logo.style.transitionDuration = '1s';
+
+    hamburger.setAttribute('style', 'background-color:#101119;');
   }
 
   //   conditions to apply when checkbox is unchecked
-
   if (this.checked == false) {
     box.setAttribute(
       'style',
@@ -45,8 +49,17 @@ check.addEventListener('change', function () {
     );
     ball.setAttribute(
       'style',
-      'transform:translatex(-5%); background-color:#bd6abb; border: 2px solid #e0e3ec;'
+      'transform:translatex(-5%); background-color:#e0e3ec; border: 2px solid #e0e3ec;'
     );
     body.setAttribute('style', 'background-color:#101119; color:#e0e3ec;');
+    body.style.transitionDuration = '1s';
+
+    header.setAttribute('style', 'background-color:#101119;');
+    header.style.transitionDuration = '1s';
+
+    logo.setAttribute('style', 'color:#e0e3ec;');
+    logo.style.transitionDuration = '1s';
+
+    hamburger.setAttribute('style', 'background-color:#e0e3ec;');
   }
 });

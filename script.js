@@ -26,19 +26,19 @@ check.addEventListener('change', function () {
   if (this.checked == true) {
     box.setAttribute(
       'style',
-      'background-color:#101119; color:white; border: 2px solid #e0e3ec;'
+      'background-color:#000000; color:white; border: 2px solid #FFFFFF;'
     );
     ball.setAttribute(
       'style',
-      'transform:translatex(95%); background-color:#e0e3ec; border: 2px solid #e0e3ec;'
+      'transform:translatex(95%); background-color:#FFFFFF; border: 2px solid #FFFFFF;'
     );
-    body.setAttribute('style', 'background-color:#101119; color:#e0e3ec;');
+    body.setAttribute('style', 'background-color:#000000; color:#FFFFFF;');
     body.style.transitionDuration = '1s';
 
-    header.setAttribute('style', 'background-color:#101119;');
+    header.setAttribute('style', 'background-color:#000000;');
     header.style.transitionDuration = '1s';
 
-    logo.setAttribute('style', 'color:#e0e3ec;');
+    logo.setAttribute('style', 'color:#FFFFFF;');
     logo.style.transitionDuration = '1s';
   }
 
@@ -46,19 +46,19 @@ check.addEventListener('change', function () {
   if (this.checked == false) {
     box.setAttribute(
       'style',
-      'background-color:#e0e3ec; border: 2px solid #52796f;'
+      'background-color:#000000; color:white; border: 2px solid #FFFFFF;'
     );
     ball.setAttribute(
       'style',
-      'transform:translatex(-5%); background-color:#52796f; border: 2px solid #101119;'
+      'transform:translatex(-10%); background-color:#FFFFFF; border: 2px solid #FFFFFF;'
     );
-    body.setAttribute('style', 'background-color:#e0e3ec; color:#101119');
+    body.setAttribute('style', 'background-color:#FFFFFF; color:#000000');
     body.style.transitionDuration = '1s';
 
-    header.setAttribute('style', 'background-color:#e0e3ec;');
+    header.setAttribute('style', 'background-color:#FFFFFF;');
     header.style.transitionDuration = '1s';
 
-    logo.setAttribute('style', 'color:#101119;');
+    logo.setAttribute('style', 'color:#000000;');
     logo.style.transitionDuration = '1s';
   }
 });

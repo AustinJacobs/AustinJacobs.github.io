@@ -18,9 +18,13 @@ p {
 }
 
 body {
-  background-color: #e0e3ec;
-  color: #101119;
+  background-color: #ffffff;
+  color: #000000;
   font-size: 16px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
 }
 
 header {
@@ -29,7 +33,7 @@ header {
   -ms-grid-columns: 25% 1fr 25%;
       grid-template-columns: 25% 1fr 25%;
   height: 100px;
-  background-color: #e0e3ec;
+  background-color: #ffffff;
 }
 
 header .logo {
@@ -46,7 +50,7 @@ header .logo {
 
 header .logo a {
   text-decoration: none;
-  color: #101119;
+  color: #000000;
 }
 
 header .logo a .logo-content {
@@ -55,7 +59,7 @@ header .logo a .logo-content {
 }
 
 header .logo a .logo-content .logo-content-2 {
-  color: #adaeb7;
+  color: #d6ad60;
 }
 
 .checkbox-hack {
@@ -64,6 +68,10 @@ header .logo a .logo-content .logo-content-2 {
 
 .btn {
   margin: 15px 0;
+}
+
+.gold {
+  color: #d6ad60;
 }
 
 .box {
@@ -85,21 +93,21 @@ header .logo a .logo-content .logo-content-2 {
   position: relative;
   border-radius: 15px;
   cursor: pointer;
-  border: 2px solid #e0e3ec;
+  border: 2px solid #ffffff;
   margin-left: 15px;
 }
 
 .box .ball {
   width: 30px;
   height: 30px;
-  background-color: #e0e3ec;
+  background-color: #ffffff;
   -webkit-transition: all 1s ease;
   transition: all 1s ease;
   position: absolute;
   border-radius: 50%;
-  border: 2px solid #e0e3ec;
-  -webkit-transform: translateX(-5%);
-          transform: translateX(-5%);
+  border: 2px solid #ffffff;
+  -webkit-transform: translateX(-10%);
+          transform: translateX(-10%);
 }
 
 .box .scene {
@@ -141,8 +149,8 @@ header .logo a .logo-content .logo-content-2 {
   transition: width 475ms ease-out, transform 450ms ease, border-radius 0.8s 0.1s ease;
   transition: width 475ms ease-out, transform 450ms ease, border-radius 0.8s 0.1s ease, -webkit-transform 450ms ease;
   border-bottom-left-radius: 100vw;
-  background-color: #161822;
-  background-color: #161822;
+  background-color: black;
+  background-color: #000000;
 }
 
 @media (min-width: 768px) {
@@ -181,7 +189,7 @@ header .logo a .logo-content .logo-content-2 {
 
 .drawer-list li a {
   text-decoration: none;
-  color: #e0e3ec;
+  color: #ffffff;
   text-align: left;
   display: block;
   padding: 1rem;
@@ -197,8 +205,8 @@ header .logo a .logo-content .logo-content-2 {
 
 .drawer-list li a:hover {
   cursor: pointer;
-  background-color: #161822;
-  background-color: #161822;
+  background-color: black;
+  background-color: #000000;
 }
 
 input.hamburger {
@@ -611,7 +619,7 @@ label.hamburger > i {
   width: 100%;
   height: 2px;
   top: 50%;
-  background-color: #52796f;
+  background-color: #d6ad60;
   pointer-events: auto;
   -webkit-transition-duration: 0.35s;
           transition-duration: 0.35s;
@@ -625,7 +633,7 @@ label.hamburger > i:before, label.hamburger > i:after {
   width: 50%;
   height: 2px;
   left: 50%;
-  background-color: #52796f;
+  background-color: #adaeb7;
   content: '';
   -webkit-transition: -webkit-transform 0.35s;
   transition: -webkit-transform 0.35s;
@@ -651,23 +659,45 @@ label.hamburger > i:after {
 }
 
 .toggle-text {
-  color: #e0e3ec;
+  color: #ffffff;
 }
 
 .landing-page {
-  margin: 2em;
+  margin: 1em;
+  font-size: 2em;
 }
 
-.landing-page p:nth-of-type(1) {
-  color: #52796f;
+.landing-page .intro {
+  display: -ms-grid;
+  display: grid;
+  gap: 1em;
 }
 
-.landing-page h2 {
-  color: #52796f;
+.landing-page .intro h1 {
+  -ms-grid-column-align: left;
+      justify-self: left;
+  margin: 0;
 }
 
-.landing-page .job-title {
-  color: #52796f;
+.landing-page .intro h3 {
+  margin: 0;
+}
+
+.landing-page .intro p {
+  font-size: 0.8em;
+  margin: 0;
+}
+
+.landing-page .intro a {
+  color: #d6ad60;
+  text-decoration: none;
+}
+
+.landing-page .intro img {
+  width: 100%;
+  -webkit-filter: grayscale(100%);
+  /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
 }
 
 footer {

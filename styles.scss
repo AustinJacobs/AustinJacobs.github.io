@@ -86,8 +86,8 @@ $base-thickness: 2px;
 
 // BODY STYLES
 body {
-  background-color: $color-black;
-  color: $color-white;
+  background-color: $color-white;
+  color: $color-black;
   font-size: 16px;
 }
 
@@ -96,7 +96,7 @@ header {
   display: grid;
   grid-template-columns: 25% 1fr 25%;
   height: 100px;
-  background-color: $color-black;
+  background-color: $color-white;
 
   .logo {
     grid-column: 1/2;
@@ -106,7 +106,7 @@ header {
 
     a {
       text-decoration: none;
-      color: $color-white;
+      color: $color-black;
 
       .logo-content {
         font-size: 3em;

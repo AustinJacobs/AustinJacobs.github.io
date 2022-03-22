@@ -18,8 +18,8 @@ p {
 }
 
 body {
-  background-color: #101119;
-  color: #e0e3ec;
+  background-color: #e0e3ec;
+  color: #101119;
   font-size: 16px;
 }
 
@@ -29,7 +29,7 @@ header {
   -ms-grid-columns: 25% 1fr 25%;
       grid-template-columns: 25% 1fr 25%;
   height: 100px;
-  background-color: #101119;
+  background-color: #e0e3ec;
 }
 
 header .logo {
@@ -46,7 +46,7 @@ header .logo {
 
 header .logo a {
   text-decoration: none;
-  color: #e0e3ec;
+  color: #101119;
 }
 
 header .logo a .logo-content {

@@ -26,31 +26,11 @@ check.addEventListener('change', function () {
   if (this.checked == true) {
     box.setAttribute(
       'style',
-      'background-color:#e0e3ec; border: 2px solid #52796f;'
-    );
-    ball.setAttribute(
-      'style',
-      'transform:translatex(95%); background-color:#52796f; border: 2px solid #101119;'
-    );
-    body.setAttribute('style', 'background-color:#e0e3ec; color:#101119');
-    body.style.transitionDuration = '1s';
-
-    header.setAttribute('style', 'background-color:#e0e3ec;');
-    header.style.transitionDuration = '1s';
-
-    logo.setAttribute('style', 'color:#101119;');
-    logo.style.transitionDuration = '1s';
-  }
-
-  //   conditions to apply when checkbox is unchecked
-  if (this.checked == false) {
-    box.setAttribute(
-      'style',
       'background-color:#101119; color:white; border: 2px solid #e0e3ec;'
     );
     ball.setAttribute(
       'style',
-      'transform:translatex(-5%); background-color:#e0e3ec; border: 2px solid #e0e3ec;'
+      'transform:translatex(95%); background-color:#e0e3ec; border: 2px solid #e0e3ec;'
     );
     body.setAttribute('style', 'background-color:#101119; color:#e0e3ec;');
     body.style.transitionDuration = '1s';
@@ -59,6 +39,26 @@ check.addEventListener('change', function () {
     header.style.transitionDuration = '1s';
 
     logo.setAttribute('style', 'color:#e0e3ec;');
+    logo.style.transitionDuration = '1s';
+  }
+
+  //   conditions to apply when checkbox is unchecked
+  if (this.checked == false) {
+    box.setAttribute(
+      'style',
+      'background-color:#e0e3ec; border: 2px solid #52796f;'
+    );
+    ball.setAttribute(
+      'style',
+      'transform:translatex(-5%); background-color:#52796f; border: 2px solid #101119;'
+    );
+    body.setAttribute('style', 'background-color:#e0e3ec; color:#101119');
+    body.style.transitionDuration = '1s';
+
+    header.setAttribute('style', 'background-color:#e0e3ec;');
+    header.style.transitionDuration = '1s';
+
+    logo.setAttribute('style', 'color:#101119;');
     logo.style.transitionDuration = '1s';
   }
 });

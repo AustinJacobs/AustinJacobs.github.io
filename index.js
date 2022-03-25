@@ -1,6 +1,3 @@
-// Import all plugins
-import * as bootstrap from 'bootstrap';
-
 // let date = new Date();
 // let year = date.getFullYear();
 

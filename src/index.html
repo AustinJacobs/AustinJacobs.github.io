@@ -11,59 +11,82 @@
     />
     <link rel="stylesheet" href="../scss/custom.scss" />
   </head>
-  <body>
-    <!--NAV BAR-->
-    <header class="header">
-      <div class="logo">
-        <a href="index.html"
-          ><p class="logo-content">A<span class="logo-content-2">J</span></p></a
-        >
-      </div>
-      <input id="hamburger" class="hamburger" type="checkbox" />
-      <label class="hamburger" for="hamburger">
-        <i class="menu-bars"></i>
-      </label>
-      <section class="drawer-list">
-        <ul class="drawer-ul">
-          <li><a href="#">About</a></li>
-          <li><a href="#">Experience</a></li>
-          <li><a href="#">Work</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </section>
-    </header>
-    <main>
-      <section class="landing">
-        <div class="container-fluid intro">
-          <div class="flip mb-5">
-            <span class="color-gold" style="--i: 1">A</span>
-            <span style="--i: 2">U</span>
-            <span style="--i: 3">S</span>
-            <span style="--i: 4">T</span>
-            <span style="--i: 5">I</span>
-            <span style="--i: 6">N</span>
-            <span style="--i: 7"></span>
-            <span class="color-gold" style="--i: 8">J</span>
-            <span style="--i: 9">A</span>
-            <span style="--i: 10">C</span>
-            <span style="--i: 11">O</span>
-            <span style="--i: 12">B</span>
-            <span style="--i: 13">S</span>
+  <body onload="myFunction()" style="margin: 0">
+    <!-- PAGE LOADER -->
+    <div id="loader"></div>
+    <div class="wrapper" style="display:none;" id="myDiv">
+      <!--NAV BAR-->
+      <header class="header animate-top">
+        <div class="logo">
+          <a href="index.html"
+            ><p class="logo-content">
+              A<span class="logo-content-2">J</span>
+            </p></a
+          >
+        </div>
+        <input id="hamburger" class="hamburger" type="checkbox" />
+        <label class="hamburger" for="hamburger">
+          <i class="menu-bars"></i>
+        </label>
+        <section class="drawer-list">
+          <ul class="drawer-ul">
+            <li><a href="#">About</a></li>
+            <li><a href="#">Experience</a></li>
+            <li><a href="#">Work</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </section>
+      </header>
+      <main>
+        <section class="landing animate-bottom">
+          <div class="container-fluid intro">
+            <div class="flip mb-5">
+              <span class="color-gold" style="--i: 1">A</span>
+              <span style="--i: 2">U</span>
+              <span style="--i: 3">S</span>
+              <span style="--i: 4">T</span>
+              <span style="--i: 5">I</span>
+              <span style="--i: 6">N</span>
+              <span style="--i: 7"></span>
+              <span class="color-gold" style="--i: 8">J</span>
+              <span style="--i: 9">A</span>
+              <span style="--i: 10">C</span>
+              <span style="--i: 11">O</span>
+              <span style="--i: 12">B</span>
+              <span style="--i: 13">S</span>
+            </div>
+            <div class="intro-p-div mt-5">
+              <p class="gradient-animation">
+                I am a web developer and designer.
+              </p>
+            </div>
           </div>
-          <div class="intro-p-div mt-5">
-            <p class="gradient-animation">I am web developer and designer.</p>
+          <div class="anim-scroll">
+            <div class="anim-scroll--wheel"></div>
           </div>
-        </div>
-        <div class="anim-scroll">
-          <div class="anim-scroll--wheel"></div>
-        </div>
-      </section>
-      <section>
-        <div class="container-fluid image-container">
-          <img src="../assets/headshot.png" alt="Image of me, Austin Jacobs.">
-        </div>
-      </section>
-    </main>
+        </section>
+        <section>
+          <div class="container-fluid image-container">
+            <img
+              src="../assets/headshot.png"
+              alt="Image of me, Austin Jacobs."
+            />
+          </div>
+        </section>
+      </main>
+    </div>
+    <script>
+      var myVar;
+
+      function myFunction() {
+        myVar = setTimeout(showPage, 1500);
+      }
+
+      function showPage() {
+        document.getElementById('loader').style.display = 'none';
+        document.getElementById('myDiv').style.display = 'block';
+      }
+    </script>
     <script src="./index.js" type="module"></script>
   </body>
 </html>

@@ -11,12 +11,39 @@
     />
     <link rel="stylesheet" href="../scss/custom.scss" />
   </head>
-  <body onload="myFunction()" style="margin: 0">
+  <body onload="loaderFunction()" style="margin: 0">
     <!-- PAGE LOADER -->
-    <div id="loader"></div>
-    <div class="wrapper" style="display:none;" id="myDiv">
+    <div id="loader">
+      <div class="boxes">
+        <div class="box">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        <div class="box">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        <div class="box">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        <div class="box">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+    </div>
+    <div class="wrapper" style="display: none" id="myDiv">
       <!--NAV BAR-->
-      <header class="header animate-top">
+      <header class="header fade-in">
         <div class="logo">
           <a href="index.html"
             ><p class="logo-content">
@@ -65,12 +92,25 @@
             <div class="anim-scroll--wheel"></div>
           </div>
         </section>
-        <section>
-          <div class="container-fluid image-container">
-            <img
-              src="../assets/headshot.png"
-              alt="Image of me, Austin Jacobs."
-            />
+        <section class="container-fluid about mt-5">
+          <div class="about-container">
+            <div class="container-fluid image-container">
+              <img
+                src="../assets/headshot.png"
+                alt="Image of me, Austin Jacobs."
+              />
+            </div>
+            <div class="container-fluid">
+              <h1 class="fw-bold mt-5 text-center">This is who I am.</h1>
+              <hr />
+              <p class="text-left">
+                I am a frontend web developer focusing on making responsive and
+                stunning websites. I am a university student as well, and I am
+                studying web design & development to increase my talents. I am
+                currently interning for
+                <span class="gold">Leisure Time Inc.</span>
+              </p>
+            </div>
           </div>
         </section>
       </main>
@@ -78,8 +118,8 @@
     <script>
       var myVar;
 
-      function myFunction() {
-        myVar = setTimeout(showPage, 1500);
+      function loaderFunction() {
+        myVar = setTimeout(showPage, 2000);
       }
 
       function showPage() {

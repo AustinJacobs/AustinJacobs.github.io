@@ -48,8 +48,8 @@ header {
   background-color: $color-white;
   position: fixed; /* Set the navbar to fixed position */
   top: 0; /* Position the navbar at the bottom of the page */
-  width: 100%; /* Full width */
   z-index: 9999;
+  width: 100%;
 
   .logo {
     grid-column: 1/2;
@@ -144,7 +144,7 @@ $text: $color-white;
       text-align: left;
       display: block;
       padding: 1rem;
-      font-size: calc(24px - 0.5vw);
+      font-size: 3em;
       @media (min-width: 768px) {
         text-align: right;
         padding: 0.5rem;
@@ -407,6 +407,7 @@ label.hamburger {
 
 #myDiv {
   display: none;
+  width: 100vw;
 }
 
 // PAGE LOAD ANIMATION END //
@@ -568,8 +569,9 @@ html {
 // Center
 body {
   min-height: 100vh;
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
   align-items: center;
 }
 

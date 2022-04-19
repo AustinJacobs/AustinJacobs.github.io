@@ -1,2 +1,2 @@
-// // Import all plugins
-// import * as bootstrap from 'bootstrap';
+// bootstrap css
+import 'bootstrap/dist/css/bootstrap.css';

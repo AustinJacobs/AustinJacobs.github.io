@@ -1,2 +1,2 @@
-// Import all plugins
-import * as bootstrap from 'bootstrap';
+// // Import all plugins
+// import * as bootstrap from 'bootstrap';

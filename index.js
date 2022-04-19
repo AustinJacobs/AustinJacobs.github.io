@@ -1,2 +1,1 @@
-// bootstrap css
-import 'bootstrap/dist/css/bootstrap.css';
+

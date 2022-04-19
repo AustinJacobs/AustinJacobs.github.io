@@ -1,10 +1,7 @@
 $body-bg: white;
 $body-color: rgb(57, 57, 57);
-$primary: rgb(57, 57, 57);
 
 $font-family-sans-serif: 'Poppins', sans-serif;
-
-@import '../node_modules/bootstrap/scss/bootstrap';
 
 // Site Colors
 $color-white: #ffffff;
@@ -14,10 +11,30 @@ $color-gold: #d6ad60;
 
 // PERSONAL UTILITIES //
 
+.margin-4em {
+  margin-top: 4em;
+}
+
+.margin-2em {
+  margin-top: 2em;
+}
+
+.margin {
+  margin: 1em;
+}
+
+.bold {
+  font-weight: bold;
+}
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+
+p {
+  font-size: 1em;
 }
 
 hr {
@@ -31,6 +48,9 @@ hr {
 html,
 body {
   overflow-x: hidden;
+  font-family: $font-family-sans-serif;
+  background-color: $body-bg;
+  color: $body-color;
 }
 
 .color-gold {

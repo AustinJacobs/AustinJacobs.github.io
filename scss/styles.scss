@@ -43,9 +43,8 @@ hr {
 html,
 body {
   overflow-x: hidden;
-  font-family: $font-family-sans-serif;
-  background-color: $body-bg;
-  color: $body-color;
+  background-color: white;
+  color: $color-black;
   font-family: 'Poppins', sans-serif;
 }
 
@@ -136,7 +135,7 @@ $text: $color-white;
     overflow: auto;
     overflow-x: hidden;
     pointer-events: auto;
-    font-family: $font-family-sans-serif;
+    font-family: 'Poppins', sans-serif;
   }
   li {
     list-style: none;

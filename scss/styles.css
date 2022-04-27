@@ -1084,4 +1084,25 @@ body {
       -ms-flex-align: center;
           align-items: center;
 }
+
+.work-section {
+  margin: 0;
+}
+
+.work-section h1 {
+  font-size: 4em;
+}
+
+.work-section .column {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  margin: 0;
+}
+
+.work-section .column img {
+  max-width: 100%;
+  padding: 1em;
+}
 /*# sourceMappingURL=styles.css.map */

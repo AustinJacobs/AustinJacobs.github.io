@@ -585,3 +585,22 @@ body {
 }
 
 // LOADER FUNCTION END //
+
+.work-section {
+  margin: 0;
+
+  h1 {
+    font-size: 4em;
+  }
+
+  .column {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 0;
+
+    img {
+      max-width: 100%;
+      padding: 1em;
+    }
+  }
+}

@@ -14,9 +14,22 @@
   font-weight: bold;
 }
 
+.center {
+  text-align: center;
+}
+
+.headline {
+  margin-bottom: -15px;
+}
+
 * {
   padding: 0;
   margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*:before, *:after {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -33,12 +46,25 @@ hr {
   opacity: 0.75;
 }
 
-html,
+html {
+  -webkit-font-smoothing: antialiased;
+}
+
 body {
   overflow-x: hidden;
   background-color: white;
   color: #393939;
   font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  min-height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .color-gold {
@@ -846,6 +872,7 @@ label.hamburger > i:after {
   display: grid;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
+  margin-bottom: 4em;
 }
 
 .about-container {
@@ -1059,32 +1086,6 @@ label.hamburger > i:after {
   }
 }
 
-html {
-  -webkit-font-smoothing: antialiased;
-}
-
-* {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-*:before, *:after {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-body {
-  min-height: 100vh;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr;
-      grid-template-columns: 1fr;
-  justify-items: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
 .work-section {
   margin: 0;
 }
@@ -1101,8 +1102,41 @@ body {
   margin: 0;
 }
 
-.work-section .column img {
+.work-section .column .card {
+  margin: 1em;
+}
+
+.work-section .column .card img {
   max-width: 100%;
-  padding: 1em;
+}
+
+.work-section .column .card a {
+  text-decoration: none;
+}
+
+.work-section .column .card .card-view {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: .5em .5em .5em 0;
+  color: #393939;
+  cursor: pointer;
+}
+
+.work-section .column .card .card-view i {
+  margin-left: .5em;
+}
+
+.work-section .column .card .card-view:hover {
+  font-size: 1.2em;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
 }
 /*# sourceMappingURL=styles.css.map */

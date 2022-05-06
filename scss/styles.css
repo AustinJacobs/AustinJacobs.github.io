@@ -872,7 +872,6 @@ label.hamburger > i:after {
   display: grid;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
-  margin-bottom: 4em;
 }
 
 .about-container {
@@ -1087,14 +1086,14 @@ label.hamburger > i:after {
 }
 
 .work-section {
-  margin: 0;
+  margin: 4em 0 0 0;
 }
 
 .work-section h1 {
   font-size: 4em;
 }
 
-.work-section .column {
+.work-section .work-grid {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr;
@@ -1102,19 +1101,19 @@ label.hamburger > i:after {
   margin: 0;
 }
 
-.work-section .column .card {
+.work-section .work-grid .card {
   margin: 1em;
 }
 
-.work-section .column .card img {
+.work-section .work-grid .card img {
   max-width: 100%;
 }
 
-.work-section .column .card a {
+.work-section .work-grid .card a {
   text-decoration: none;
 }
 
-.work-section .column .card .card-view {
+.work-section .work-grid .card .card-view {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1125,18 +1124,94 @@ label.hamburger > i:after {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: .5em .5em .5em 0;
+  margin: 0.5em 0.5em 0.5em 0;
   color: #393939;
   cursor: pointer;
+  font-weight: bold;
 }
 
-.work-section .column .card .card-view i {
-  margin-left: .5em;
+.work-section .work-grid .card .card-view i {
+  margin-left: 0.5em;
 }
 
-.work-section .column .card .card-view:hover {
-  font-size: 1.2em;
-  -webkit-transition: .5s ease-in-out;
-  transition: .5s ease-in-out;
+.other-projects-section {
+  margin: 2em 0 0 0;
+  background-color: #393939;
+  padding: 2em 1em 2em 1em;
+  color: white;
+}
+
+.other-projects-section h1 {
+  font-size: 4em;
+}
+
+.other-projects-section ul {
+  margin-left: 2em;
+}
+
+.other-projects-section .single-project {
+  margin-top: 1em;
+}
+
+.other-projects-section a {
+  text-decoration: none;
+}
+
+.other-projects-section .card-view {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0.5em 0.5em 0.5em 0;
+  color: #393939;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.other-projects-section .card-view i {
+  margin-left: 0.5em;
+}
+
+.other-projects-section .project-features {
+  margin: 1em 0 0 0;
+}
+
+footer {
+  background-color: black;
+  color: #ffffff;
+  margin-top: -1em;
+}
+
+footer .heading-container {
+  margin: 1em;
+}
+
+footer .heading-container .footer-heading {
+  font-size: 1.75em;
+  text-align: center;
+  padding: 2em 2em 0 2em;
+}
+
+footer .social-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+}
+
+footer .social-grid i {
+  font-size: 3em;
+}
+
+footer .date-info {
+  padding: 0 1em 1em 1em;
+  text-align: center;
 }
 /*# sourceMappingURL=styles.css.map */

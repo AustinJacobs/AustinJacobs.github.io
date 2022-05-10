@@ -1,3 +1,7 @@
+.view-height {
+  height: 100vh;
+}
+
 .margin-4em {
   margin-top: 4em;
 }
@@ -794,12 +798,6 @@ label.hamburger > i:after {
   }
 }
 
-.image-container img {
-  max-width: 100%;
-  -webkit-filter: grayscale(100%);
-          filter: grayscale(100%);
-}
-
 /* Add animation to "page content" */
 .animate-bottom {
   position: relative;
@@ -864,20 +862,72 @@ label.hamburger > i:after {
 }
 
 .about {
-  -webkit-clip-path: polygon(0 5%, 100% 0%, 100% 95%, 0% 100%);
-          clip-path: polygon(0 5%, 100% 0%, 100% 95%, 0% 100%);
-  background-color: #d6ad60;
-  height: 100vh;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
+  border: none;
 }
 
 .about-container {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+}
+
+.about-container h1 {
+  font-size: 4em;
+}
+
+.sig-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+}
+
+.sig-grid .signature {
+  width: 40%;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.experience {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  border: none;
+  margin: 2em 0 2em 0;
+}
+
+.experience-container {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.experience-container h1 {
+  font-size: 4em;
+}
+
+.experience-container p {
+  margin-bottom: .5em;
+}
+
+.experience-container .experience-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(100px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  justify-items: center;
+  gap: 1em;
+  padding-top: 2em;
+}
+
+.experience-container .experience-grid i {
+  font-size: 3em;
+  color: #d6ad60;
 }
 
 .boxes {
@@ -1136,9 +1186,7 @@ label.hamburger > i:after {
 
 .other-projects-section {
   margin: 2em 0 0 0;
-  background-color: #393939;
   padding: 2em 1em 2em 1em;
-  color: white;
 }
 
 .other-projects-section h1 {
@@ -1151,6 +1199,10 @@ label.hamburger > i:after {
 
 .other-projects-section .single-project {
   margin-top: 1em;
+}
+
+.other-projects-section .single-project p {
+  padding-top: 1em;
 }
 
 .other-projects-section a {
@@ -1178,8 +1230,8 @@ label.hamburger > i:after {
   margin-left: 0.5em;
 }
 
-.other-projects-section .project-features {
-  margin: 1em 0 0 0;
+.other-projects-section .card-view p {
+  padding: 0;
 }
 
 footer {

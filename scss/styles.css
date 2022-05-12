@@ -24,6 +24,21 @@
 
 .headline {
   margin-bottom: -15px;
+  color: #393939;
+  text-shadow: 2px 8px 6px rgba(0, 0, 0, 0.2), 0px -5px 35px rgba(255, 255, 255, 0.3);
+}
+
+.landing-headline {
+  text-shadow: 2px 8px 6px rgba(0, 0, 0, 0.2), 0px -5px 35px rgba(255, 255, 255, 0.3);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-shadow: 2px 8px 6px rgba(0, 0, 0, 0.2), 0px -5px 35px rgba(255, 255, 255, 0.3);
 }
 
 * {
@@ -69,6 +84,13 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+main {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
 }
 
 .color-gold {
@@ -886,7 +908,10 @@ label.hamburger > i:after {
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
   border: none;
-  margin-top: 6em;
+  height: 80vh;
+  max-width: 1500px;
+  -ms-grid-column-align: center;
+      justify-self: center;
 }
 
 @media (min-width: 600px) {
@@ -898,7 +923,7 @@ label.hamburger > i:after {
 
 @media (min-width: 1200px) {
   .about {
-    margin: 6em 8em 0 8em;
+    margin: 6em 12em 0 12em;
   }
 }
 
@@ -920,7 +945,7 @@ label.hamburger > i:after {
 }
 
 .sig-grid .signature {
-  width: 40%;
+  width: 35%;
   -ms-grid-column-align: center;
       justify-self: center;
 }
@@ -944,7 +969,9 @@ label.hamburger > i:after {
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
   border: none;
-  margin-top: 6em;
+  max-width: 1500px;
+  -ms-grid-column-align: center;
+      justify-self: center;
 }
 
 @media (min-width: 600px) {
@@ -956,7 +983,7 @@ label.hamburger > i:after {
 
 @media (min-width: 1200px) {
   .experience {
-    margin: 6em 8em 0 8em;
+    margin: 6em 4em 6em 4em;
   }
 }
 
@@ -1210,6 +1237,9 @@ label.hamburger > i:after {
 
 .work-section {
   margin-top: 8em;
+  max-width: 1500px;
+  -ms-grid-column-align: center;
+      justify-self: center;
 }
 
 .work-section h1 {
@@ -1225,7 +1255,7 @@ label.hamburger > i:after {
 
 @media (min-width: 1200px) {
   .work-section {
-    margin: 6em 8em 0 8em;
+    margin: 6em 4em 0 4em;
   }
 }
 
@@ -1252,7 +1282,7 @@ label.hamburger > i:after {
 }
 
 .work-section .work-grid .card {
-  margin: 1em;
+  margin: 1em 1em 3em 1em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1260,14 +1290,20 @@ label.hamburger > i:after {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  background-color: #ffffff;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+          box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  padding: 1em;
+  border-radius: 5px;
 }
 
 .work-section .work-grid .card h2 {
-  margin-top: .5em;
+  margin-top: 0.5em;
 }
 
 .work-section .work-grid .card img {
   max-width: 100%;
+  border-radius: 5px;
 }
 
 .work-section .work-grid .card a {
@@ -1309,11 +1345,11 @@ label.hamburger > i:after {
 }
 
 .other-projects-section .single-project {
-  margin-top: 1em;
+  margin-bottom: 4em;
 }
 
 .other-projects-section .single-project p {
-  padding-top: 1em;
+  padding-top: 0.5em;
 }
 
 .other-projects-section a {
@@ -1362,9 +1398,9 @@ footer .heading-container {
 }
 
 footer .heading-container .footer-heading {
-  font-size: 1.75em;
+  font-size: 2em;
   text-align: center;
-  padding: 1em 2em 1em 2em;
+  padding: 1em 1em 0 1em;
 }
 
 @media (min-width: 600px) {
@@ -1380,6 +1416,7 @@ footer .social-grid {
   -ms-grid-columns: 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr;
   justify-items: center;
+  padding: 2em 0 2em 0;
 }
 
 @media (min-width: 600px) {
@@ -1401,9 +1438,9 @@ footer .social-grid i {
 }
 
 footer .date-info {
-  padding: 0 1em 1em 1em;
+  padding: 2em 0 1em 0;
   text-align: center;
-  width: 50%;
+  width: 100%;
   margin: 0 auto;
 }
 

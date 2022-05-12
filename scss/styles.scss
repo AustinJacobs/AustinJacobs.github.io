@@ -31,6 +31,24 @@ $color-gold: #d6ad60;
 
 .headline {
   margin-bottom: -15px;
+  color: $color-black;
+  text-shadow: 2px 8px 6px rgba(0, 0, 0, 0.2),
+    0px -5px 35px rgba(255, 255, 255, 0.3);
+}
+
+.landing-headline {
+  text-shadow: 2px 8px 6px rgba(0, 0, 0, 0.2),
+    0px -5px 35px rgba(255, 255, 255, 0.3);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-shadow: 2px 8px 6px rgba(0, 0, 0, 0.2),
+    0px -5px 35px rgba(255, 255, 255, 0.3);
 }
 
 * {
@@ -70,6 +88,11 @@ body {
   grid-template-columns: 1fr;
   justify-items: center;
   align-items: center;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr;
 }
 
 .color-gold {
@@ -497,7 +520,9 @@ label.hamburger {
   display: grid;
   grid-template-columns: 1fr;
   border: none;
-  margin-top: 6em;
+  height: 80vh;
+  max-width: 1500px;
+  justify-self: center;
 
   @include for-tablet-portrait-up {
     font-size: 1.25em;
@@ -505,7 +530,7 @@ label.hamburger {
   }
 
   @include for-desktop-up {
-    margin: 6em 8em 0 8em;
+    margin: 6em 12em 0 12em;
   }
 }
 
@@ -522,7 +547,7 @@ label.hamburger {
   grid-template-columns: 1fr;
 
   .signature {
-    width: 40%;
+    width: 35%;
     justify-self: center;
 
     @include for-tablet-portrait-up {
@@ -544,7 +569,8 @@ label.hamburger {
   display: grid;
   grid-template-columns: 1fr;
   border: none;
-  margin-top: 6em;
+  max-width: 1500px;
+  justify-self: center;
 
   @include for-tablet-portrait-up {
     font-size: 1.25em;
@@ -552,7 +578,7 @@ label.hamburger {
   }
 
   @include for-desktop-up {
-    margin: 6em 8em 0 8em;
+    margin: 6em 4em 6em 4em;
   }
 }
 
@@ -721,6 +747,8 @@ $shadow: #dbe3f4;
 
 .work-section {
   margin-top: 8em;
+  max-width: 1500px;
+  justify-self: center;
 
   h1 {
     font-size: 3.5em;
@@ -732,7 +760,7 @@ $shadow: #dbe3f4;
   }
 
   @include for-desktop-up {
-    margin: 6em 8em 0 8em;
+    margin: 6em 4em 0 4em;
   }
 
   .work-grid {
@@ -749,17 +777,22 @@ $shadow: #dbe3f4;
     }
 
     .card {
-      margin: 1em;
+      margin: 1em 1em 3em 1em;
       display: flex;
       flex-direction: column;
-      
+      background-color: $color-white;
+      box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+        rgba(0, 0, 0, 0.22) 0px 15px 12px;
+      padding: 1em;
+      border-radius: 5px;
+
       h2 {
-        margin-top: .5em;
+        margin-top: 0.5em;
       }
 
       img {
         max-width: 100%;
-        // border-radius: 10px;
+        border-radius: 5px;
       }
 
       a {
@@ -795,10 +828,10 @@ $shadow: #dbe3f4;
   }
 
   .single-project {
-    margin-top: 1em;
+    margin-bottom: 4em;
 
     p {
-      padding-top: 1em;
+      padding-top: 0.5em;
     }
   }
 
@@ -837,9 +870,9 @@ footer {
   .heading-container {
     margin: 1em;
     .footer-heading {
-      font-size: 1.75em;
+      font-size: 2em;
       text-align: center;
-      padding: 1em 2em 1em 2em;
+      padding: 1em 1em 0 1em;
 
       @include for-tablet-portrait-up {
         font-size: 3em;
@@ -852,6 +885,7 @@ footer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     justify-items: center;
+    padding: 2em 0 2em 0;
 
     @include for-tablet-portrait-up {
       grid-template-columns: 1fr 1fr 1fr;
@@ -868,9 +902,9 @@ footer {
   }
 
   .date-info {
-    padding: 0 1em 1em 1em;
+    padding: 2em 0 1em 0;
     text-align: center;
-    width: 50%;
+    width: 100%;
     margin: 0 auto;
 
     @include for-tablet-portrait-up {

@@ -48,10 +48,116 @@
         </div>
       </div>
     </div>
-    <div class="future-grid wrapper" style="display: none" id="myDiv">
-      <h1 class="center headline color-gold">New Site Coming Soon!</h1>
+    <div class="wrapper" style="display: none" id="myDiv">
+      <!--NAV BAR-->
+      <header class="header fade-in">
+        <div class="logo">
+          <a href="index.html"
+            ><p class="logo-content bold">
+              A<span class="logo-content-2 bold color-gold">J</span>
+            </p></a
+          >
+        </div>
+        <input id="hamburger" class="hamburger" type="checkbox" />
+        <label class="hamburger" for="hamburger">
+          <i class="menu-bars"></i>
+        </label>
+        <section class="drawer-list">
+          <ul class="drawer-ul">
+            <li><a href="f-index.html">About</a></li>
+            <li><a href="experience.html">Experience</a></li>
+            <li><a href="work.html">Work</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </section>
+      </header>
+      <main>
+        <section class="landing animate-bottom">
+          <div class="intro">
+            <div class="flip bold">
+              <span class="color-gold landing-headline" style="--i: 1">A</span>
+              <span class="landing-headline" style="--i: 2">U</span>
+              <span class="landing-headline" style="--i: 3">S</span>
+              <span class="landing-headline" style="--i: 4">T</span>
+              <span class="landing-headline" style="--i: 5">I</span>
+              <span class="landing-headline" style="--i: 6">N</span>
+              <span style="--i: 7"></span>
+              <span class="color-gold landing-headline" style="--i: 8">J</span>
+              <span class="landing-headline" style="--i: 9">A</span>
+              <span class="landing-headline" style="--i: 10">C</span>
+              <span class="landing-headline" style="--i: 11">O</span>
+              <span class="landing-headline" style="--i: 12">B</span>
+              <span class="landing-headline" style="--i: 13">S</span>
+            </div>
+            <div class="intro-p-div">
+              <p class="gradient-animation margin-4em landing-headline">
+                Web developer and designer.
+              </p>
+            </div>
+          </div>
+          <div class="anim-scroll">
+            <div class="anim-scroll--wheel"></div>
+          </div>
+        </section>
+        <section id="about" class="about">
+          <div class="about-container margin">
+            <h1 class="center headline">About</h1>
+            <hr />
+            <div>
+              <p class="about-paragraph">
+                I am a frontend web developer focusing on making responsive and
+                stunning websites. I currently attend university where I am
+                studying web design & development to increase my talents. I work
+                as a frontend developer for
+                <span class="color-gold">Leisure Time Inc.</span>
+              </p>
+              <div class="sig-grid">
+                <img
+                  class="signature"
+                  src="assets/signature.png"
+                  alt="signature"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer id="contact">
+        <div class="heading-container">
+          <p class="footer-heading">
+            Need a website? Connect with me and let's get started!
+          </p>
+        </div>
+
+        <div class="social-grid">
+          <div>
+            <a
+              class="color-gold"
+              href="https://www.linkedin.com/in/aust-t-jac/"
+            >
+              <i class="fa-brands fa-linkedin-in"></i
+            ></a>
+          </div>
+          <div>
+            <a class="color-gold" href="https://github.com/AustinJacobs">
+              <i class="fa-brands fa-github"></i
+            ></a>
+          </div>
+          <div>
+            <a class="color-gold" href="mailto:aust.t.jac@gmail.com">
+              <i class="fa-solid fa-envelope"></i
+            ></a>
+          </div>
+        </div>
+
+        <div class="date-info">
+          <p>
+            Designed and developed by Austin Jacobs. Copyright ©
+            <span id="date-span"></span> Austin Jacobs. All rights reserved.
+          </p>
+        </div>
+      </footer>
     </div>
-    
     <script>
       var myVar;
 

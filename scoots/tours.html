@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Scoots is a scooter, ATV and Jeep rental website servicing two physical locations in Cozumel. Find your next rental at Scoots, and explore the beauty of Cozumel, Mexico.">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Khula&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/srq0soo.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+        integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <title>Scoots | Tours</title>
+</head>
+
+<body>
+
+    <nav>
+        <header>
+            <a href="index.html"><img id="image-logo" src="images/multi-logo-cropped.png" alt="website logo"></a>
+        </header>
+
+        <div>
+            <ul id="nav" class="navigation">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="rentals.html">RENTALS</a></li>
+                <li><a href="reservations.html">RESERVATIONS</a></li>
+                <li><a class="current" href="tours.html">TOURS</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </div>
+
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+                <a href="index.html">HOME</a>
+                <a href="rentals.html">RENTALS</a>
+                <a href="reservations.html">RESERVATIONS</a>
+                <a href="tours.html">TOURS</a>
+                <a href="contact.html">CONTACT</a>
+            </div>
+        </div>
+        <span id="burger" onclick="openNav()">&#9776;</span>
+    </nav>
+
+    <picture>
+        <source media="(max-width: 419px)" srcset="images/tours-mobile-420x420.jpg">
+        <source media="(max-width: 800px)" srcset="images/tours-tablet-800x545.jpg">
+        <img class="home-rentals-image" src="images/tours-full-1400x693.jpg"
+            alt="Image of a jeep driving through the water.">
+    </picture>
+    <div id="mySidepanel" class="sidepanel">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeSideNav()">&times;</a>
+        <table id="weather-summary-table">
+            <tr>
+                <td id="current-weather" class="table-keys">Weather Type: </td>
+                <td class="table-values"><span class="capitalize" id="description"></span></td>
+            </tr>
+            <tr>
+                <td class="table-keys">Current Temp: </td>
+                <td class="table-values"><span id="temp"></span>°F</td>
+            </tr>
+            <tr>
+                <td class="table-keys">Temp in 5 days: </td>
+                <td class="table-values"><span id="f-temp"></span>°F</td>
+            </tr>
+            <tr>
+                <td class="table-keys">Humidity: </td>
+                <td class="table-values"><span id="humidity"></span>%</td>
+            </tr>
+            <tr>
+                <td class="table-keys">Wind Speed: </td>
+                <td class="table-values"><span id="wind"></span> mph</td>
+            </tr>
+        </table>
+
+    </div>
+
+    <button class="openbtn" onclick="openSideNav()"><i id="arrow" class="fas fa-chevron-right"></i>
+        Weather Info</button>
+    <main>
+        <section id="history">
+            <h1 id="tours-title">Tours</h1>
+            <h1 id="history-title">Cozumel's History</h1>
+            <hr id="tours-hr-1">
+            <p class="history-p">Measuring about 29 miles (46 km) from northeast to southwest and averaging 9 miles (14
+                km) in width, it is the largest of Mexico’s inhabited islands. Geologically similar to the Yucatán, the
+                interior of Cozumel consists of a plain broken by low hills that are only about 50 feet (15 metres)
+                above sea level. Much of the island is covered by scrubby tropical jungle. Poor soils have discouraged
+                agriculture on the island, but traditional crops include tropical fruits, henequen (a fibre crop), corn
+                (maize), and cassava (manioc).</p>
+            <p class="history-p">
+                Clear, warm water, spectacular coral reefs, and abundant marine life make Cozumel one of the world’s
+                best scuba-diving destinations as well as a major resort. Indeed, the economy of Cozumel has been based
+                on tourism since the 1970s. In addition to the diving opportunities, other water sports, and fishing,
+                tourists are attracted by Cozumel’s tropical climate, sand beaches, and duty-free port shopping, along
+                with its atmosphere, which is more relaxed than that of nearby Cancún. Substantial resort development on
+                the island’s protected western coast extends both north and south from the island’s main town and
+                commercial centre, San Miguel de Cozumel. Chankanaab National Park, just south of San Miguel, has a
+                museum, botanic garden, and archaeological park. Cruise ships dock regularly at a pier south of San
+                Miguel. Cozumel has regular ferry service from Playa del Carmen and Puerto Morelos. An international
+                airport is located 2 miles (3 km) south of San Miguel.</p>
+            <p class="history-p">
+                Cozumel was a commercial and ceremonial centre during the Mayan period (about 250 to 950 CE), and the
+                island has several small archaeological sites. In 1518 Juan de Grijalva led the first Spanish expedition
+                to Cozumel. In 1519 Hernán Cortés used the island as a base for Spanish efforts to conquer the Maya.
+                During most of the Spanish colonial era, Cozumel was only sparsely populated, but trading ships and
+                pirates occasionally sought shelter and replenished supplies on the island, which was protected behind
+                offshore reefs. Area 189 square miles (489 square km). Pop. (2005) 71,401; (2010) 77,236. - Information
+                gathered from www.britannica.com.</p>
+        </section>
+        <section id="popular-tours">
+            <h1 id="pop-tours">Popular Tours</h1>
+            <hr id="tours-hr-2">
+            <div>
+                <ul id="tours-list">
+                    <li><a
+                            href="https://www.viator.com/tours/Cozumel/Incredible-Tulum-Mayan-Ruins-Exploration/d632-120267P8">Tulum
+                            Mayan Ruins Excursion</a></li>
+
+                    <li><a href="https://www.viator.com/tours/Cozumel/Cozumel-Beach-Horseback-Riding-Tour/d632-14856P3">Cozumel
+                            Beach Horseback Riding Tour</a></li>
+
+                    <li><a
+                            href="https://www.viator.com/tours/Cozumel/Cozumel-Snorkeling-Tour-Palancar-Columbia-and-Cielo-Reefs/d632-6079SNORKEL">Cozumel
+                            Snorkeling Tour</a></li>
+
+                    <li><a
+                            href="https://www.viator.com/tours/Cozumel/Cozumel-Self-Drive-Buggy-Tour-Snorkeling-Mayan-Heritage-and-Mexican-Lunch/d632-6044COZDUNE">Cozumel
+                            Self-Drive Buggy Tour</a></li>
+
+                    <li><a
+                            href="https://www.viator.com/tours/Cozumel/Atlantis-Submarine-Expedition-Cozumel/d632-3792SUB">Atlantis
+                            Submarine Expedition in Cozumel</a></li>
+                </ul>
+            </div>
+
+        </section>
+
+    </main>
+    <footer>
+        <hr id="footer-hr-first">
+        <div id="footer-grid">
+            <div id="footer-item-1">
+                <a href="index.html"><img id="image-logo-footer" src="images/multi-logo-cropped.png"
+                        alt="website logo"></a>
+            </div>
+            <div id="footer-item-2" class="footer-contact">
+                <h2 id="home-contact-title">Contact Us</h2>
+                <i id="pin" class="fas fa-map-marker-alt"><span class="i-font">189 Calle 45 Oeste 77600</span></i>
+                <i id="phone" class="fas fa-phone-alt"><span class="i-font">52.800.987.3458</span></i>
+                <i id="calendar" class="fas fa-calendar"><span class="i-font">Open Monday - Saturday</span></i>
+                <i id="clock" class="fas fa-clock"><span class="i-font">7:00 a.m. - 6:00 p.m.</span></i>
+            </div>
+            <div id="footer-social">
+                <a aria-label="Facebook" href="https://www.facebook.com"><i id="facebook"
+                        class="fab fa-facebook"></i></a>
+                <a aria-label="Twitter" href="https://www.twitter.com"><i id="twitter" class="fab fa-twitter"></i></a>
+                <a aria-label="Instagram" href="https://www.instagram.com"><i id="instagram"
+                        class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+        <hr id="footer-hr">
+        <div id="copyright">
+            Copyright &copy; <span id="copyright-year"></span> Scoots
+            <div></div><span id="current-date"></span>
+            <div id="last-update-style">Last Updated: <span id="last-update"></span></div>
+            <a href="resources.html">Resources Used</a>
+        </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/font.js"></script>
+    <script src="js/footer.js"></script>
+    <script src="js/weather.js"></script>
+    <script src="js/future_forecast.js"></script>
+</body>
+
+</html>
